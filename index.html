@@ -41,9 +41,18 @@
 		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od9/public/basic?alt=json-in-script"
 		ex:converter="googleSpreadsheets" />
 
-	<script src="http://static.simile.mit.edu/exhibit/api-2.1.0/exhibit-api.js?bundle=false&locale=en" type="text/javascript"></script>
-	<script src="http://static.simile.mit.edu/exhibit/extensions-2.1.0/time/time-extension.js" type="text/javascript"></script>
-	<script src="http://static.simile.mit.edu/exhibit/extensions-2.1.0/map/map-extension.js?gmapkey=ABQIAAAA3N9-7oj7-G89bYFMzamBkRTQRsezl3d7ON-ukbGIyTMDcN93rhRYNlA4IoqHExasEglm13nOHiMAEg"></script>
+	<script>
+	Exhibit_urlPrefix="lib/exhibit/api-2.1.0/";
+	Exhibit_parameters='bundle=true';
+
+	Timeline_urlPrefix='lib/timeline/api-2.2.0/';
+	Timeline_parameters='bundle=true';
+	</script>
+
+	<script src="lib/ajax/api-2.1.0/simile-ajax-api.js" type="text/javascript"></script>
+	<script src="lib/exhibit/api-2.1.0/exhibit-api.js?locale=en" type="text/javascript"></script>
+	<script src="lib/exhibit/extensions-2.1.0/time/time-extension.js" type="text/javascript"></script>
+	<script src="lib/exhibit/extensions-2.1.0/map/map-extension.js?gmapkey=ABQIAAAA3N9-7oj7-G89bYFMzamBkRTQRsezl3d7ON-ukbGIyTMDcN93rhRYNlA4IoqHExasEglm13nOHiMAEg"></script>
 	<script src="cv-exhibit-ext.js"></script>
 
  </head> 
@@ -116,7 +125,7 @@
 	<div ex:role="collection" id="projects" ex:itemTypes="Project"></div>
 
     <h1>Cédric Vidal</h1>
-    <h2>Freelance JavaEE & MDSD Architect</h2>
+    <h2>Freelance JavaEE &amp; MDSD Architect</h2>
 
     <table width="100%" class="hresume">
         <tr valign="top">
