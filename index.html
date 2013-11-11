@@ -1,0 +1,332 @@
+<html>
+ <head>
+    <title>Cédric Vidal's CV (interactive edition)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link type="text/css" rel="stylesheet" href="index.css">
+    <link href="cv.js" type="application/json" rel="exhibit/data" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od6/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od7/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od4/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od5/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/oda/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od8/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<link rel="exhibit/data" 
+		type="application/jsonp"
+		href="http://spreadsheets.google.com/feeds/list/0ApThpMMqEFNbdDYyYVdOekxxZzVQX21ZR0Nxc1ZCNXc/od9/public/basic?alt=json-in-script"
+		ex:converter="googleSpreadsheets" />
+
+	<script src="http://static.simile.mit.edu/exhibit/api-2.1.0/exhibit-api.js?bundle=false&locale=en" type="text/javascript"></script>
+	<script src="http://static.simile.mit.edu/exhibit/extensions-2.1.0/time/time-extension.js" type="text/javascript"></script>
+	<script src="http://static.simile.mit.edu/exhibit/extensions-2.1.0/map/map-extension.js?gmapkey=ABQIAAAA3N9-7oj7-G89bYFMzamBkRTQRsezl3d7ON-ukbGIyTMDcN93rhRYNlA4IoqHExasEglm13nOHiMAEg"></script>
+	<script src="cv-exhibit-ext.js"></script>
+
+ </head> 
+ <body ex:ondataload="loadExhibit" onload="onload()">
+
+	<script type="text/javascript"><!--
+
+		/**
+		 * I use a special exhibit loading hook in order to do geolocalisation
+		 * after the database has been loaded. This handler is called after
+		 * the database has been loaded.
+		 */
+		function loadExhibit() {
+	        window.exhibit = Exhibit.create();
+	        window.exhibit.configureFromDOM();
+	        getLatLng();
+
+//	        window.exhibit.getDatabase.addListener([
+//	        	onAfterLoadingItems : function() {
+//	        		zoomToFitMap();
+//	        	}
+//		        ]);
+		}
+
+		function zoomToFitMap() {
+			// map: an instance of GMap2
+			// latlng: an array of instances of GLatLng
+			var latlngbounds = new GLatLngBounds( );
+			for ( var i = 0; i < latlng.length; i++ )
+			{
+			latlngbounds.extend( latlng[ i ] );
+			}
+			map.setCenter( latlngbounds.getCenter( ), map.getBoundsZoomLevel( latlngbounds ) );
+		}
+
+		/**
+		 * CV JSON data contains locations but the geotag must be computed
+		 */
+       function getLatLng() {
+           var database = exhibit.getDatabase();
+           CV.lookupLatLng(
+               exhibit.getCollection("events").getAllItems(),
+               ".location",
+               "addressLatLng",
+               function(result) {
+                   // result contains only id -> lat/long mappings
+                   // loading them in the database augments previously loaded data
+            	   database.loadItems(result, window.location.href);
+               },
+               database,
+               4
+               );
+       }
+
+		function onload() {
+			var emailElt = document.getElementById('email');
+			var email = "cedric" + "@" + "vidal" + "." + "biz";
+			emailElt.setAttribute("href", "mailto:" + email);
+			emailElt.innerHTML = email;
+		}
+--></script>
+
+	<div ex:role="collection" id="educations" ex:itemTypes="Education"></div>
+	<div ex:role="collection" id="experiences" ex:itemTypes="Experience"></div>
+	<div ex:role="collection" id="skills" ex:itemTypes="Skill"></div>
+	<div ex:role="collection" id="talks" ex:itemTypes="Talk"></div>
+	<div ex:role="collection" id="events" ex:itemTypes="Experience, Talk, Publication, Education"></div>
+	<div ex:role="collection" id="publications" ex:itemTypes="Publication"></div>
+	<div ex:role="collection" id="expertises" ex:itemTypes="Expertise"></div>
+	<div ex:role="collection" id="projects" ex:itemTypes="Project"></div>
+
+    <h1>Cédric Vidal</h1>
+    <h2>JavaEE & MDSD Architect</h2>
+
+    <table width="100%" class="hresume">
+        <tr valign="top">
+            <td ex:role="viewPanel">
+
+				<table ex:role="lens" ex:itemTypes="Experience" class="experience" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+					<tr>
+						<td class="left">
+							<div ex:content=".start" class="start"></div>
+							<div class="end">to <span ex:content="if(exists(.end), .end, 'today')"></span></div>
+							<div ex:if-exists=".place" ex:content=".participation" class="participation"></div>
+						</td>
+						<td class="middle">
+							<div>
+								<span ex:content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
+								<span ex:if-exists=".place">
+									<span>(</span>
+									<span ex:content=".place" class="place"></span>
+									<span>)</span>
+								</span>
+							</div>
+							<div>
+								<table>
+									<tr>
+										<td class="label">Context</td>
+										<td><span ex:content=".label" class="name"></span></td>
+									</tr>
+									<tr>
+										<td class="label">Title</td>
+										<td><span ex:content=".title" class="title"></span></td>
+									</tr>
+									<tr>
+										<td class="label">Responsibilities</td>
+										<td><span ex:content=".responsibilities" class="responsibilities"></span></td>
+									</tr>
+									<tr>
+										<td class="label">Technical environment</td>
+										<td><span ex:content=".tech" class="tech"></span></td>
+									</tr>
+									<tr>
+										<td class="label">Industry</td>
+										<td><span ex:content=".industry" class="industry"></span></td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="right">
+							<a ex:href-content="if(exists(.url), .url, .customer.website)">
+								<img ex:if-exists=".customer.logo" ex:src-subcontent="logos/{{.customer.logo}}" class="logo" width="100"></div>
+							</a>
+						</td>
+					</tr>
+				</table>
+
+				<table ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
+					<tr>
+						<td class="left">
+							<div ex:content=".start" class="start"></div>
+						</td>
+						<td class="middle">
+							<div>
+								<span ex:content=".label" class="name"></span>
+								<span ex:if-exists=".place">
+									<span>(</span>
+									<span ex:content=".place" class="place"></span>
+									<span>)</span>
+								</span>
+							</div>
+							<div>
+								<span ex:content=".description" class="description"></span>
+							</div>
+							<div ex:if-exists=".slideshare">
+								<a ex:href-content=".slideshare" class="slideshare">Slideshare presentation</a>
+							</div>
+						</td>
+						<td class="right">
+							<div ex:if-exists=".slideshare" ex:if-exists=".thumbnail">
+								<a ex:href-content=".slideshare" class="slideshare">
+									<img ex:if-exists=".thumbnail" ex:src-content=".thumbnail" class="logo"></div>
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table ex:role="lens" ex:itemTypes="Publication" class="publication" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+					<tr>
+						<td class="left">
+							<div ex:content=".date" class="date"></div>
+						</td>
+						<td class="middle">
+							<div>
+								<cite ex:content=".label" class="title"></cite>
+							</div>
+							<div>
+								<span ex:content=".description" class="description"></span>
+							</div>
+							<div ex:if-exists=".download">
+								<a ex:href-content=".download" class="download">Download publication</a>
+							</div>
+						</td>
+						<td class="right">
+							<div ex:if-exists=".image">
+								<img ex:if-exists=".image" ex:src-content=".image" class="image" height="200"></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table ex:role="lens" ex:itemTypes="Education" class="education" ex:formats="date { template: 'yyyy'; show: date }" style="display: none;">
+					<tr>
+						<td class="left">
+							<!--div ex:content=".start" class="date"></div-->
+							<div ex:content=".end" class="date"></div>
+						</td>
+						<td>
+							<div>
+								<span class="title"><span ex:content=".label"></span> <span>School</span></span>
+								<span ex:if-exists=".place">
+									<span>(</span>
+									<span ex:content=".place" class="place"></span>
+									<span>)</span>
+								</span>
+							</div>
+							<div>
+								<span ex:content=".diploma" class="diploma"></span>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<span ex:role="lens" ex:itemTypes="Expertise" class="expertise" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
+					<span ex:content=".label" class="name"></span><span>,&nbsp;</span>
+				</span>
+
+				<table ex:role="lens" ex:itemTypes="Project" class="project" style="display: none;">
+					<tr>
+						<td class="left">
+							<a ex:href-content=".website" class="website">
+								<span ex:content=".label" class="title"></span>
+							</a>
+						</td>
+						<td class="middle">
+							<div>
+								<span ex:content=".description" class="description"></span>
+							</div>
+							<p>
+								<a ex:href-content=".website" class="website">Website</a>
+							</p>
+						</td>
+						<td class="right">
+							<div ex:if-exists=".image">
+								<img ex:if-exists=".image" ex:src-content=".image" class="image" height="300"></div>
+							</div>
+							<div ex:if-exists=".logo">
+								<img ex:if-exists=".logo" ex:src-content=".logo" class="logo"></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+                <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences"></div>
+                <div ex:role="view" ex:label="Education" ex:orders=".end" ex:directions="descending" ex:collectionID="educations"></div>
+                <!--div ex:role="view" ex:label="Skills" id="skillsview" ex:collectionID="skills"></div-->
+                <!--div ex:role="view" ex:label="Expertise" id="expertiseview" ex:viewClass="Thumbnail" ex:orders=".domain" ex:collectionID="expertises"></div-->
+                <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks"></div>
+                <div ex:role="view" ex:label="Publications" ex:orders=".date" ex:directions="descending" ex:collectionID="publications"></div>
+                <div ex:role="view" ex:label="Open Source" ex:orders=".label" ex:directions="ascending" ex:collectionID="projects"></div>
+
+				<div ex:role="view" ex:label="Timeline"
+					ex:viewClass="Timeline"
+					ex:start="if(exists(.date), .date, .start)"
+					ex:end="if(exists(.end), .end, now())"
+					ex:colorKey=".industry"
+					ex:collectionID="events">
+				</div>
+
+				<div ex:role="view" ex:label="Map" 
+					ex:viewClass="Map" 
+					ex:latlng=".addressLatLng"
+					ex:collectionID="events"
+					>
+				</div>
+
+            </td>
+            <td width="20%">
+				<div class="addressbox">
+				    <address class="vcard">
+						<div><span class="fn">Cédric Vidal</span></div>
+						<div class="adr">
+							<span class="street-address">38, av Mathurin Moreau</span>
+							<span class="postal-code">75019</span>
+							<span class="locality">Paris</span>, <span class="region">IDF</span>
+						</div>
+						<div>E-mail : <a id="email" class="email">cedric at vidal dot biz</a></div>
+						<div>Web : <a class="url" href="http://vidal.biz/">vidal.biz</a></div>
+						<div>Phone : <span class="tel">+33.(0)6.63.58.71.40</span></div>
+						<div>Linkedin : <a href="http://www.linkedin.com/in/cedricvidal">cedricvidal</a></div>
+						<div>Twitter : <a href="http://twitter.com/cedricvidal">@cedricvidal</a></div>
+						<div>As PDF : <a href="cedric-vidal.en.pdf">cedric-vidal.en.pdf</a></div>
+					</address>
+				</div>
+
+				<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Filter by text" ex:collectionID="experiences"></div>
+				<div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:facetLabel="Filter by technology" ex:showMissing="false" ex:collectionID="experiences"></div>
+				<div ex:role="facet" ex:expression=".customer" ex:facetLabel="Filter by customer" ex:collectionID="experiences"></div>
+				<div ex:role="facet" ex:expression=".employer" ex:facetLabel="Filter by company" ex:collectionID="experiences"></div>
+				<div ex:role="facet" ex:expression=".industry" ex:facetLabel="Filter by industry" ex:collectionID="experiences"></div>
+            </td>
+        </tr>
+    </table>
+ </body>
+ </html>

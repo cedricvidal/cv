@@ -1,0 +1,8 @@
+Attach slideshare presentations to Talk
+	- display thumbnail in list
+	- when cliking on the thumbnail, display a popup with the embedded slideshare presentation
+
+Attach PDFs of articles published in Programmez!
+
+Display open source projects by interrogating Ohloh's API
+	- the Ohloh API doesn't expose a user's project list

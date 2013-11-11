@@ -1,0 +1,117 @@
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+table.experience {
+	padding:    10px;
+}
+.experience .left, .education .left {
+	width:     100px;
+}
+.experience .middle {
+	width:     70%;
+	text-align: justify;
+}
+.experience .middle .label {
+	width:     200px;
+}
+.experience .start, .talk .start {
+	font-weight: bold;
+}
+.experience .end, .experience .participation {
+	font-style: italic;
+}
+.experience .customer {
+	font-weight: bold;
+}
+
+.talk .left {
+	width:     150;
+}
+.talk .middle {
+	width:     600;
+}
+.talk .right {
+}
+.talk .name {
+	font-weight: bold;
+}
+.talk {
+	margin-bottom: 20px;
+}
+
+
+.experience .label {
+	font-weight: bold;
+}
+
+.publication .title {
+	font-weight: bold;
+}
+.publication .date {
+	font-weight: bold;
+}
+
+.publication .left {
+	width:     100px;
+}
+.publication .middle {
+	width:     600px;
+}
+.publication .right {
+}
+table.publication {
+	margin-bottom: 20px;
+}
+
+.education .title {
+	font-weight: bold;
+}
+.education .date {
+	font-weight: bold;
+}
+
+.project .title {
+	font-weight: bold;
+}
+
+table.project {
+	margin-bottom: 20px;
+}
+
+table.project .left {
+	width:     200px;
+}
+
+table.project .middle {
+	width:     500px;
+	text-align: justify;
+}
+
+table.project .right {
+	width:     50%;
+	text-align:     center;
+}
+
+table.project .left a {
+	text-decoration: none;
+}
+
+ol.exhibit-tileView-body {
+	list-style: none; // detactivate list view line numbers
+}
+div.addressbox {
+	margin-bottom: 10px;
+}
+div.addressbox span.fn {
+	font-weight: bold;
+}
+div.exhibit-cloudFacet-body {
+	overflow: auto;
+	height: 200px;
+	border: 1px solid #DDDDDD;
+}
