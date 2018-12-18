@@ -206,11 +206,9 @@
 							<div>
 								<span ex:content=".description" class="description"></span>
 							</div>
-							<div ex:if-exists=".slideshare">
-								<a ex:href-content=".slideshare" class="slideshare">Slides</a>
-							</div>
-							<div ex:if-exists=".video">
-								<a ex:href-content=".video" class="video">Video</a>
+							<div>
+								<a ex:if-exists=".slideshare" ex:href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
+								<a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
 							</div>
 						</td>
 						<td class="right">
