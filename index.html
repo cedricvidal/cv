@@ -181,7 +181,7 @@
 								</table>
 							</div>
 						</td>
-						<td class="right">
+						<td class="right noprint">
 							<a ex:href-content="if(exists(.url), .url, .customer.website)">
 								<img ex:if-exists=".customer.logo" ex:src-subcontent="logos/{{.customer.logo}}" class="logo" width="100"></div>
 							</a>
@@ -211,7 +211,7 @@
 								<a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
 							</div>
 						</td>
-						<td class="right">
+						<td class="right noprint">
 							<div ex:if-exists=".thumbnail">
 								<img ex:if-exists=".thumbnail" ex:src-content=".thumbnail" class="logo" width="100"></div>
 							</div>
@@ -235,7 +235,7 @@
 								<a ex:href-content=".download" class="download">Download publication</a>
 							</div>
 						</td>
-						<td class="right">
+						<td class="right noprint">
 							<div ex:if-exists=".image">
 								<img ex:if-exists=".image" ex:src-content=".image" class="image" height="200"></div>
 							</div>
@@ -284,7 +284,7 @@
 								<a ex:href-content=".website" class="website">Website</a>
 							</p>
 						</td>
-						<td class="right">
+						<td class="right noprint">
 							<div ex:if-exists=".image">
 								<img ex:if-exists=".image" ex:src-content=".image" class="image" height="300"></div>
 							</div>
@@ -336,11 +336,13 @@
 					</address>
 				</div>
 
-				<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Filter by text" ex:collectionID="experiences"></div>
-				<div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:facetLabel="Filter by technology" ex:showMissing="false" ex:collectionID="experiences"></div>
-				<div ex:role="facet" ex:expression=".customer" ex:facetLabel="Filter by customer" ex:collectionID="experiences"></div>
-				<div ex:role="facet" ex:expression=".employer" ex:facetLabel="Filter by company" ex:collectionID="experiences"></div>
-				<div ex:role="facet" ex:expression=".industry" ex:facetLabel="Filter by industry" ex:collectionID="experiences"></div>
+				<div class="noprint">
+					<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Filter by text" ex:collectionID="experiences"></div>
+					<div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:facetLabel="Filter by technology" ex:showMissing="false" ex:collectionID="experiences"></div>
+					<div ex:role="facet" ex:expression=".customer" ex:facetLabel="Filter by customer" ex:collectionID="experiences"></div>
+					<div ex:role="facet" ex:expression=".employer" ex:facetLabel="Filter by company" ex:collectionID="experiences"></div>
+					<div ex:role="facet" ex:expression=".industry" ex:facetLabel="Filter by industry" ex:collectionID="experiences"></div>
+				</div>
             </td>
         </tr>
     </table>

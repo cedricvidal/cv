@@ -1,3 +1,14 @@
+/*@media print {*/
+	.noprint {
+		display: none;
+	}
+
+	.exhibit-collectionView-header, .exhibit-collectionView-footer {
+		display: none !important;
+	}
+
+/*}*/
+
 h1 {
 	text-align: center;
 }
