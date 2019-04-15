@@ -1,4 +1,4 @@
-/*@media print {*/
+@media print {
 	.noprint {
 		display: none;
 	}
@@ -7,7 +7,7 @@
 		display: none !important;
 	}
 
-/*}*/
+}
 
 h1 {
 	text-align: center;
