@@ -303,21 +303,6 @@
                 <div ex:role="view" ex:label="Publications" ex:orders=".date" ex:directions="descending" ex:collectionID="publications"></div>
                 <div ex:role="view" ex:label="Open Source" ex:orders=".label" ex:directions="ascending" ex:collectionID="projects"></div>
 
-				<div ex:role="view" ex:label="Timeline"
-					ex:viewClass="Timeline"
-					ex:start="if(exists(.date), .date, .start)"
-					ex:end="if(exists(.end), .end, now())"
-					ex:colorKey=".industry"
-					ex:collectionID="events">
-				</div>
-
-				<div ex:role="view" ex:label="Map" 
-					ex:viewClass="Map" 
-					ex:latlng=".addressLatLng"
-					ex:collectionID="events"
-					>
-				</div>
-
             </td>
             <td width="20%">
 				<div class="addressbox">
