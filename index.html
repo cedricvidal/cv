@@ -171,7 +171,7 @@
         <div id="ex-vp-talk">
 
             <div ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
-                <p>
+                <p class="project-title">
                     <span ex:content=".start" class="start"></span>
                     <span ex:content=".label"></span>
                     <span ex:if-exists=".place">
@@ -194,6 +194,25 @@
             <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks"></div>
 
         </div>
+
+
+        <p class="rela-block caps side-header">Open Source</p>
+        <div id="ex-vp-oss">
+
+            <div ex:role="lens" ex:itemTypes="Project" class="project" style="display: none;">
+                <p>
+                    <span ex:content=".label" class="project-title"></span>
+                </p>
+                <p>
+                    <span ex:content=".description" class="description"></span>
+                    <a ex:href-content=".website" class="website">Website</a>
+                </p>
+            </div>
+
+            <div ex:role="view" ex:label="Open Source" ex:orders=".label" ex:directions="ascending" ex:collectionID="projects"></div>
+
+        </div>
+
 
     </div>
     <div class="rela-block content-container">
@@ -227,7 +246,7 @@
                 <p class="justified industry" ex:if-exists=".industry"><span class="label">Industry</span>: <span ex:content=".industry"></span></p>
             </div>
 
-            <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences"></div>
+            <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences" ex:showAll="true"></div>
         </div>
 
 </div>
