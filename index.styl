@@ -59,6 +59,8 @@ h3 {font('Open Sans',21px,1px,600,28px); color: black}
 @media screen
     *
         transition: 0.35s ease
+    .print-only
+        display: none
     .page
         width 90%
         max-width 1200px
@@ -98,7 +100,7 @@ ol.exhibit-tileView-body
     width 350px
     background-color #F7E0C1
     padding 320px 30px 50px
-        
+
 .mugshot
     setup($x,absolute,$x,50px,$x,$x,70px)
     height 210px
@@ -122,6 +124,11 @@ ol.exhibit-tileView-body
         setup($x, absolute, $x, 58%, 16%)
         cursor pointer
         font("Montserrat", $midSize/5 + $midSize/50, 0px, 400, $midSize/5 + $midSize/30)
+    & .identity
+        object-fit cover
+        height 100%
+        width 100%
+        border-radius 50%
 
 .social
     padding-left 60px
