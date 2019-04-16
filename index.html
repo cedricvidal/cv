@@ -160,16 +160,19 @@
         <p class="rela-block caps side-header">Publications</p>
         <div id="ex-vp-pub">
             <div ex:role="lens" ex:itemTypes="Publication" class="publication" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
-                <p class="pub-title">
-                    <span ex:content=".date" class="date"></span>
-                    <cite ex:content=".label" class="title"></cite>
-                </p>
-                <p>
-                    <span ex:content=".description" class="description"></span>
-                </p>
-                <p ex:if-exists=".download">
-                    <a ex:href-content=".download" class="download">Download publication</a>
-                </p>
+                <div>
+                    <p class="pub-title">
+                        <span ex:content=".date" class="date"></span>
+                        <cite ex:content=".label" class="title"></cite>
+                    </p>
+                    <p class="pub-desc">
+                        <img ex:if-exists=".image" ex:src-content=".image" class="pub-image" />
+                        <span ex:content=".description" class="description pub-text"></span>
+                    </p>
+                    <p ex:if-exists=".download">
+                        <a ex:href-content=".download" class="download">Download publication</a>
+                    </p>
+                </div>
             </div>
 
             <div ex:role="view" ex:label="Publications" ex:orders=".date" ex:directions="descending" ex:collectionID="publications"></div>
