@@ -148,6 +148,25 @@
         <p class="rela-block caps side-header">Expertise</p>
         <div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:showMissing="false" ex:collectionID="experiences"></div>
 
+        <p class="rela-block caps side-header">Publications</p>
+        <div id="ex-vp-pub">
+            <div ex:role="lens" ex:itemTypes="Publication" class="publication" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+                <p class="pub-title">
+                    <span ex:content=".date" class="date"></span>
+                    <cite ex:content=".label" class="title"></cite>
+                </p>
+                <p>
+                    <span ex:content=".description" class="description"></span>
+                </p>
+                <p ex:if-exists=".download">
+                    <a ex:href-content=".download" class="download">Download publication</a>
+                </p>
+            </div>
+
+            <div ex:role="view" ex:label="Publications" ex:orders=".date" ex:directions="descending" ex:collectionID="publications"></div>
+
+        </div>
+			
         <p class="rela-block caps side-header">Talks</p>
         <div id="ex-vp-talk">
 
