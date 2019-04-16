@@ -215,8 +215,9 @@
                 <p>
                     <span ex:content=".label" class="project-title"></span>
                 </p>
-                <p>
-                    <span ex:content=".description" class="description"></span>
+                <p class="project-desc">
+                    <img ex:if-exists="if(exists(.image), .image, .logo)" ex:src-content="if(exists(.image), .image, .logo)" class="project-image" />
+                    <span ex:content=".description" class="description project-text"></span>
                     <a ex:href-content=".website" class="website">Website</a>
                 </p>
             </div>
