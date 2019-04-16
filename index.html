@@ -148,6 +148,34 @@
         <p class="rela-block caps side-header">Expertise</p>
         <div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:showMissing="false" ex:collectionID="experiences"></div>
 
+        <p class="rela-block caps side-header">Talks</p>
+        <div id="ex-vp-talk">
+
+            <div ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
+                <p>
+                    <span ex:content=".start" class="start"></span>
+                    <span ex:content=".label"></span>
+                    <span ex:if-exists=".place">
+                        <span>(</span>
+                        <span ex:content=".place" class="place"></span>
+                        <span>)</span>
+                    </span>
+                </p>
+                <p class="light">
+                    <span ex:content=".description" class="description"></span>
+                </p>
+                <p class="justified responsibilities">
+                    <a ex:if-exists=".slideshare" ex:href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
+                    <a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
+                    
+                </p>
+
+            </div>
+
+            <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks"></div>
+
+        </div>
+
     </div>
     <div class="rela-block content-container">
         <h2 class="rela-block caps title">Innovative technology builder and team leader</h2>
@@ -181,34 +209,6 @@
             </div>
 
             <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences"></div>
-        </div>
-
-        <div class="rela-block caps greyed">Talks</div>
-        <div>
-
-            <div ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
-                <h3 class="job-title">
-                    <span ex:content=".start" class="start"></span>
-                    <span ex:content=".label"></span>
-                    <span ex:if-exists=".place">
-                        <span>(</span>
-                        <span ex:content=".place" class="place"></span>
-                        <span>)</span>
-                    </span>
-                </h3>
-                <p class="light">
-                    <span ex:content=".description" class="description"></span>
-                </p>
-                <p class="justified responsibilities">
-                    <a ex:if-exists=".slideshare" ex:href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
-                    <a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
-                    
-                </p>
-
-            </div>
-
-            <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks"></div>
-
         </div>
 
 </div>
