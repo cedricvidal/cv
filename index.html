@@ -92,7 +92,6 @@
     <div ex:role="collection" id="experiences" ex:itemTypes="Experience"></div>
     <div ex:role="collection" id="skills" ex:itemTypes="Skill"></div>
     <div ex:role="collection" id="talks" ex:itemTypes="Talk"></div>
-    <div ex:role="collection" id="events" ex:itemTypes="Experience, Talk, Publication, Education"></div>
     <div ex:role="collection" id="publications" ex:itemTypes="Publication"></div>
     <div ex:role="collection" id="expertises" ex:itemTypes="Expertise"></div>
     <div ex:role="collection" id="projects" ex:itemTypes="Project"></div>
@@ -160,9 +159,7 @@
         -->
 
         <div class="rela-block caps greyed">Experience</div>
-
-
-        <div ex:role="viewPanel" id="ex-vp-exp">
+        <div>
             <div ex:role="lens" ex:itemTypes="Experience" class="experience" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
                 <h3 class="job-title">
                     <span ex:content=".title" class="title"></span> at <span ex:content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
@@ -184,6 +181,34 @@
             </div>
 
             <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences"></div>
+        </div>
+
+        <div class="rela-block caps greyed">Talks</div>
+        <div>
+
+            <div ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
+                <h3 class="job-title">
+                    <span ex:content=".start" class="start"></span>
+                    <span ex:content=".label"></span>
+                    <span ex:if-exists=".place">
+                        <span>(</span>
+                        <span ex:content=".place" class="place"></span>
+                        <span>)</span>
+                    </span>
+                </h3>
+                <p class="light">
+                    <span ex:content=".description" class="description"></span>
+                </p>
+                <p class="justified responsibilities">
+                    <a ex:if-exists=".slideshare" ex:href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
+                    <a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
+                    
+                </p>
+
+            </div>
+
+            <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks"></div>
+
         </div>
 
 </div>
