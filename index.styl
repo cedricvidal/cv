@@ -75,6 +75,7 @@ h3 {font('Open Sans',21px,1px,600,28px); color: black}
         display: none
     .exhibit-collectionView-header, .exhibit-collectionView-footer
         display: none !important
+    h2 {font('Open Sans',25px,3px,600,30px); color: black}
 
 .exhibit-toolboxWidget-popup
     display: none !important
@@ -169,7 +170,13 @@ ol.exhibit-tileView-body
     & .exhibit-collectionView-header
         display: none;
 
-.title{width: 80%; text-align: center}
+.title
+    width 80%
+    text-align center
+
+@media print
+    .title
+        width 90%
 
 .separator
     width 240px
