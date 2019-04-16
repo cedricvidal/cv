@@ -4,15 +4,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="C&eacute;dric Vidal's interactive Curriculum Vitae. Innovative technology enabler, team leader." />
 	<meta name="author" content="C&eacute;dric Vidal" />
-	<meta name="keywords" content="Curriculum Vitae">
+	<meta name="keywords" content="Curriculum Vitae" />
 
-	<!--
-		About this Curriculum Vitae. Created in 2013.
-		The client is a SPA built with MIT's Exhibit 2.1.0 framework, specialized for search and filtering capabilities.
-		The data is stored in a Google Sheet and fetched using Exhibit's Google Sheet converter
-	-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link type="text/css" rel="stylesheet" href="index.css" />
 
-	<link type="text/css" rel="stylesheet" href="index.css">
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css' />
+
     <link href="cv.js" type="application/json" rel="exhibit/data" />
 
 	<link rel="exhibit/data" 
@@ -60,276 +61,131 @@
 
 	<script src="lib/ajax/api-2.1.0/simile-ajax-api.js" type="text/javascript"></script>
 	<script src="lib/exhibit/api-2.1.0/exhibit-api.js?locale=en" type="text/javascript"></script>
-	<script src="lib/exhibit/extensions-2.1.0/time/time-extension.js" type="text/javascript"></script>
-	<script src="lib/exhibit/extensions-2.1.0/map/map-extension.js?gmapkey=ABQIAAAA3N9-7oj7-G89bYFMzamBkRTQRsezl3d7ON-ukbGIyTMDcN93rhRYNlA4IoqHExasEglm13nOHiMAEg"></script>
 	<script src="cv-exhibit-ext.js"></script>
 
- </head> 
- <body ex:ondataload="loadExhibit" onload="onload()">
+</head> 
 
-	<script type="text/javascript"><!--
+<body ex:ondataload="loadExhibit" onload="onload()">
 
-		/**
-		 * I use a special exhibit loading hook in order to do geolocalisation
-		 * after the database has been loaded. This handler is called after
-		 * the database has been loaded.
-		 */
-		function loadExhibit() {
-	        window.exhibit = Exhibit.create();
-	        window.exhibit.configureFromDOM();
-	        getLatLng();
 
-//	        window.exhibit.getDatabase.addListener([
-//	        	onAfterLoadingItems : function() {
-//	        		zoomToFitMap();
-//	        	}
-//		        ]);
-		}
+    <script type="text/javascript"><!--
 
-		function zoomToFitMap() {
-			// map: an instance of GMap2
-			// latlng: an array of instances of GLatLng
-			var latlngbounds = new GLatLngBounds( );
-			for ( var i = 0; i < latlng.length; i++ )
-			{
-			latlngbounds.extend( latlng[ i ] );
-			}
-			map.setCenter( latlngbounds.getCenter( ), map.getBoundsZoomLevel( latlngbounds ) );
-		}
+        /**
+         * I use a special exhibit loading hook in order to do geolocalisation
+         * after the database has been loaded. This handler is called after
+         * the database has been loaded.
+         */
+        function loadExhibit() {
+            window.exhibit = Exhibit.create();
+            window.exhibit.configureFromDOM();
+        }
 
-		/**
-		 * CV JSON data contains locations but the geotag must be computed
-		 */
-       function getLatLng() {
-           var database = exhibit.getDatabase();
-           CV.lookupLatLng(
-               exhibit.getCollection("events").getAllItems(),
-               ".location",
-               "addressLatLng",
-               function(result) {
-                   // result contains only id -> lat/long mappings
-                   // loading them in the database augments previously loaded data
-            	   database.loadItems(result, window.location.href);
-               },
-               database,
-               4
-               );
-       }
-
-		function onload() {
-			var emailElt = document.getElementById('email');
-			var email = "cedric" + "@" + "vidal" + "." + "biz";
-			emailElt.setAttribute("href", "mailto:" + email);
-			emailElt.innerHTML = email;
-		}
+        function onload() {
+            var emailElt = document.getElementById('email');
+            var email = "cedric" + "@" + "vidal" + "." + "biz";
+            emailElt.setAttribute("href", "mailto:" + email);
+            emailElt.innerHTML = email;
+        }
 --></script>
 
-	<div ex:role="collection" id="educations" ex:itemTypes="Education"></div>
-	<div ex:role="collection" id="experiences" ex:itemTypes="Experience"></div>
-	<div ex:role="collection" id="skills" ex:itemTypes="Skill"></div>
-	<div ex:role="collection" id="talks" ex:itemTypes="Talk"></div>
-	<div ex:role="collection" id="events" ex:itemTypes="Experience, Talk, Publication, Education"></div>
-	<div ex:role="collection" id="publications" ex:itemTypes="Publication"></div>
-	<div ex:role="collection" id="expertises" ex:itemTypes="Expertise"></div>
-	<div ex:role="collection" id="projects" ex:itemTypes="Project"></div>
+    <div ex:role="collection" id="educations" ex:itemTypes="Education"></div>
+    <div ex:role="collection" id="experiences" ex:itemTypes="Experience"></div>
+    <div ex:role="collection" id="skills" ex:itemTypes="Skill"></div>
+    <div ex:role="collection" id="talks" ex:itemTypes="Talk"></div>
+    <div ex:role="collection" id="events" ex:itemTypes="Experience, Talk, Publication, Education"></div>
+    <div ex:role="collection" id="publications" ex:itemTypes="Publication"></div>
+    <div ex:role="collection" id="expertises" ex:itemTypes="Expertise"></div>
+    <div ex:role="collection" id="projects" ex:itemTypes="Project"></div>
 
-    <h1>C&eacute;dric Vidal</h1>
-    <h2>Innovative technology builder and team leader</h2>
+<!-- PAGE STUFF -->
+<div class="rela-block page">
+    <div class="rela-block top-bar">
+        <div class="caps name"><div class="abs-center">C&eacute;dric Vidal</div></div>
+    </div>
+    <div class="side-bar">
+        <div class="mugshot">
+            <div class="logo">
+                <svg viewbox="0 0 80 80" class="rela-block logo-svg">
+                    <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none"/>
+                </svg>
+                <p class="logo-text">CV</p>
+            </div>
+        </div>
+        <div class="addressbox">
+            <address class="vcard">
+                <div><span class="fn">C&eacute;dric Vidal</span></div>
+                <div class="adr">
+                    <span class="postal-code">92150</span>
+                    <span class="locality">Suresnes</span>, <span class="region">IDF</span>
+                </div>
+                <div>E-mail : <a id="email" class="email">cedric at vidal dot biz</a></div>
+                <div>Web : <a class="url" href="http://vidal.biz/">vidal.biz</a></div>
+                <div>Phone : <span class="tel">+33.(0)6.63.58.71.40</span></div>
+            </address>
+        </div>
 
-    <table width="100%" class="hresume">
-        <tr valign="top">
-            <td ex:role="viewPanel">
+        <p class="rela-block social twitter"><a href="http://twitter.com/cedricvidal">cedricvidal</a></p>
+        <p class="rela-block social linked-in"><a href="http://www.linkedin.com/in/cedricvidal">cedricvidal</a></p>
 
-				<table ex:role="lens" ex:itemTypes="Experience" class="experience" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
-					<tr>
-						<td class="left">
-							<div ex:content=".start" class="start"></div>
-							<div class="end">to <span ex:content="if(exists(.end), .end, 'today')"></span></div>
-							<div ex:if-exists=".place" ex:content=".participation" class="participation"></div>
-						</td>
-						<td class="middle">
-							<div>
-								<span ex:content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
-								<span ex:if-exists=".place">
-									<span>(</span>
-									<span ex:content=".place" class="place"></span>
-									<span>)</span>
-								</span>
-							</div>
-							<div>
-								<table>
-									<tr>
-										<td class="label">Context</td>
-										<td><span ex:content=".label" class="name"></span></td>
-									</tr>
-									<tr>
-										<td class="label">Title</td>
-										<td><span ex:content=".title" class="title"></span></td>
-									</tr>
-									<tr>
-										<td class="label">Responsibilities</td>
-										<td><span ex:content=".responsibilities" class="responsibilities"></span></td>
-									</tr>
-									<tr>
-										<td class="label">Technical environment</td>
-										<td><span ex:content=".tech" class="tech"></span></td>
-									</tr>
-									<tr>
-										<td class="label">Industry</td>
-										<td><span ex:content=".industry" class="industry"></span></td>
-									</tr>
-								</table>
-							</div>
-						</td>
-						<td class="right noprint">
-							<a ex:href-content="if(exists(.url), .url, .customer.website)">
-								<img ex:if-exists=".customer.logo" ex:src-subcontent="logos/{{.customer.logo}}" class="logo" width="100"></div>
-							</a>
-						</td>
-					</tr>
-				</table>
+        <p class="rela-block caps side-header">Education</p>
+        <div ex:role="viewPanel" id="ex-vp-edu">
 
-				<table ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
-					<tr>
-						<td class="left">
-							<div ex:content=".start" class="start"></div>
-						</td>
-						<td class="middle">
-							<div>
-								<span ex:content=".label" class="name"></span>
-								<span ex:if-exists=".place">
-									<span>(</span>
-									<span ex:content=".place" class="place"></span>
-									<span>)</span>
-								</span>
-							</div>
-							<div>
-								<span ex:content=".description" class="description"></span>
-							</div>
-							<div>
-								<a ex:if-exists=".slideshare" ex:href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
-								<a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
-							</div>
-						</td>
-						<td class="right noprint">
-							<div ex:if-exists=".thumbnail">
-								<img ex:if-exists=".thumbnail" ex:src-content=".thumbnail" class="logo" width="100"></div>
-							</div>
-						</td>
-					</tr>
-				</table>
+            <p ex:role="lens" ex:itemTypes="Education" class="education rela-block list-thing" ex:formats="date { template: 'yyyy'; show: date }" style="display: none;">
+                <span ex:content=".diploma" class="diploma"></span>
+                <span>at</span>
+                <span class="title"><span ex:content=".label"></span></span>
+                <span ex:if-exists=".place">
+                    <span>(</span>
+                    <span ex:content=".place" class="place"></span>
+                    <span>)</span>
+                </span>
+                in <span ex:content=".end" class="date"></span>
+            </p>
 
-				<table ex:role="lens" ex:itemTypes="Publication" class="publication" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
-					<tr>
-						<td class="left">
-							<div ex:content=".date" class="date"></div>
-						</td>
-						<td class="middle">
-							<div>
-								<cite ex:content=".label" class="title"></cite>
-							</div>
-							<div>
-								<span ex:content=".description" class="description"></span>
-							</div>
-							<div ex:if-exists=".download">
-								<a ex:href-content=".download" class="download">Download publication</a>
-							</div>
-						</td>
-						<td class="right noprint">
-							<div ex:if-exists=".image">
-								<img ex:if-exists=".image" ex:src-content=".image" class="image" height="200"></div>
-							</div>
-						</td>
-					</tr>
-				</table>
+            <div ex:role="view" ex:label="Education" ex:orders=".end" ex:directions="descending" ex:collectionID="educations"></div>
 
-				<table ex:role="lens" ex:itemTypes="Education" class="education" ex:formats="date { template: 'yyyy'; show: date }" style="display: none;">
-					<tr>
-						<td class="left">
-							<!--div ex:content=".start" class="date"></div-->
-							<div ex:content=".end" class="date"></div>
-						</td>
-						<td>
-							<div>
-								<span class="title"><span ex:content=".label"></span> <span>School</span></span>
-								<span ex:if-exists=".place">
-									<span>(</span>
-									<span ex:content=".place" class="place"></span>
-									<span>)</span>
-								</span>
-							</div>
-							<div>
-								<span ex:content=".diploma" class="diploma"></span>
-							</div>
-						</td>
-					</tr>
-				</table>
+        </div>
 
-				<span ex:role="lens" ex:itemTypes="Expertise" class="expertise" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
-					<span ex:content=".label" class="name"></span><span>,&nbsp;</span>
-				</span>
+        <p class="rela-block caps side-header">Expertise</p>
+        <div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:showMissing="false" ex:collectionID="experiences"></div>
 
-				<table ex:role="lens" ex:itemTypes="Project" class="project" style="display: none;">
-					<tr>
-						<td class="left">
-							<a ex:href-content=".website" class="website">
-								<span ex:content=".label" class="title"></span>
-							</a>
-						</td>
-						<td class="middle">
-							<div>
-								<span ex:content=".description" class="description"></span>
-							</div>
-							<p>
-								<a ex:href-content=".website" class="website">Website</a>
-							</p>
-						</td>
-						<td class="right noprint">
-							<div ex:if-exists=".image">
-								<img ex:if-exists=".image" ex:src-content=".image" class="image" height="300"></div>
-							</div>
-							<div ex:if-exists=".logo">
-								<img ex:if-exists=".logo" ex:src-content=".logo" class="logo"></div>
-							</div>
-						</td>
-					</tr>
-				</table>
+    </div>
+    <div class="rela-block content-container">
+        <h2 class="rela-block caps title">Innovative technology builder and team leader</h2>
+        <div class="rela-block separator"></div>
 
-                <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences"></div>
-                <div ex:role="view" ex:label="Education" ex:orders=".end" ex:directions="descending" ex:collectionID="educations"></div>
-                <!--div ex:role="view" ex:label="Skills" id="skillsview" ex:collectionID="skills"></div-->
-                <!--div ex:role="view" ex:label="Expertise" id="expertiseview" ex:viewClass="Thumbnail" ex:orders=".domain" ex:collectionID="expertises"></div-->
-                <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks"></div>
-                <div ex:role="view" ex:label="Publications" ex:orders=".date" ex:directions="descending" ex:collectionID="publications"></div>
-                <div ex:role="view" ex:label="Open Source" ex:orders=".label" ex:directions="ascending" ex:collectionID="projects"></div>
+        <!--
+        <div class="rela-block caps greyed">Profile</div>
+        <p class="long-margin">Retro DIY quinoa, mixtape williamsburg master cleanse bushwick tumblr chillwave dreamcatcher hella wolf paleo. Knausgaard semiotics truffaut cornhole hoodie, YOLO meggings gochujang tofu. Locavore ugh kale chips iPhone biodiesel typewriter freegan, kinfolk brooklyn kitsch man bun. Austin neutra etsy, lumbersexual paleo cornhole sriracha kinfolk meggings kickstarter. </p>
+        -->
 
-            </td>
-            <td width="20%">
-				<div class="addressbox">
-				    <address class="vcard">
-						<div><span class="fn">C&eacute;dric Vidal</span></div>
-						<div class="adr">
-							<span class="postal-code">92150</span>
-							<span class="locality">Suresnes</span>, <span class="region">IDF</span>
-						</div>
-						<div>E-mail : <a id="email" class="email">cedric at vidal dot biz</a></div>
-						<div>Web : <a class="url" href="http://vidal.biz/">vidal.biz</a></div>
-						<div>Phone : <span class="tel">+33.(0)6.63.58.71.40</span></div>
-						<div>Linkedin : <a href="http://www.linkedin.com/in/cedricvidal">cedricvidal</a></div>
-						<div>Twitter : <a href="http://twitter.com/cedricvidal">cedricvidal</a></div>
-						<div>Keybase : <a href="https://keybase.io/cedricvidal">cedricvidal</a></div>
-					</address>
-				</div>
+        <div class="rela-block caps greyed">Experience</div>
 
-				<div class="noprint">
-					<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Filter by text" ex:collectionID="experiences"></div>
-					<div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:facetLabel="Filter by technology" ex:showMissing="false" ex:collectionID="experiences"></div>
-					<div ex:role="facet" ex:expression=".customer" ex:facetLabel="Filter by customer" ex:collectionID="experiences"></div>
-					<div ex:role="facet" ex:expression=".employer" ex:facetLabel="Filter by company" ex:collectionID="experiences"></div>
-					<div ex:role="facet" ex:expression=".industry" ex:facetLabel="Filter by industry" ex:collectionID="experiences"></div>
-				</div>
-            </td>
-        </tr>
-    </table>
- </body>
- </html>
+
+        <div ex:role="viewPanel" id="ex-vp-exp">
+            <div ex:role="lens" ex:itemTypes="Experience" class="experience" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+                <h3 class="job-title">
+                    <span ex:content=".title" class="title"></span> at <span ex:content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
+                </h3>
+
+                <p class="light">
+                    <span ex:content=".start" class="start"></span>
+                    <span class="end">to <span ex:content="if(exists(.end), .end, 'today')"></span></span>
+                    <span ex:if-exists=".participation" ex:content=".participation" class="participation"></span>
+                    <span ex:if-exists=".place">
+                            <span>(</span>
+                            <span ex:content=".place" class="place"></span>
+                            <span>)</span>
+                    </span>
+                </p>
+                <p class="justified responsibilities" ex:content=".responsibilities"></p>
+                <p class="justified tech" ex:if-exists=".tech"><span class="label">Technical environment</span>: <span ex:content=".tech"></span></p>
+                <p class="justified industry" ex:if-exists=".industry"><span class="label">Industry</span>: <span ex:content=".industry"></span></p>
+            </div>
+
+            <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences"></div>
+        </div>
+
+</div>
+</div>
+</body>
