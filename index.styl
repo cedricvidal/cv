@@ -52,7 +52,7 @@ body
 p.light {color: #777;}
 h2 {font('Open Sans',30px,5px,600,40px); color: black}
 h3 {font('Open Sans',21px,1px,600,28px); color: black}
-    
+
 .page
     background-color white
 
@@ -72,7 +72,7 @@ h3 {font('Open Sans',21px,1px,600,28px); color: black}
         -webkit-transition: none !important;
         transition: none !important;
     .noprint
-        display: none
+        display: none !important
     .exhibit-collectionView-header, .exhibit-collectionView-footer
         display: none !important
     h2 {font('Open Sans',25px,3px,600,30px); color: black}
@@ -86,16 +86,26 @@ ol.exhibit-tileView-body
 
 .top-bar
     height 220px
+    overflow hidden
     background-color #848484
     color white
-    
+    & .top-bar-image
+        object-fit cover
+        display: block
+        max-width: 100%
+        opacity: 0.5
+
 .name
+    color: white
     setup($x,absolute,$x,$x,0,0,calc(350px + 5%))
     height 120px
     text-align center
     font('Raleway',58px,8px,100,60px)
     & div {width: 94%}
-    
+
+@media screen and (max-width: 1150px)
+    .name {color: white; font('Raleway',38px,6px,100,48px)}
+
 .side-bar
     setup($x,absolute,$x,60px,$x,0,5%)
     width 350px
@@ -190,9 +200,6 @@ ol.exhibit-tileView-body
     text-align center
     font('Open Sans',18px,6px,600,28px)
     
-@media screen and (max-width: 1150px)
-    .name {color: white; font('Raleway',38px,6px,100,48px)}
-
 .tech, .industry
     font('Open Sans',12px,1px,300,18px)
     & > .label
