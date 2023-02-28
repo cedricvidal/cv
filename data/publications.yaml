@@ -4,7 +4,7 @@ items:
     type: Publication
     description: 'Co-wrote with Arnaud Buisine the article ''MDSD, MDD, ou MDA : quel outil choisir ?'' (MDSD, MDD or MDA : what tool should you choose ?) published in french Programmez ! magazine issue 115 in January 2009'
     magazine: 'Programmez! magazine issue 115'
-    'date:date': '2009-01-01'
+    date: '2009-01-01'
     url: 'http://www.programmez.com/boutique.php?numero=115'
     download: 'http://vidal.biz/publications/200901-programmez115-article_outils_MDSD_et_tableau_outils.pdf'
     image: img/programmez-115.jpg
@@ -13,7 +13,7 @@ items:
     type: Publication
     description: 'Wrote the article ''Créez votre propre langage et son éditeur Eclipse avec Xtext'' (Create your own language and his Eclipse based editor using Xtext) published in french Programmez ! magazine issue 129 in April 2010'
     magazine: 'Programmez! magazine issue 129'
-    'date:date': '2010-04-01'
+    date: '2010-04-01'
     url: 'http://www.programmez.com/boutique.php?numero=129'
     download: 'https://vidal.biz/publications/201004-programmez129-ProxiAD-Article-Xtext-part1.pdf'
     image: img/programmez-129.jpg
@@ -22,7 +22,7 @@ items:
     type: Publication
     description: 'Submitted to APIA 2019 conference (https://www.irit.fr/pfia2019/apia/)'
     magazine: ""
-    'date:date': '2019-04-05'
+    date: '2019-04-05'
     url: ""
     download: 'https://vidal.biz/publications/201904-quicksign-multimodal-text-image-classification.pdf'
     image: img/multimodal-text-image-classification.png

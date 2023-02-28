@@ -14,7 +14,7 @@ items:
     start: '2019-09-01'
     end: '2022-11-01'
     participation: 100%
-    'url:url': 'https://bit.ly/3Sxi1pj'
+    url: 'https://bit.ly/3Sxi1pj'
   -
     label: Quicksign
     type: Experience
