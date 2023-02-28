@@ -254,7 +254,10 @@
                             <span>)</span>
                     </span>
                 </p>
-                <p class="justified responsibilities" ex:content=".responsibilities"></p>
+                <p class="justified responsibilities">
+                    <span ex:content=".responsibilities"></span>
+                    <a ex:if-exists=".details_url" ex:href-content=".details_url" class="details_url">More details.</a>
+                </p>
                 <p class="justified tech" ex:if-exists=".tech"><span class="label">Technical environment</span>: <span ex:content=".tech"></span></p>
                 <p class="justified industry" ex:if-exists=".industry"><span class="label">Industry</span>: <span ex:content=".industry"></span></p>
             </div>
