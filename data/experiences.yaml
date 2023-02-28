@@ -1,18 +1,34 @@
 items:
   -
-    label: ArgoAI
+    label: ArgoAI_WS
     type: Experience
     exp_type: Professional
     employer: ArgoAI
     customer: ArgoAI
-    title: 'Staff Software Engineer'
-    responsibilities: 'Staff Software Engineer then Software Engineering Manager II for the Labeling Data Pipelines, Labeling Tools and Labeling Services teams from Sept 2019 to March 2022 and Staff Software Engineer for the Workflow Services team until the Argo AI shutdown in Oct 2022.'
-    tech: 'S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Node; Typescript; Big Query; Camunda; BPMN; Airflow; KNative; Python; Postgraphile; PostgreSQL; REST; GraphQL; Micro Services; Elasticsearch'
+    title: 'Tech Lead for Workflow Services'
+    responsibilities: 'Tech Lead / Staff Software Engineer for the Workflow Services team until the Argo AI shutdown in Oct 2022.'
+    tech: 'Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; REST; Micro Services; Elasticsearch'
+    industry: 'Self Driving; AI'
+    place: 'Palo Alto'
+    location: '1450 Page Mill Rd, Palo Alto, CA 94304'
+    start: '2022-03-01'
+    end: '2022-11-01'
+    participation: 100%
+    details_url: 'https://bit.ly/3Sxi1pj'
+  -
+    label: ArgoAI_LBS
+    type: Experience
+    exp_type: Professional
+    employer: ArgoAI
+    customer: ArgoAI
+    title: 'Staff Software Engineer / EM2 for Labeling'
+    responsibilities: 'Staff Software Engineer then Software Engineering Manager II for the Labeling Data Pipelines, Labeling Tools and Labeling Services teams.'
+    tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch'
     industry: 'Self Driving; AI'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
     start: '2019-09-01'
-    end: '2022-11-01'
+    end: '2022-03-01'
     participation: 100%
     details_url: 'https://bit.ly/3Sxi1pj'
   -
