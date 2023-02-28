@@ -8,7 +8,7 @@ items:
     title: 'Tech Lead for Workflow Services'
     responsibilities: 'Tech Lead / Staff Software Engineer for the Workflow Services team until the Argo AI shutdown in Oct 2022.'
     tech: 'Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; REST; Micro Services; Elasticsearch'
-    industry: 'Self Driving; AI'
+    industry: 'Self Driving'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
     start: '2022-03-01'
@@ -24,7 +24,7 @@ items:
     title: 'Staff Software Engineer / EM2 for Labeling'
     responsibilities: 'Staff Software Engineer then Software Engineering Manager II for the Labeling Data Pipelines, Labeling Tools and Labeling Services teams.'
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch'
-    industry: 'Self Driving; AI'
+    industry: 'Self Driving'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
     start: '2019-09-01'
@@ -40,7 +40,7 @@ items:
     title: CTO
     responsibilities: "Evangelized, convinced, staffed, lead, built and ran innovation projects such as the REST HATEOAS API, the ADR (Automatic Document Recognition and Reading and anti fraud system), the mobile document scanning application and the new BPMN centric Kappa based micro services platform projects;\r\nPut the JIRA based project management practices in place, later converted to agile with the help of external consultants and hired POs;\r\nBuilt from scratch the Machine Learning engineering team;"
     tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
-    industry: 'Digital Signature, On-Boarding and anti-fraud'
+    industry: 'Digital Signature'
     place: France
     location: "38, rue du Sentier\r\nParis\r\nFrance"
     start: '2014-01-01'
