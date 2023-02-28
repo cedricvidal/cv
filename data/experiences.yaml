@@ -11,8 +11,8 @@ items:
     industry: 'Self Driving; AI'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
-    'start:date': '2019-09-01'
-    'end:date': '2022-11-01'
+    start: '2019-09-01'
+    end: '2022-11-01'
     participation: 100%
     'url:url': 'https://bit.ly/3Sxi1pj'
   -
@@ -27,8 +27,8 @@ items:
     industry: 'Digital Signature, On-Boarding and anti-fraud'
     place: France
     location: "38, rue du Sentier\r\nParis\r\nFrance"
-    'start:date': '2014-01-01'
-    'end:date': '2019-07-15'
+    start: '2014-01-01'
+    end: '2019-07-15'
     participation: 100%
     'url:url': ""
   -
@@ -43,8 +43,8 @@ items:
     industry: 'Digital Signature'
     place: France
     location: Neuilly
-    'start:date': '2013-05-01'
-    'end:date': '2013-12-01'
+    start: '2013-05-01'
+    end: '2013-12-01'
     participation: 30%
     'url:url': ""
   -
@@ -59,8 +59,8 @@ items:
     industry: 'Digital Signature'
     place: France
     location: Neuilly
-    'start:date': '2012-01-23'
-    'end:date': '2013-12-31'
+    start: '2012-01-23'
+    end: '2013-12-31'
     participation: 30%
     'url:url': ""
   -
@@ -75,8 +75,8 @@ items:
     industry: Booking
     place: 'Ile St Germain, Paris'
     location: 'Amadeus France, 2 Avenue Bas Meudon, 92130 Issy-les-Moulineaux, France'
-    'start:date': '2012-01-23'
-    'end:date': '2013-12-31'
+    start: '2012-01-23'
+    end: '2013-12-31'
     participation: 70%
     'url:url': ""
   -
@@ -91,8 +91,8 @@ items:
     industry: Wine
     place: Bordeaux
     location: Bordeaux
-    'start:date': '2012-01-23'
-    'end:date': '2013-12-31'
+    start: '2012-01-23'
+    end: '2013-12-31'
     participation: 10%
     'url:url': ""
   -
@@ -107,8 +107,8 @@ items:
     industry: Finance
     place: France
     location: France
-    'start:date': '2011-06-07'
-    'end:date': '2012-01-23'
+    start: '2011-06-07'
+    end: '2012-01-23'
     participation: 40%
     'url:url': ""
   -
@@ -123,8 +123,8 @@ items:
     industry: Booking
     place: 'Ile St Germain, Paris'
     location: 'Amadeus France, 2 Avenue Bas Meudon, 92130 Issy-les-Moulineaux, France'
-    'start:date': '2011-04-04'
-    'end:date': '2011-11-25'
+    start: '2011-04-04'
+    end: '2011-11-25'
     participation: 20%
     'url:url': ""
   -
@@ -139,8 +139,8 @@ items:
     industry: Booking
     place: 'Ile St Germain, Paris'
     location: 'Amadeus France, 2 Avenue Bas Meudon, 92130 Issy-les-Moulineaux, France'
-    'start:date': '2011-04-04'
-    'end:date': '2011-11-25'
+    start: '2011-04-04'
+    end: '2011-11-25'
     participation: 20%
     'url:url': ""
   -
@@ -155,8 +155,8 @@ items:
     industry: Army
     place: Versailles
     location: 'Versailles, France'
-    'start:date': '2011-02-08'
-    'end:date': '2011-07-20'
+    start: '2011-02-08'
+    end: '2011-07-20'
     participation: 5%
     'url:url': ""
   -
@@ -171,8 +171,8 @@ items:
     industry: Army
     place: Versailles
     location: 'Versailles, France'
-    'start:date': '2011-02-08'
-    'end:date': '2011-07-20'
+    start: '2011-02-08'
+    end: '2011-07-20'
     participation: 40%
     'url:url': ""
   -
@@ -187,8 +187,8 @@ items:
     industry: Bank
     place: Lille
     location: 'Lille, France'
-    'start:date': '2010-06-14'
-    'end:date': '2010-12-07'
+    start: '2010-06-14'
+    end: '2010-12-07'
     participation: 50%
     'url:url': ""
   -
@@ -203,8 +203,8 @@ items:
     industry: Insurance
     place: Niort
     location: 'Niort, France'
-    'start:date': '2010-05-05'
-    'end:date': '2010-07-07'
+    start: '2010-05-05'
+    end: '2010-07-07'
     participation: 50%
     'url:url': ""
   -
@@ -219,8 +219,8 @@ items:
     industry: Government
     place: Paris
     location: 'AEFE, Rue du Colonel Pierre Avia, 75015 Paris'
-    'start:date': '2010-02-01'
-    'end:date': '2010-04-01'
+    start: '2010-02-01'
+    end: '2010-04-01'
     participation: 15d
     'url:url': ""
   -
@@ -235,8 +235,8 @@ items:
     industry: Finance
     place: Paris
     location: 'Paris, France'
-    'start:date': '2010-03-01'
-    'end:date': '2010-03-06'
+    start: '2010-03-01'
+    end: '2010-03-06'
     participation: 5d
     'url:url': ""
   -
@@ -251,8 +251,8 @@ items:
     industry: Betting
     place: Paris
     location: 'SPS, 57 Rue Pierre Charron, 75008 Paris'
-    'start:date': '2010-01-01'
-    'end:date': '2010-01-03'
+    start: '2010-01-01'
+    end: '2010-01-03'
     participation: 2d
     'url:url': ""
   -
@@ -267,8 +267,8 @@ items:
     industry: Bank
     place: 'Guyancourt, France'
     location: 'Guyancourt, France'
-    'start:date': '2010-01-01'
-    'end:date': '2010-03-01'
+    start: '2010-01-01'
+    end: '2010-03-01'
     participation: 6d
     'url:url': ""
   -
@@ -283,8 +283,8 @@ items:
     industry: Betting
     place: Paris
     location: 'SPS, 57 Rue Pierre Charron, 75008 Paris'
-    'start:date': '2009-12-01'
-    'end:date': '2009-07-03'
+    start: '2009-12-01'
+    end: '2009-07-03'
     participation: 10d
     'url:url': ""
   -
@@ -299,8 +299,8 @@ items:
     industry: Building
     place: 'Saclay and Sophia Antipolis, France'
     location: 'Saclay, France; Sophia Antipolis, France'
-    'start:date': '2009-12-01'
-    'end:date': '2010-02-01'
+    start: '2009-12-01'
+    end: '2010-02-01'
     participation: 7d
     'url:url': ""
   -
@@ -315,8 +315,8 @@ items:
     industry: Healthcare
     place: Geneva
     location: 'HUG, Geneva, Switzerland'
-    'start:date': '2009-07-01'
-    'end:date': '2009-09-01'
+    start: '2009-07-01'
+    end: '2009-09-01'
     participation: 5d/mth
     'url:url': ""
   -
@@ -331,8 +331,8 @@ items:
     industry: Bank
     place: 'Défense, Paris'
     location: 'Défense, France'
-    'start:date': '2009-08-01'
-    'end:date': '2009-10-30'
+    start: '2009-08-01'
+    end: '2009-10-30'
     participation: 1d/week
     'url:url': ""
   -
@@ -347,8 +347,8 @@ items:
     industry: SSII
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2009-06-01'
-    'end:date': '2009-09-01'
+    start: '2009-06-01'
+    end: '2009-09-01'
     participation: 20d
     'url:url': 'http://code.google.com/p/emf-customizer/'
   -
@@ -363,8 +363,8 @@ items:
     industry: Bank
     place: 'Défense, Paris'
     location: 'Défense, France'
-    'start:date': '2009-06-01'
-    'end:date': '2009-06-15'
+    start: '2009-06-01'
+    end: '2009-06-15'
     participation: 2w
     'url:url': ""
   -
@@ -379,8 +379,8 @@ items:
     industry: SAAS
     place: Rouen
     location: 'Rouen, France'
-    'start:date': '2009-03-01'
-    'end:date': '2009-03-02'
+    start: '2009-03-01'
+    end: '2009-03-02'
     participation: 2d
     'url:url': ""
   -
@@ -395,8 +395,8 @@ items:
     industry: 'Personnal services'
     place: Paris
     location: 'Domiserve, Rue André Gide, Châtillon'
-    'start:date': '2009-03-01'
-    'end:date': '2009-05-01'
+    start: '2009-03-01'
+    end: '2009-05-01'
     participation: 1d/w
     'url:url': ""
   -
@@ -411,8 +411,8 @@ items:
     industry: SSII
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2009-02-01'
-    'end:date': ""
+    start: '2009-02-01'
+    end: ""
     participation: ""
     'url:url': ""
   -
@@ -427,8 +427,8 @@ items:
     industry: SSII
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2009-02-01'
-    'end:date': ""
+    start: '2009-02-01'
+    end: ""
     participation: 2d/month
     'url:url': 'http://blog.proxiad.com'
   -
@@ -443,8 +443,8 @@ items:
     industry: Retail
     place: Lille
     location: Lille
-    'start:date': '2008-12-01'
-    'end:date': '2009-01-01'
+    start: '2008-12-01'
+    end: '2009-01-01'
     participation: 2d/week
     'url:url': ""
   -
@@ -459,8 +459,8 @@ items:
     industry: Finance
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2008-06-01'
-    'end:date': '2008-06-15'
+    start: '2008-06-01'
+    end: '2008-06-15'
     participation: 2w
     'url:url': ""
   -
@@ -475,8 +475,8 @@ items:
     industry: SAAS
     place: Rouen
     location: 'Rouen, France'
-    'start:date': '2008-05-01'
-    'end:date': '2008-05-15'
+    start: '2008-05-01'
+    end: '2008-05-15'
     participation: 2w
     'url:url': ""
   -
@@ -491,8 +491,8 @@ items:
     industry: SSII
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2008-01-01'
-    'end:date': '2009-01-01'
+    start: '2008-01-01'
+    end: '2009-01-01'
     participation: 5d/month
     'url:url': ""
   -
@@ -507,8 +507,8 @@ items:
     industry: 'Personnal services'
     place: Paris
     location: 'Domiserve, Rue André Gide, Châtillon'
-    'start:date': '2008-01-01'
-    'end:date': '2008-01-08'
+    start: '2008-01-01'
+    end: '2008-01-08'
     participation: 2w
     'url:url': ""
   -
@@ -523,8 +523,8 @@ items:
     industry: Dematerialization
     place: Nantes
     location: 'Vecteur-Plus, 1 Rue Galilée, 44340 Bouguenais, France'
-    'start:date': '2007-08-01'
-    'end:date': '2008-04-01'
+    start: '2007-08-01'
+    end: '2008-04-01'
     participation: Full
     'url:url': ""
   -
@@ -539,8 +539,8 @@ items:
     industry: SSII
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2007-03-01'
-    'end:date': ""
+    start: '2007-03-01'
+    end: ""
     participation: ""
     'url:url': ""
   -
@@ -555,8 +555,8 @@ items:
     industry: Dematerialization
     place: Paris
     location: Paris
-    'start:date': '2006-07-01'
-    'end:date': '2007-03-01'
+    start: '2006-07-01'
+    end: '2007-03-01'
     participation: Full
     'url:url': ""
   -
@@ -571,8 +571,8 @@ items:
     industry: 'Personnal services'
     place: Paris
     location: 'Domiserve, Rue André Gide, Châtillon'
-    'start:date': '2006-04-01'
-    'end:date': '2006-06-01'
+    start: '2006-04-01'
+    end: '2006-06-01'
     participation: Full
     'url:url': ""
   -
@@ -587,8 +587,8 @@ items:
     industry: Publishing
     place: Paris
     location: Paris
-    'start:date': '2006-03-01'
-    'end:date': '2006-05-01'
+    start: '2006-03-01'
+    end: '2006-05-01'
     participation: Full
     'url:url': ""
   -
@@ -603,8 +603,8 @@ items:
     industry: Dematerialization
     place: Paris
     location: Paris
-    'start:date': '2006-02-01'
-    'end:date': '2006-03-01'
+    start: '2006-02-01'
+    end: '2006-03-01'
     participation: Full
     'url:url': ""
   -
@@ -619,8 +619,8 @@ items:
     industry: Finance
     place: Paris
     location: Paris
-    'start:date': '2005-11-01'
-    'end:date': '2006-02-01'
+    start: '2005-11-01'
+    end: '2006-02-01'
     participation: Full
     'url:url': ""
   -
@@ -635,8 +635,8 @@ items:
     industry: Bank
     place: Paris
     location: 'Boursorama, Place Abel Gance, 92100 Boulogne-Billancourt‎'
-    'start:date': '2005-08-01'
-    'end:date': '2006-02-01'
+    start: '2005-08-01'
+    end: '2006-02-01'
     participation: Full
     'url:url': ""
   -
@@ -651,8 +651,8 @@ items:
     industry: Bank
     place: Nantes
     location: Nantes
-    'start:date': '2005-01-01'
-    'end:date': '2005-01-08'
+    start: '2005-01-01'
+    end: '2005-01-08'
     participation: 1w
     'url:url': ""
   -
@@ -667,8 +667,8 @@ items:
     industry: Retail
     place: 'Les Ulis, Evry'
     location: '19 avenue de la Baltique, Courtaboeuf'
-    'start:date': '2004-10-01'
-    'end:date': '2005-09-01'
+    start: '2004-10-01'
+    end: '2005-09-01'
     participation: Full
     'url:url': ""
   -
@@ -683,8 +683,8 @@ items:
     industry: SSII
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
-    'start:date': '2004-10-01'
-    'end:date': ""
+    start: '2004-10-01'
+    end: ""
     participation: ""
     'url:url': ""
   -
@@ -699,8 +699,8 @@ items:
     industry: Retail
     place: Lille
     location: 'Decathlon Campus, Lille, France'
-    'start:date': '2004-04-01'
-    'end:date': '2004-09-01'
+    start: '2004-04-01'
+    end: '2004-09-01'
     participation: Full
     'url:url': ""
   -
@@ -715,8 +715,8 @@ items:
     industry: Education
     place: 'Cergy Pontoise, France'
     location: 'avenue du Parc, Cergy-Pontoise, France'
-    'start:date': '2003-07-01'
-    'end:date': '2003-10-01'
+    start: '2003-07-01'
+    end: '2003-10-01'
     participation: Full
     'url:url': ""
   -
@@ -731,8 +731,8 @@ items:
     industry: Advertising
     place: 'Bastille, Paris'
     location: 'place de la bastille, paris, france'
-    'start:date': '2002-07-01'
-    'end:date': '2002-10-01'
+    start: '2002-07-01'
+    end: '2002-10-01'
     participation: Full
     'url:url': ""
   -
@@ -747,8 +747,8 @@ items:
     industry: 'Field sales force'
     place: Paris
     location: '20 rue de Cronstadt, 75015, Paris'
-    'start:date': '2001-07-01'
-    'end:date': '2001-09-01'
+    start: '2001-07-01'
+    end: '2001-09-01'
     participation: Full
     'url:url': ""
   -
@@ -763,7 +763,7 @@ items:
     industry: 'Field sales force'
     place: Paris
     location: '20 rue de Cronstadt, 75015, Paris'
-    'start:date': '2000-07-01'
-    'end:date': '2000-09-01'
+    start: '2000-07-01'
+    end: '2000-09-01'
     participation: Full
     'url:url': ""
