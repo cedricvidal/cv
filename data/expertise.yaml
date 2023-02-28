@@ -1,0 +1,45 @@
+items:
+  -
+    label: 'Distributed and highly available architectures'
+    domain: Plateforme
+    type: Expertise
+  -
+    label: 'Dynamic processing of information'
+    domain: Plateforme
+    type: Expertise
+  -
+    label: UML
+    domain: MDA
+    type: Expertise
+  -
+    label: Modelisation
+    domain: MDA
+    type: Expertise
+  -
+    label: Meta-Modelisation
+    domain: MDA
+    type: Expertise
+  -
+    label: 'Model to Model transformations'
+    domain: MDA
+    type: Expertise
+  -
+    label: 'Model to Text code generators'
+    domain: MDA
+    type: Expertise
+  -
+    label: 'Forward incremental model engineering'
+    domain: MDA
+    type: Expertise
+  -
+    label: 'Reverse model engineering'
+    domain: MDA
+    type: Expertise
+  -
+    label: 'Internal DSLs'
+    domain: MDA
+    type: Expertise
+  -
+    label: 'External textual and graphical DSLs'
+    domain: MDA
+    type: Expertise

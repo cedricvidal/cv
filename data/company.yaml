@@ -1,0 +1,181 @@
+items:
+  -
+    label: AXA
+    id: ""
+    type: Company
+    logo: axa.jpg
+    'website:url': 'http://www.axa.com/'
+  -
+    label: AEFE
+    id: ""
+    type: Company
+    logo: aefe.png
+    'website:url': 'http://www.aefe.diplomatie.fr/'
+  -
+    label: 'SPS (Eurosport)'
+    id: SPS
+    type: Company
+    logo: eurosport.jpg
+    'website:url': 'http://www.eurosportbet.co.uk/'
+  -
+    label: 'Calyon (CA-CIB)'
+    id: Calyon
+    type: Company
+    logo: ca-cib.jpg
+    'website:url': 'http://www.ca-cib.fr/'
+  -
+    label: CEA
+    id: ""
+    type: Company
+    logo: cea.png
+    'website:url': 'http://www.cea.fr/'
+  -
+    label: Dexia
+    id: ""
+    type: Company
+    logo: dexia.gif
+    'website:url': 'http://www.dexia.com'
+  -
+    label: HUG
+    id: ""
+    type: Company
+    logo: hug.gif
+    'website:url': 'http://www.hug-ge.ch/'
+  -
+    label: ProxiAD
+    id: ""
+    type: Company
+    logo: proxiad.png
+    'website:url': 'http://proxiad.com/'
+  -
+    label: Masternaut
+    id: ""
+    type: Company
+    logo: masternaut.gif
+    'website:url': 'http://www.masternaut.fr/'
+  -
+    label: Domiserve
+    id: ""
+    type: Company
+    logo: domiserve.jpg
+    'website:url': 'http://www.edomiserve.com/'
+  -
+    label: Auchan
+    id: ""
+    type: Company
+    logo: auchan.gif
+    'website:url': 'http://www.groupe-auchan.com/'
+  -
+    label: Vecteur-Plus
+    id: ""
+    type: Company
+    logo: vecteurplus.gif
+    'website:url': 'http://www.vecteurplus.com/'
+  -
+    label: B-Process
+    id: ""
+    type: Company
+    logo: b-process.gif
+    'website:url': 'http://www.b-process.com/'
+  -
+    label: 'Moniteur Group'
+    id: Moniteur
+    type: Company
+    logo: moniteur.jpg
+    'website:url': 'http://www.groupemoniteur.fr/'
+  -
+    label: Euronext
+    id: ""
+    type: Company
+    logo: euronext.gif
+    'website:url': 'http://www.euronext.com/'
+  -
+    label: Boursorama
+    id: ""
+    type: Company
+    logo: boursorama.jpg
+    'website:url': 'http://www.boursorama.com/'
+  -
+    label: 'Caisse d''Epargne'
+    id: ""
+    type: Company
+    logo: caisse-epargne.jpg
+    'website:url': 'http://www.caisse-epargne.fr'
+  -
+    label: JM-Bruneau
+    id: ""
+    type: Company
+    logo: jmb.gif
+    'website:url': 'http://www.jm-bruneau.fr/'
+  -
+    label: Decathlon
+    id: ""
+    type: Company
+    logo: decathlon.jpg
+    'website:url': 'http://www.decathlon.fr'
+  -
+    label: EISTI
+    id: ""
+    type: Company
+    logo: eisti.jpg
+    'website:url': 'http://www.eisti.fr/'
+  -
+    label: Live-Banner
+    id: ""
+    type: Company
+    logo: live-banner.jpg
+    'website:url': 'http://www.live-banner.com/'
+  -
+    label: PMP
+    id: ""
+    type: Company
+    logo: pmp.png
+    'website:url': 'http://www.pmp.fr/'
+  -
+    label: 'Banque Accord'
+    id: Accord
+    type: Company
+    logo: banque-accord.gif
+    'website:url': 'http://www.banque-accord.fr/'
+  -
+    label: Confidential
+    id: ""
+    type: Company
+    logo: confidential.jpg
+    'website:url': ""
+  -
+    label: MAIF
+    id: ""
+    type: Company
+    logo: maif.jpg
+    'website:url': 'http://www.maif.fr/'
+  -
+    label: Amadeus
+    id: ""
+    type: Company
+    logo: amadeus.jpg
+    'website:url': 'http://www.amadeus.com/fr/fr.html'
+  -
+    label: 'La Cote Bleue'
+    id: ""
+    type: Company
+    logo: lcb.gif
+    'website:url': 'http://www.lacotebleue.fr/'
+  -
+    label: 'Ministère de la Défense'
+    id: Mindef
+    type: Company
+    logo: mindef.jpg
+    'website:url': 'http://www.defense.gouv.fr/sga/le-sga/son-organisation/directions-et-services/service-d-infrastructure-de-la-defense-sid'
+  -
+    label: Quicksign
+    id: ""
+    type: Company
+    logo: quicksign.png
+    'website:url': 'http://www.quicksign.com'
+  -
+    label: Cleverwine
+    id: ""
+    type: Company
+    logo: cleverwine.png
+    'website:url': 'http://clever-wine.com/'
