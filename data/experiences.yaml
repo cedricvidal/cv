@@ -5,9 +5,29 @@ items:
     exp_type: Professional
     employer: ArgoAI
     customer: ArgoAI
-    title: 'Tech Lead for Workflow Services'
-    responsibilities: 'Tech Lead / Staff Software Engineer for the Workflow Services team until the Argo AI shutdown in Oct 2022.'
-    tech: 'Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; REST; Micro Services; Elasticsearch'
+    title: Tech Lead for Workflow Services
+    responsibilities: >
+      Tech Lead / Staff Software Engineer for the Workflow Services team until the Argo AI shutdown in Oct 2022.
+      Led the adoption of Camunda and BPMN at Argo, and successfully migrated legacy workflows to a new, more robust platform 
+      resulting in uninterrupted service since the launch.
+      Expert in BPMN/Camunda and a thought leader in promoting best practices and concepts to stakeholders, decision-makers, 
+      customers, and UX team for designing workflow products.
+      Experienced in Typescript language, with readership and praises received for the design of the Operator Management 
+      Typescript client library.
+      Introduced the process of streamlining REST client library generation through OpenAPI contracts, resulting in reduced 
+      coding and maintenance effort.
+      Praised by the team for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with rigorous 
+      PR reviews spanning system design, coding, and algorithms.
+      Actively contributes to building a culture of humility, excellence, and support of each other with a high-quality bar.
+      Continuous improvement mindset to processes, tools, and quality of life.
+      First-hand involvement in customer satisfaction and product definition by closely collaborating with customers from 
+      Map Ops, Map Tools, and product UX team.
+      Hands-on support to engineering customers to help them integrate the platform, with a proactive approach in listening 
+      to and addressing customer feedback.
+      Coach the team on how to engage with customers effectively to achieve their satisfaction.
+    tech: >
+      Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; 
+      REST; Micro Services; Elasticsearch
     industry: 'Self Driving'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
@@ -21,8 +41,22 @@ items:
     exp_type: Professional
     employer: ArgoAI
     customer: ArgoAI
-    title: 'Staff Software Engineer / EM2 for Labeling'
-    responsibilities: 'Staff Software Engineer then Software Engineering Manager II for the Labeling Data Pipelines, Labeling Tools and Labeling Services teams.'
+    title: Staff Software Engineer / EM2 for Labeling
+    responsibilities: >
+      Staff Software Engineer then Software Engineering Manager II for the Labeling Data Pipelines, Labeling Tools and Labeling Services teams.
+      In-depth knowledge of Argo ML Labeling Tools and pipelines.
+      Increased team productivity and reduced maintenance costs by replacing legacy hand-coded labeling REST API with 
+      a GraphQL API generated from the database schema.
+      Improved observability, availability, and operationality of labeling organization by leading the instrumentation, 
+      collection, and reporting of operations metrics using an approach called RUM (Real User Metrics).
+      Improved labeling operations reliability by hardening production release procedures and on-call schedules.
+      Expertise in a wide range of labeling modalities, pipelines, and sensor types.
+      Contributed key methodology to assess GDPR readiness for the international country support rollout.
+      Drove the migration of tools and services from Marathon to Kubernetes.
+      Led the initiative to optimize transport of Lidar and Radar point clouds in the browser using the Draco protocol, 
+      resulting in major improvements in tool loading time.
+      Led the creation of a new API for programmatically submitting labeling rework requests.
+      Led efforts to identify and implement AWS cost savings, resulting in over $300k savings per year.
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch'
     industry: 'Self Driving'
     place: 'Palo Alto'
