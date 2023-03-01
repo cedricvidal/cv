@@ -60,6 +60,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'stylus:compile']);
+  grunt.registerTask('default', ['stylus:compile']);
 
 };
