@@ -63,7 +63,14 @@ items:
     employer: Quicksign
     customer: Quicksign
     title: CTO
-    responsibilities: "Evangelized, convinced, staffed, lead, built and ran innovation projects such as the REST HATEOAS API, the ADR (Automatic Document Recognition and Reading and anti fraud system), the mobile document scanning application and the new BPMN centric Kappa based micro services platform projects;\r\nPut the JIRA based project management practices in place, later converted to agile with the help of external consultants and hired POs;\r\nBuilt from scratch the Machine Learning engineering team;"
+    responsibilities: |
+      - Evangelized, convinced, staffed, lead, built and ran innovation projects such as the 
+      REST HATEOAS API, the ADR (Automatic Document Recognition and Reading and anti fraud system), 
+      the mobile document scanning application and the new BPMN centric Kappa based micro services 
+      platform projects.
+      - Put the JIRA based project management practices in place, later converted to agile with the 
+      help of external consultants and hired POs.
+      - Built from scratch the Machine Learning engineering team.
     tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
     industry: 'Digital Signature'
     place: France
