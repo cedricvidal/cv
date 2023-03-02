@@ -20,7 +20,7 @@ items:
       Map Ops, Map Tools, and product UX team.
     tech: >
       Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; 
-      REST; Micro Services; Elasticsearch
+      REST; Micro Services; Elasticsearch; Terraform
     industry: 'Self Driving'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
@@ -50,7 +50,7 @@ items:
       approach called **RUM (Real User Metrics)**. **Reduced production** issues by hardening production release procedures.
       - Drove the migration of tools and services from Marathon to **Kubernetes**.
       - Led efforts to identify and implement **AWS cost savings**.
-    tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch'
+    tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch; Terraform'
     industry: 'Self Driving'
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
