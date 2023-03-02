@@ -73,7 +73,7 @@ items:
       platform projects.
       - Put the **JIRA** based project tracking practices in place, later converted to **agile** with the 
       help of external consultants and hired POs.
-    tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
+    tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Flask; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
     industry: 'Digital Signature'
     place: France
     location: "38, rue du Sentier\r\nParis\r\nFrance"
