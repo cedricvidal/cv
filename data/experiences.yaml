@@ -7,18 +7,18 @@ items:
     customer: ArgoAI
     title: Tech Lead for Workflow Services
     responsibilities: |
-      **Tech Lead / Staff Software Engineer** for the Workflow Services team until the Argo AI shutdown in Oct 2022.
+      Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
       
-      - Led the adoption of Camunda and BPMN at Argo, and successfully migrated legacy workflows to the new platform 
-      resulting in uninterrupted service since the launch.
-      - Expert in BPMN/Camunda and a thought leader in promoting best practices and concepts to stakeholders, 
+      - Expert in **BPMN** and **Camunda** and a thought leader in promoting best practices and concepts to stakeholders, 
       customers, and UX team for designing workflow products.
-      - Introduced the process of streamlining REST client library generation through OpenAPI contracts, resulting in reduced 
+      - Led the adoption of Camunda and BPMN at Argo, and successfully **migrated** legacy workflows to the new platform 
+      resulting in uninterrupted service since the launch.
+      - Introduced the process of streamlining **REST client library generation** through OpenAPI contracts, resulting in reduced 
       coding and maintenance effort.
-      - Praised by the team for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with rigorous 
+      - **Praised by the team** for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with rigorous 
       - PR reviews spanning system design, coding, and algorithms.
-      - Actively contributes to building a culture of humility, excellence, and support of each other with a high-quality bar.
-      - First-hand involvement in customer satisfaction and product definition by closely collaborating with customers from 
+      - Actively contributes to building a **culture of humility, excellence**, and support of each other with a high-quality bar.
+      - First-hand involvement in **customer satisfaction** and product definition by closely collaborating with customers from 
       Map Ops, Map Tools, and product UX team.
     tech: >
       Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; 
@@ -38,16 +38,19 @@ items:
     customer: ArgoAI
     title: Staff Software Engineer / EM2 for Labeling
     responsibilities: |
-      Staff Software Engineer then Software Engineering Manager II for the **Labeling Data Pipelines**, **Labeling Tools** and **Labeling Services** teams.
+      Staff Software Engineer then Software Engineering Manager II for the **Labeling Data Pipelines**, **Labeling Tools** 
+      and **Labeling Services** teams.
       
-      - In-depth knowledge of Argo ML Labeling Tools and pipelines. Expertise in a wide range of labeling modalities, pipelines, and sensor types.
-      - Increased team productivity and reduced maintenance costs by replacing legacy hand-coded labeling REST API with 
+      - **In-depth knowledge** of Argo ML Labeling Tools and pipelines. Expertise in a wide range of labeling modalities, 
+      pipelines, and sensor types.
+      - Increased **team productivity** and reduced **maintenance costs** by replacing legacy hand-coded labeling REST API with 
       a GraphQL API generated from the database schema.
-      - Improved operationality of labeling organization by automating operations metrics for services and tools using an approach called RUM (Real User Metrics).
-      - Reduced production issues by hardening production release procedures.
-      - Drove the migration of tools and services from Marathon to Kubernetes.
-      - Led the initiative to optimize transport of Lidar and Radar point clouds in the browser.
-      - Led efforts to identify and implement AWS cost savings.
+      - Improved **operationality** of labeling organization by automating operations metrics for services and tools using an 
+      approach called **RUM (Real User Metrics)**.
+      - **Reduced production** issues by hardening production release procedures.
+      - Drove the migration of tools and services from Marathon to **Kubernetes**.
+      - Led the initiative to **optimize transport of Lidar and Radar point clouds** in the browser.
+      - Led efforts to identify and implement **AWS cost savings**.
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch'
     industry: 'Self Driving'
     place: 'Palo Alto'
@@ -64,13 +67,13 @@ items:
     customer: Quicksign
     title: CTO
     responsibilities: |
-      - Evangelized, convinced, staffed, lead, built and ran innovation projects such as the 
-      REST HATEOAS API, the ADR (Automatic Document Recognition and Reading and anti fraud system), 
-      the mobile document scanning application and the new BPMN centric Kappa based micro services 
+      - Built from scratch the **Machine Learning engineering team** consisting of 4 ML Engineers.
+      - Evangelized, convinced, staffed, lead, built and ran multiple innovation projects such as the 
+      **REST HATEOAS API**, the **ADR** (Automatic Document Recognition and Reading and **anti-fraud** system), 
+      the **mobile document scanning** application and the new **BPMN** and **Kafka** based **micro services** 
       platform projects.
-      - Put the JIRA based project management practices in place, later converted to agile with the 
+      - Put the **JIRA** based project tracking practices in place, later converted to **agile** with the 
       help of external consultants and hired POs.
-      - Built from scratch the Machine Learning engineering team.
     tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
     industry: 'Digital Signature'
     place: France
@@ -86,7 +89,9 @@ items:
     employer: Freelance
     customer: Quicksign
     title: 'Senior architect, scalability and rule engine expert, Tech Lead'
-    responsibilities: 'Design the software and infrastructure architectures for a highly scalable and distributed OCR, ADR and anti fraud intelligence rule storage and execution engine. Tech lead and expert for a team of highly motivated and smart dev guys.'
+    responsibilities: |
+      Design the software and infrastructure architectures for a highly scalable and distributed **OCR**, **ADR** and **anti-fraud** 
+      intelligence rule storage and execution engine. Tech lead and expert for a team of highly motivated and smart dev guys.
     tech: 'ActiveMQ; Camel; Java; Hibernate; Joda Time; ABBYY; Drools; Spring; Guava; Mockito; JForkr; C++; Automake; Autoconf; STL; Debian Packaging; Ubuntu'
     industry: 'Digital Signature'
     place: France
