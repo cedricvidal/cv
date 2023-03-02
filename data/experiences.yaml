@@ -9,8 +9,8 @@ items:
     responsibilities: |
       Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
       
-      - Expert in **BPMN** and **Camunda**, led their **adoption at Argo** and successfully **migrated** legacy workflows to the 
-      new platform resulting in uninterrupted service since the launch.
+      Expert in **BPMN** and **Camunda**, led their **adoption at Argo** and successfully **migrated** legacy workflows to the 
+      new platform resulting in uninterrupted service since the launch. Example of achievements include:
       - Introduced **REST client library generation** through OpenAPI contracts, resulting in reduced coding and 
       maintenance effort.
       - **Praised by the team** for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with 
@@ -25,7 +25,7 @@ items:
     place: 'Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
     start: '2022-03-01'
-    end: '2022-11-01'
+    end: '2022-11-02'
     participation: 100%
     details_url: 'https://bit.ly/3Sxi1pj'
   -
