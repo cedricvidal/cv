@@ -1,51 +1,51 @@
-/*==================================================
- *  ExhibitYAMLImporter
+/**
+ *  ExhibitYAML
  *
  *  Exhibit doesn't support importing YAML files by
  *  default. This code adds support for YAML import
  *  using the yamljs library.
  * 
- *  @author Cedric Vidal
- *==================================================
+ * @fileOverview
+ * @author Cedric Vidal
  */
 
-ExhibitYAMLImporter = {}; 
-Exhibit.importers["application/yaml"] = ExhibitYAMLImporter;
-
-ExhibitYAMLImporter.parse= function(content, link, url) {
-    var o = null;
-    try {
-        o = YAML.parse(content);
-    } catch (e) {
-        Exhibit.UI.showJsonFileValidation(Exhibit.l10n.badJsonMessage(url, e), url);
-    }
-    return o;
-}
-
-ExhibitYAMLImporter.load = function(link, database, cont) {
-    var url = typeof link == "string" ? link : link.href;
-    url = Exhibit.Persistence.resolveURL(url);
-
-    var fError = function(statusText, status, xmlhttp) {
-        Exhibit.UI.hideBusyIndicator();
-        Exhibit.UI.showHelp(Exhibit.l10n.failedToLoadDataFileMessage(url));
-        if (cont) cont();
-    };
-    
-    var fDone = function(xmlhttp) {
-        Exhibit.UI.hideBusyIndicator();
-	var o = ExhibitYAMLImporter.parse(xmlhttp.responseText, link, url);
-	if (o != null) {
-	    try {
-		database.loadData(o, Exhibit.Persistence.getBaseURL(url));
- 	    } catch (e) {
-		SimileAjax.Debug.exception(e, "Error loading Exhibit YAML data from " + url);
-	    }
-	}
-
-        if (cont) cont();
-    };
-
-    Exhibit.UI.showBusyIndicator();
-    SimileAjax.XmlHttp.get(url, fError, fDone);
+/**
+ * @namespace
+ */
+ExhibitYAML = {
+    _importer: null
 };
+
+/**
+ * @param {String} url
+ * @param {String} s
+ * @param {Function} callback
+ * @depends JSON
+ */
+ExhibitYAML.parse = function(url, s, callback) {
+    var o = null;
+
+    try {
+        o = YAML.parse(s);
+    } catch(e) {
+        Exhibit.UI.showJsonFileValidation(Exhibit._("%general.badJsonMessage", url, e.message), url);
+    }
+
+    if (typeof callback === "function") {
+        callback(o);
+    }
+};
+
+/**
+ * @private
+ */
+ExhibitYAML._register = function() {
+    ExhibitYAML._importer = new Exhibit.Importer(
+        "application/yaml",
+        "get",
+        ExhibitYAML.parse
+    );
+};
+
+$(document).one("registerImporters.exhibit",
+                ExhibitYAML._register);

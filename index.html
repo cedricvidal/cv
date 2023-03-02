@@ -48,37 +48,16 @@
         type="application/yaml"
         href="data/talks.yaml" />
 
-	<script>
-	Exhibit_urlPrefix="lib/exhibit/api-2.1.0/";
-	Exhibit_parameters='bundle=true';
-
-	Timeline_urlPrefix='lib/timeline/api-2.2.0/';
-	Timeline_parameters='bundle=true';
-	</script>
-
-	<script src="lib/yaml/yaml.min.js" type="text/javascript"></script>
-	<script src="lib/ajax/api-2.1.0/simile-ajax-api.js" type="text/javascript"></script>
-	<script src="lib/exhibit/api-2.1.0/exhibit-api.js?locale=en" type="text/javascript"></script>
+    <script src="lib/exhibit3/lib/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="lib/yaml/yaml.min.js" type="text/javascript"></script>
+	<script src="lib/exhibit3/exhibit-api.js?bundle=true" type="text/javascript"></script>
 	<script src="src/exhibit-yaml-importer.js" type="text/javascript"></script>
 	<script src="cv-exhibit-ext.js"></script>
 
-</head> 
+</head>
 
-<body ex:ondataload="loadExhibit" onload="onload()">
-
-
+<body onload="onload()">
     <script type="text/javascript"><!--
-
-        /**
-         * I use a special exhibit loading hook in order to do geolocalisation
-         * after the database has been loaded. This handler is called after
-         * the database has been loaded.
-         */
-        function loadExhibit() {
-            window.exhibit = Exhibit.create();
-            window.exhibit.configureFromDOM();
-        }
-
         function onload() {
             var emailElt = document.getElementById('email');
             var email = "cedric" + "@" + "vidal" + "." + "biz";
@@ -87,13 +66,13 @@
         }
 --></script>
 
-    <div ex:role="collection" id="educations" ex:itemTypes="Education"></div>
-    <div ex:role="collection" id="experiences" ex:itemTypes="Experience"></div>
-    <div ex:role="collection" id="skills" ex:itemTypes="Skill"></div>
-    <div ex:role="collection" id="talks" ex:itemTypes="Talk"></div>
-    <div ex:role="collection" id="publications" ex:itemTypes="Publication"></div>
-    <div ex:role="collection" id="expertises" ex:itemTypes="Expertise"></div>
-    <div ex:role="collection" id="projects" ex:itemTypes="Project"></div>
+    <div data-ex-role="collection" id="educations" data-ex-item-types="Education"></div>
+    <div data-ex-role="collection" id="experiences" data-ex-item-types="Experience"></div>
+    <div data-ex-role="collection" id="skills" data-ex-item-types="Skill"></div>
+    <div data-ex-role="collection" id="talks" data-ex-item-types="Talk"></div>
+    <div data-ex-role="collection" id="publications" data-ex-item-types="Publication"></div>
+    <div data-ex-role="collection" id="expertises" data-ex-item-types="Expertise"></div>
+    <div data-ex-role="collection" id="projects" data-ex-item-types="Project"></div>
 
 <!-- PAGE STUFF -->
 <div class="rela-block page">
@@ -125,83 +104,83 @@
         <p class="rela-block social github"><a href="https://github.com/cedricvidal/">cedricvidal</a></p>
 
         <p class="rela-block caps side-header">Education</p>
-        <div ex:role="viewPanel" id="ex-vp-edu">
+        <div data-ex-role="viewPanel" id="ex-vp-edu">
 
-            <p ex:role="lens" ex:itemTypes="Education" class="education rela-block list-thing" ex:formats="date { template: 'yyyy'; show: date }" style="display: none;">
-                <span ex:content=".diploma" class="diploma"></span>
+            <p data-ex-role="lens" data-ex-item-types="Education" class="education rela-block list-thing" data-ex-formats="date { template: 'yyyy'; show: date }" style="display: none;">
+                <span data-ex-content=".diploma" class="diploma"></span>
                 <span>at</span>
-                <span class="title"><span ex:content=".label"></span></span>
-                <span ex:if-exists=".place">
+                <span class="title"><span data-ex-content=".label"></span></span>
+                <span data-ex-if-exists=".place">
                     <span>(</span>
-                    <span ex:content=".place" class="place"></span>
+                    <span data-ex-content=".place" class="place"></span>
                     <span>)</span>
                 </span>
-                in <span ex:content=".end" class="date"></span>
+                in <span data-ex-content=".end" class="date"></span>
             </p>
 
-            <div ex:role="view" ex:label="Education" ex:orders=".end" ex:directions="descending" ex:collectionID="educations"></div>
+            <div data-ex-role="view" data-ex-label="Education" data-ex-orders=".end" data-ex-directions="descending" data-ex-collection-id="educations"></div>
 
         </div>
 
         <p class="rela-block caps side-header noprint">Expertise</p>
         <div class="noprint">
-            <div ex:role="facet" ex:facetClass="Cloud" ex:expression=".tech" ex:showMissing="false" ex:collectionID="experiences"></div>
+            <div data-ex-role="facet" data-ex-facetClass="Cloud" data-ex-expression=".tech" data-ex-showMissing="false" data-ex-collection-id="experiences"></div>
         </div>
 
         <div class="noprint">
-            <div class="noprint" ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Filter by text" ex:collectionID="experiences"></div>
-            <div class="noprint" ex:role="facet" ex:expression=".customer" ex:facetLabel="Filter by customer" ex:collectionID="experiences"></div>
-            <div class="noprint" ex:role="facet" ex:expression=".employer" ex:facetLabel="Filter by company" ex:collectionID="experiences"></div>
-            <div class="noprint" ex:role="facet" ex:expression=".industry" ex:facetLabel="Filter by industry" ex:collectionID="experiences"></div>
+            <div class="noprint" data-ex-role="facet" data-ex-facet-class="TextSearch" data-ex-facet-label="Filter by text" data-ex-collection-id="experiences"></div>
+            <div class="noprint" data-ex-role="facet" data-ex-expression=".customer" data-ex-facet-label="Filter by customer" data-ex-collection-id="experiences"></div>
+            <div class="noprint" data-ex-role="facet" data-ex-expression=".employer" data-ex-facet-label="Filter by company" data-ex-collection-id="experiences"></div>
+            <div class="noprint" data-ex-role="facet" data-ex-expression=".industry" data-ex-facet-label="Filter by industry" data-ex-collection-id="experiences"></div>
         </div>
 
         <p class="rela-block caps side-header">Publications</p>
         <div id="ex-vp-pub">
-            <div ex:role="lens" ex:itemTypes="Publication" class="publication" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+            <div data-ex-role="lens" data-ex-item-types="Publication" class="publication" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
                 <div>
                     <p class="pub-title">
-                        <span ex:content=".date" class="date"></span>
-                        <cite ex:content=".label" class="title"></cite>
+                        <span data-ex-content=".date" class="date"></span>
+                        <cite data-ex-content=".label" class="title"></cite>
                     </p>
                     <p class="pub-desc">
-                        <img ex:if-exists=".image" ex:src-content=".image" class="pub-image" />
-                        <span ex:content=".description" class="description pub-text"></span>
+                        <img data-ex-if-exists=".image" data-ex-src-content=".image" class="pub-image" />
+                        <span data-ex-content=".description" class="description pub-text"></span>
                     </p>
-                    <p ex:if-exists=".download">
-                        <a ex:href-content=".download" class="download">Download publication</a>
+                    <p data-ex-if-exists=".download">
+                        <a data-ex-href-content=".download" class="download">Download publication</a>
                     </p>
                 </div>
             </div>
 
-            <div ex:role="view" ex:label="Publications" ex:orders=".date" ex:directions="descending" ex:collectionID="publications" ex:showAll="false"></div>
+            <div data-ex-role="view" data-ex-label="Publications" data-ex-orders=".date" data-ex-directions="descending" data-ex-collection-id="publications" data-ex-show-all="false"></div>
 
         </div>
 
         <p class="rela-block caps side-header">Talks</p>
         <div id="ex-vp-talk">
 
-            <div ex:role="lens" ex:itemTypes="Talk" class="talk" ex:formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
+            <div data-ex-role="lens" data-ex-item-types="Talk" class="talk" data-ex-formats="date { template: 'd MMM yyyy'; show: date }" style="display: none;">
                 <p class="project-title">
-                    <span ex:content=".start" class="start"></span>
-                    <span ex:content=".label"></span>
-                    <span ex:if-exists=".place">
+                    <span data-ex-content=".start" class="start"></span>
+                    <span data-ex-content=".label"></span>
+                    <span data-ex-if-exists=".place">
                         <span>(</span>
-                        <span ex:content=".place" class="place"></span>
+                        <span data-ex-content=".place" class="place"></span>
                         <span>)</span>
                     </span>
                 </p>
                 <p class="light">
-                    <span ex:content=".description" class="description"></span>
+                    <span data-ex-content=".description" class="description"></span>
                 </p>
                 <p class="justified responsibilities">
-                    <a ex:if-exists=".slideshare" ex:href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
-                    <a ex:if-exists=".video" ex:href-content=".video" class="video">Video&nbsp;</a>
-                    <a ex:if-exists=".url" ex:href-content=".url" class="link">Event&nbsp;</a>
+                    <a data-ex-if-exists=".slideshare" data-ex-href-content=".slideshare" class="slideshare">Slides&nbsp;</a>
+                    <a data-ex-if-exists=".video" data-ex-href-content=".video" class="video">Video&nbsp;</a>
+                    <a data-ex-if-exists=".url" data-ex-href-content=".url" class="link">Event&nbsp;</a>
                 </p>
 
             </div>
 
-            <div ex:role="view" ex:label="Talks & events" ex:orders=".date" ex:directions="descending" ex:collectionID="talks" ex:showAll="false" ex:abbreviatedCount="4"></div>
+            <div data-ex-role="view" data-ex-label="Talks & events" data-ex-orders=".date" data-ex-directions="descending" data-ex-collection-id="talks" data-ex-show-all="false" data-ex-abbreviated-count="4"></div>
 
         </div>
 
@@ -209,18 +188,18 @@
         <p class="rela-block caps side-header">Open Source</p>
         <div id="ex-vp-oss">
 
-            <div ex:role="lens" ex:itemTypes="Project" class="project" style="display: none;">
+            <div data-ex-role="lens" data-ex-item-types="Project" class="project" style="display: none;">
                 <p>
-                    <span ex:content=".label" class="project-title"></span>
+                    <span data-ex-content=".label" class="project-title"></span>
                 </p>
                 <p class="project-desc">
-                    <img ex:if-exists=".image" ex:src-content=".image" class="project-image" />
-                    <span ex:content=".description" class="description project-text"></span>
-                    <a ex:href-content=".website" class="website">Website</a>
+                    <img data-ex-if-exists=".image" data-ex-src-content=".image" class="project-image" />
+                    <span data-ex-content=".description" class="description project-text"></span>
+                    <a data-ex-href-content=".website" class="website">Website</a>
                 </p>
             </div>
 
-            <div ex:role="view" ex:label="Open Source" ex:orders=".label" ex:directions="ascending" ex:collectionID="projects" ex:showAll="false" ex:abbreviatedCount="3"></div>
+            <div data-ex-role="view" data-ex-label="Open Source" data-ex-orders=".label" data-ex-directions="ascending" data-ex-collection-id="projects" data-ex-show-all="false" data-ex-abbreviated-count="3"></div>
 
         </div>
 
@@ -237,30 +216,30 @@
 
         <div class="rela-block caps greyed">Experience</div>
         <div>
-            <div ex:role="lens" ex:itemTypes="Experience" class="experience" ex:formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+            <div data-ex-role="lens" data-ex-item-types="Experience" class="experience" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
                 <h3 class="job-title">
-                    <span ex:content=".title" class="title"></span> at <span ex:content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
+                    <span data-ex-content=".title" class="title"></span> at <span data-ex-content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
                 </h3>
 
                 <p class="light">
-                    <span ex:content=".start" class="start"></span>
-                    <span class="end">to <span ex:content="if(exists(.end), .end, 'today')"></span></span>
-                    <span ex:if-exists=".participation" ex:content=".participation" class="participation"></span>
-                    <span ex:if-exists=".place">
+                    <span data-ex-content=".start" class="start"></span>
+                    <span class="end">to <span data-ex-content="if(exists(.end), .end, 'today')"></span></span>
+                    <span data-ex-if-exists=".participation" data-ex-content=".participation" class="participation"></span>
+                    <span data-ex-if-exists=".place">
                             <span>(</span>
-                            <span ex:content=".place" class="place"></span>
+                            <span data-ex-content=".place" class="place"></span>
                             <span>)</span>
                     </span>
                 </p>
                 <p class="justified responsibilities">
-                    <span ex:content=".responsibilities"></span>
-                    <a ex:if-exists=".details_url" ex:href-content=".details_url" class="details_url">More details.</a>
+                    <span data-ex-content=".responsibilities"></span>
+                    <a data-ex-if-exists=".details_url" data-ex-href-content=".details_url" class="details_url">More details.</a>
                 </p>
-                <p class="justified tech" ex:if-exists=".tech"><span class="label">Technical environment</span>: <span ex:content=".tech"></span></p>
-                <p class="justified industry" ex:if-exists=".industry"><span class="label">Industry</span>: <span ex:content=".industry"></span></p>
+                <p class="justified tech" data-ex-if-exists=".tech"><span class="label">Technical environment</span>: <span data-ex-content=".tech"></span></p>
+                <p class="justified industry" data-ex-if-exists=".industry"><span class="label">Industry</span>: <span data-ex-content=".industry"></span></p>
             </div>
 
-            <div ex:role="view" ex:label="Experiences" ex:orders=".start" ex:directions="descending" ex:grouped="false" ex:collectionID="experiences" ex:showAll="false" ex:abbreviatedCount="12"></div>
+            <div data-ex-role="view" data-ex-label="Experiences" data-ex-orders=".start" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="experiences" data-ex-show-all="false" data-ex-abbreviated-count="12"></div>
         </div>
 
 </div>

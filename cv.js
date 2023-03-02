@@ -1,45 +1,45 @@
 {
-    types: {
+    "types": {
         "Experience" : {
-            pluralLabel: "Experiences"
+            "pluralLabel": "Experiences"
         },
         "Company" : {
-            pluralLabel: "Experiences"
+            "pluralLabel": "Experiences"
         },
 		"Skill" : {
-		    pluralLabel: "Skills"
+		    "pluralLabel": "Skills"
         },
 		"Talk" : {
-		    pluralLabel: "Talks"
+		    "pluralLabel": "Talks"
         },
 		"Publication" : {
-		    pluralLabel: "Publications"
+		    "pluralLabel": "Publications"
         },
 		"Education" : {
-		    pluralLabel: "Educations"
+		    "pluralLabel": "Educations"
         },
 		"Expertise" : {
-		    pluralLabel: "Expertises"
+		    "pluralLabel": "Expertises"
 		}
     },
-    properties: {
+    "properties": {
         "customer" : {
-            valueType: "item"
+            "valueType": "item"
         },
         "employer" : {
-            valueType: "item"
+            "valueType": "item"
         },
 	    "start" : {
-        	label: "Start",
-	        valueType: "date"
+        	"label": "Start",
+	        "valueType": "date"
         },
 	    "end" : {
-        	label: "End",
-	        valueType: "date"
+        	"label": "End",
+	        "valueType": "date"
         },
 	    "date" : {
-        	label: "Date",
-	        valueType: "date"
+        	"label": "Date",
+	        "valueType": "date"
 	    }
     }
 }
