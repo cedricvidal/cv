@@ -6,7 +6,7 @@ items:
     role: Speaker
     place: 'Grenoble, France'
     location: ""
-    start: '2019-02-04'
+    date: '2019-02-04'
     url: 'https://eventil.com/events/kafka-night'
     slideshare: 'http://bit.ly/voxxed-paris-18-qs'
     video: ""
@@ -18,7 +18,7 @@ items:
     role: Speaker
     place: Paris
     location: '12 Rue de Penthièvre, Paris'
-    start: '2019-01-24'
+    date: '2019-01-24'
     url: 'https://twitter.com/cedricvidal/status/1088429692334604289'
     slideshare: 'http://bit.ly/voxxed-paris-18-qs'
     video: ""
@@ -30,7 +30,7 @@ items:
     role: Speaker
     place: Paris
     location: '32 Rue Blanche, 75009 Paris'
-    start: '2019-01-15'
+    date: '2019-01-15'
     url: 'https://www.meetup.com/fr-FR/Paris-Apache-Kafka-Meetup/'
     slideshare: 'http://bit.ly/voxxed-paris-18-qs'
     video: ""
@@ -42,7 +42,7 @@ items:
     role: Speaker
     place: 'Boulogne Billancourt'
     location: '122 Avenue du Général Leclerc, 92100 Boulogne-Billancourt'
-    start: '2018-12-17'
+    date: '2018-12-17'
     url: 'https://twitter.com/momichel/status/1073618445810438145'
     slideshare: 'http://bit.ly/voxxed-paris-18-qs'
     video: ""
@@ -54,7 +54,7 @@ items:
     role: Speaker
     place: 'Espace Charenton, Paris'
     location: "Espace Charenton\r\n327 Rue de Charenton, 75012 Paris - France"
-    start: '2018-10-30'
+    date: '2018-10-30'
     url: 'https://voxxeddays.com/microservices/2018/09/22/cedric-vidal-and-nicolas-romanetti-on-kafka-stream-and-bpmn/'
     slideshare: 'http://bit.ly/voxxed-paris-18-qs'
     video: 'https://www.youtube.com/watch?v=AYbLIAy_fFE'
@@ -66,7 +66,7 @@ items:
     role: Speaker
     place: Paris
     location: Paris
-    start: '2018-10-16'
+    date: '2018-10-16'
     url: 'https://www.eventbrite.fr/e/billets-koncrete-kube-2-50736590508#'
     slideshare: 'http://bit.ly/koncrete-kube-18-k8s-gitops'
     video: ""
@@ -78,7 +78,7 @@ items:
     role: Speaker
     place: 'Salons marceaux, Paris'
     location: '79 bis Avenue Marceau, 75116 Paris'
-    start: '2018-10-11'
+    date: '2018-10-11'
     url: ""
     slideshare: 'http://bit.ly/quicksign-confluent-paris-18'
     video: 'https://videos.confluent.io/watch/iCZbqespcjbE76gNqnstpt'
@@ -90,7 +90,7 @@ items:
     role: Speaker
     place: Amsterdam
     location: Amsterdam
-    start: '2018-07-03'
+    date: '2018-07-03'
     url: 'https://www.eventbrite.ca/e/camunda-day-amsterdam-registration-43164911412'
     slideshare: 'http://bit.ly/camunda-day-amst-reg-18'
     video: 'https://www.youtube.com/watch?v=jvhYUTOr6Hw'
@@ -102,7 +102,7 @@ items:
     role: Speaker
     place: 'Lesfurets.com, Paris'
     location: '14 Rue Médéric, 75017 Paris'
-    start: '2018-05-16'
+    date: '2018-05-16'
     url: ""
     slideshare: 'http://bit.ly/quicksign-bbl-kappa-lesfurets'
     video: ""
@@ -114,7 +114,7 @@ items:
     role: Speaker
     place: 'EclipseCON France 2013'
     location: Toulouse
-    start: '2013-08-16'
+    date: '2013-08-16'
     url: ""
     slideshare: ""
     video: 'https://www.infoq.com/fr/interviews/obeo-designer-open-source-sirius'
@@ -126,7 +126,7 @@ items:
     role: Speaker
     place: Lille
     location: Lille
-    start: '2011-05-01'
+    date: '2011-05-01'
     url: 'http://at2011.agiletour.org/conferencecontent.html?sid=6297'
     slideshare: 'http://bit.ly/bdd-jbehave'
     video: ""
@@ -138,7 +138,7 @@ items:
     role: Organizer
     place: 'Pavillon Royal, Paris'
     location: 'Le Pavillon Royal, Carrefour du bout du Lac, 75116 Paris'
-    start: '2010-11-05'
+    date: '2010-11-05'
     url: 'http://www.eclipsedayparis.com/'
     slideshare: ""
     video: ""
@@ -150,7 +150,7 @@ items:
     role: Speaker
     place: 'Pavillon Royal, Paris'
     location: 'Le Pavillon Royal, Carrefour du bout du Lac, 75116 Paris'
-    start: '2010-11-05'
+    date: '2010-11-05'
     url: 'http://www.eclipsedayparis.com/'
     slideshare: 'http://www.slideshare.net/secret/bGcOLkGgrkVXtp'
     video: ""
@@ -162,7 +162,7 @@ items:
     role: Speaker
     place: 'Microsoft Conference Center in Issy-les-Moulineaux'
     location: 'Quai du Président Roosevelt, 92130 Issy-les-Moulineaux, France'
-    start: '2009-11-26'
+    date: '2009-11-26'
     url: 'http://www.mdday.fr/'
     slideshare: 'http://www.slideshare.net/cedric.vidal/md-day-2009-cedric-vidal-10'
     video: ""
@@ -174,7 +174,7 @@ items:
     role: Organizer
     place: EPITA
     location: '16 Rue Voltaire, 94270 Le Kremlin-Bicêtre'
-    start: '2009-11-17'
+    date: '2009-11-17'
     url: 'http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Paris'
     slideshare: ""
     video: ""
@@ -186,7 +186,7 @@ items:
     role: Speaker
     place: 'Ludwigsburg, Germany'
     location: 'Ludwigsburg, Germany'
-    start: '2009-10-27'
+    date: '2009-10-27'
     url: 'http://code.google.com/p/emf-customizer/'
     slideshare: 'https://www.slideshare.net/cedric.vidal/emf-customizer'
     video: ""
@@ -198,7 +198,7 @@ items:
     role: Speaker
     place: 'Université de Nantes'
     location: Nantes
-    start: '2009-07-10'
+    date: '2009-07-10'
     url: 'http://is.gd/4KAGn'
     slideshare: 'http://www.slideshare.net/cedric.vidal/rmll-eclipse-acceleo-day-mdsd-scaffolding-and-acceleo-cdric-vidal-11'
     video: ""

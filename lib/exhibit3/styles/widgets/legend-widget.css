@@ -3,8 +3,7 @@ div.exhibit-legendWidget {
     text-align:     center;
     line-height:    2em;
 }
-span.exhibit-legendWidget-entry {
-    white-space: nowrap;
+div.exhibit-legendWidget-entry {
 }
 span.exhibit-legendWidget-entry-title {
     font-weight: bold;
