@@ -73,7 +73,7 @@ h3 {font('Open Sans',21px,1px,600,28px); color: black}
     *
         -webkit-transition: none !important;
         transition: none !important;
-    .noprint
+    .noprint, .print-button
         display: none !important
     .exhibit-collectionView-header, .exhibit-collectionView-footer
         display: none !important
@@ -91,6 +91,16 @@ h3 {font('Open Sans',21px,1px,600,28px); color: black}
     left: 20
     top: 50%
     transform: translateX(-50%) rotate(-90deg);
+
+.print-button
+    position: fixed
+    right: 20
+    top: 20
+    width: 50;
+    height: 50;
+
+.print-button:hover
+    transform: scale(1.2)
 
 .exhibit-toolboxWidget-popup
     display: none !important
