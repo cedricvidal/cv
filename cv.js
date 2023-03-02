@@ -40,6 +40,10 @@
 	    "date" : {
         	"label": "Date",
 	        "valueType": "date"
+	    },
+        "responsibilities" : {
+        	"label": "Responsibilities",
+	        "valueType": "markdown"
 	    }
     }
 }
