@@ -7,8 +7,8 @@ items:
     customer: ArgoAI
     title: Tech Lead for Workflow Services
     responsibilities: |
-      Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
-      
+      Moved focus to **Labeling Operators Management** as Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
+
       Expert in **BPMN** and **Camunda**, led their **adoption at Argo** and successfully **migrated** legacy workflows to the 
       new platform resulting in uninterrupted service since the launch. Example of achievements include:
       - Introduced **REST client library generation** through OpenAPI contracts, resulting in reduced coding and 
@@ -36,10 +36,10 @@ items:
     customer: ArgoAI
     title: Staff Software Engineer / EM2 for Labeling
     responsibilities: |
-      Staff Software Engineer then Software Engineering Manager II for the **Labeling Data Pipelines**, **Labeling Tools** 
+      Focus on **Labeling Engineering** as Staff Software Engineer then Software Engineering Manager II for the **Labeling Data Pipelines**, **Labeling Tools** 
       and **Labeling Services** teams.
       
-      Strong impact to scale the labeling operations for **labels 400x** and **operators 10x**. Example of achievements include:
+      Strong impact to scale **labels 400x** and **operators 10x**. Example of achievements include:
       - **In-depth knowledge** of Argo ML Labeling Tools and pipelines. Expertise in a wide range of labeling modalities, 
       pipelines, and sensor types.
       - Increased **team productivity** and reduced **maintenance costs** by replacing legacy hand-coded labeling REST API with 
