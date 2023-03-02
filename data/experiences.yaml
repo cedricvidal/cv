@@ -9,14 +9,12 @@ items:
     responsibilities: |
       Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
       
-      - Expert in **BPMN** and **Camunda** and a thought leader in promoting best practices and concepts to stakeholders, 
-      customers, and UX team for designing workflow products.
-      - Led the adoption of Camunda and BPMN at Argo, and successfully **migrated** legacy workflows to the new platform 
-      resulting in uninterrupted service since the launch.
-      - Introduced the process of streamlining **REST client library generation** through OpenAPI contracts, resulting in reduced 
-      coding and maintenance effort.
-      - **Praised by the team** for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with rigorous 
-      - PR reviews spanning system design, coding, and algorithms.
+      - Expert in **BPMN** and **Camunda**, led their **adoption at Argo** and successfully **migrated** legacy workflows to the 
+      new platform resulting in uninterrupted service since the launch.
+      - Introduced **REST client library generation** through OpenAPI contracts, resulting in reduced coding and 
+      maintenance effort.
+      - **Praised by the team** for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with 
+      rigorous PR reviews.
       - Actively contributes to building a **culture of humility, excellence**, and support of each other with a high-quality bar.
       - First-hand involvement in **customer satisfaction** and product definition by closely collaborating with customers from 
       Map Ops, Map Tools, and product UX team.
@@ -41,15 +39,16 @@ items:
       Staff Software Engineer then Software Engineering Manager II for the **Labeling Data Pipelines**, **Labeling Tools** 
       and **Labeling Services** teams.
       
+      Strong impact to scale the labeling operations for **labels 400x** and **operators 10x**. Example of achievements include:
       - **In-depth knowledge** of Argo ML Labeling Tools and pipelines. Expertise in a wide range of labeling modalities, 
       pipelines, and sensor types.
       - Increased **team productivity** and reduced **maintenance costs** by replacing legacy hand-coded labeling REST API with 
       a GraphQL API generated from the database schema.
+      - Initiated and led optimizing the **transport of Lidar and Radar point clouds** in the browser by using point 
+      cloud compression technics.
       - Improved **operationality** of labeling organization by automating operations metrics for services and tools using an 
-      approach called **RUM (Real User Metrics)**.
-      - **Reduced production** issues by hardening production release procedures.
+      approach called **RUM (Real User Metrics)**. **Reduced production** issues by hardening production release procedures.
       - Drove the migration of tools and services from Marathon to **Kubernetes**.
-      - Led the initiative to **optimize transport of Lidar and Radar point clouds** in the browser.
       - Led efforts to identify and implement **AWS cost savings**.
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch'
     industry: 'Self Driving'
