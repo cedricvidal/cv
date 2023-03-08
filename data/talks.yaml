@@ -7,7 +7,7 @@ items:
     place: 'Grenoble, France'
     date: '2019-02-04'
     url: 'https://eventil.com/events/kafka-night'
-    slideshare: 'http://bit.ly/voxxed-paris-18-qs'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
   -
     label: 'BBL CQRS ES BPMN @ Margo Bank'
     type: Talk
@@ -17,7 +17,7 @@ items:
     location: '12 Rue de Penthièvre, Paris'
     date: '2019-01-24'
     url: 'https://twitter.com/cedricvidal/status/1088429692334604289'
-    slideshare: 'http://bit.ly/voxxed-paris-18-qs'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
     thumbnail: 'https://pbs.twimg.com/media/DxrF5TlWoAMN2oS.jpg'
   -
     label: 'Kafka Meetup @ Criteo'
@@ -28,7 +28,7 @@ items:
     location: '32 Rue Blanche, 75009 Paris'
     date: '2019-01-15'
     url: 'https://www.meetup.com/fr-FR/Paris-Apache-Kafka-Meetup/'
-    slideshare: 'http://bit.ly/voxxed-paris-18-qs'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
     thumbnail: 'https://pbs.twimg.com/media/Dw-YacfX4AADnHq.jpg'
   -
     label: 'Renault Digital'
@@ -39,7 +39,7 @@ items:
     location: '122 Avenue du Général Leclerc, 92100 Boulogne-Billancourt'
     date: '2018-12-17'
     url: 'https://twitter.com/momichel/status/1073618445810438145'
-    slideshare: 'http://bit.ly/voxxed-paris-18-qs'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
     thumbnail: 'https://pbs.twimg.com/media/DuZCQvYW0AA4ZJO.jpg'
   -
     label: 'Voxxed Micro Services 2018'
@@ -50,7 +50,7 @@ items:
     location: "Espace Charenton\r\n327 Rue de Charenton, 75012 Paris - France"
     date: '2018-10-30'
     url: 'https://voxxeddays.com/microservices/2018/09/22/cedric-vidal-and-nicolas-romanetti-on-kafka-stream-and-bpmn/'
-    slideshare: 'http://bit.ly/voxxed-paris-18-qs'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
     video: 'https://www.youtube.com/watch?v=AYbLIAy_fFE'
     thumbnail: 'https://pbs.twimg.com/media/Dq2Ts2FXcAIxe7i.jpg:large'
   -
