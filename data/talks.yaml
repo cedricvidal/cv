@@ -63,7 +63,7 @@ items:
     date: '2018-10-16'
     url: 'https://www.eventbrite.fr/e/billets-koncrete-kube-2-50736590508#'
     thumbnail: 'https://pbs.twimg.com/media/DpplhBhX4AAL5Cu.jpg'
-    # slideshare: 'http://bit.ly/koncrete-kube-18-k8s-gitops'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/kubernetes-and-gitops-at-quicksign-koncrete-kube-oct-2018'
   -
     label: 'Confluent Streaming Event Paris'
     type: Talk
@@ -74,7 +74,6 @@ items:
     date: '2018-10-11'
     slideshare: 'https://www.slideshare.net/cedric.vidal/rethinking-quicksigns-digital-onboarding-confluent-streaming-days-paris'
     video: 'https://videos.confluent.io/watch/iCZbqespcjbE76gNqnstpt'
-    thumbnail: ""
   -
     label: 'Camunda Day - Amsterdam'
     type: Talk
