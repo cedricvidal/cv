@@ -84,9 +84,9 @@ items:
     location: Amsterdam
     date: '2018-07-03'
     url: 'https://www.eventbrite.ca/e/camunda-day-amsterdam-registration-43164911412'
-    slideshare: 'http://bit.ly/camunda-day-amst-reg-18'
     video: 'https://www.youtube.com/watch?v=jvhYUTOr6Hw'
     thumbnail: 'https://pbs.twimg.com/media/DhLv3GGX4AAdItW.jpg'
+    #slideshare: 'http://bit.ly/camunda-day-amst-reg-18'
   -
     label: 'BBL Kappa CQRS-ES Architecture'
     type: Talk
@@ -95,7 +95,7 @@ items:
     place: 'Lesfurets.com, Paris'
     location: '14 Rue Médéric, 75017 Paris'
     date: '2018-05-16'
-    slideshare: 'http://bit.ly/quicksign-bbl-kappa-lesfurets'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/bbl-kappa-lesfuretscom'
   -
     label: 'InfoQ Interview on Obeo Designer'
     type: Talk
