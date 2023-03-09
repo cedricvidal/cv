@@ -85,7 +85,7 @@ items:
     url: 'https://www.eventbrite.ca/e/camunda-day-amsterdam-registration-43164911412'
     video: 'https://www.youtube.com/watch?v=jvhYUTOr6Hw'
     thumbnail: 'https://pbs.twimg.com/media/DhLv3GGX4AAdItW.jpg'
-    #slideshare: 'http://bit.ly/camunda-day-amst-reg-18'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/camunda-days-2018-building-a-digital-onboarding-microservices-platform-using-camunda-bpm-and-kafka'
   -
     label: 'BBL Kappa CQRS-ES Architecture'
     type: Talk
@@ -104,7 +104,6 @@ items:
     location: Toulouse
     date: '2013-08-16'
     video: 'https://www.infoq.com/fr/interviews/obeo-designer-open-source-sirius'
-    thumbnail: ""
   -
     label: 'Agile Tour 2011'
     type: Talk
@@ -133,7 +132,7 @@ items:
     location: 'Le Pavillon Royal, Carrefour du bout du Lac, 75116 Paris'
     date: '2010-11-05'
     url: 'http://www.eclipsedayparis.com/'
-    slideshare: 'http://www.slideshare.net/secret/bGcOLkGgrkVXtp'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/eclipse-day-paris-2010-proxiad-cedric-vidal-10'
   -
     label: 'MD Day 2009'
     type: Talk
