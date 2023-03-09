@@ -115,7 +115,7 @@ items:
     location: Lille
     date: '2011-05-01'
     url: 'http://at2011.agiletour.org/conferencecontent.html?sid=6297'
-    slideshare: 'http://bit.ly/bdd-jbehave'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/agiletour-strasbourg-2011-bdd-with-jbehave'
   -
     label: 'Eclipse Day Paris 2010'
     type: Talk
