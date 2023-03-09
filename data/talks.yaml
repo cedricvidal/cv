@@ -62,8 +62,8 @@ items:
     location: Paris
     date: '2018-10-16'
     url: 'https://www.eventbrite.fr/e/billets-koncrete-kube-2-50736590508#'
-    slideshare: 'http://bit.ly/koncrete-kube-18-k8s-gitops'
     thumbnail: 'https://pbs.twimg.com/media/DpplhBhX4AAL5Cu.jpg'
+    # slideshare: 'http://bit.ly/koncrete-kube-18-k8s-gitops'
   -
     label: 'Confluent Streaming Event Paris'
     type: Talk
@@ -72,7 +72,7 @@ items:
     place: 'Salons marceaux, Paris'
     location: '79 bis Avenue Marceau, 75116 Paris'
     date: '2018-10-11'
-    slideshare: 'http://bit.ly/quicksign-confluent-paris-18'
+    slideshare: 'https://www.slideshare.net/cedric.vidal/rethinking-quicksigns-digital-onboarding-confluent-streaming-days-paris'
     video: 'https://videos.confluent.io/watch/iCZbqespcjbE76gNqnstpt'
     thumbnail: ""
   -
