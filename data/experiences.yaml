@@ -80,7 +80,6 @@ items:
     start: '2014-01-01'
     end: '2019-07-15'
     participation: 100%
-    url: ""
   -
     label: 'A leader in the digital signature market, Quicksign wants to create an innovative SAAS Automatic Document Recognition (ADR or LAD/RAD in french) and Anti-Fraud system'
     type: Experience
@@ -98,7 +97,6 @@ items:
     start: '2013-05-01'
     end: '2013-12-01'
     participation: 30%
-    url: ""
   -
     label: 'Lead architect and technical councellor'
     type: Experience
@@ -114,7 +112,6 @@ items:
     start: '2012-01-23'
     end: '2013-12-31'
     participation: 30%
-    url: ""
   -
     label: 'Architecture team'
     type: Experience
@@ -130,7 +127,6 @@ items:
     start: '2012-01-23'
     end: '2013-12-31'
     participation: 70%
-    url: ""
   -
     label: 'Cleverwine is a startup creating an innovative new mobile offering in the wine market.'
     type: Experience
@@ -146,7 +142,6 @@ items:
     start: '2012-01-23'
     end: '2013-12-31'
     participation: 10%
-    url: ""
   -
     label: 'A french financial data publishing company (name is confidential) needs to create a new production platform to cope with the end of life of its previous market data provider'
     type: Experience
@@ -162,7 +157,6 @@ items:
     start: '2011-06-07'
     end: '2012-01-23'
     participation: 40%
-    url: ""
   -
     label: 'Amadeus France wants a live production log storage and harvesting solution for its farm of servers'
     type: Experience
@@ -178,7 +172,6 @@ items:
     start: '2011-04-04'
     end: '2011-11-25'
     participation: 20%
-    url: ""
   -
     label: 'Amadeus France faces general quality of services problems and wants to be assisted in solving them'
     type: Experience
@@ -194,7 +187,6 @@ items:
     start: '2011-04-04'
     end: '2011-11-25'
     participation: 20%
-    url: ""
   -
     label: 'The French Ministry of Defense Infrastructure Departmentis looking for a solution to its Database modeling workflow problems in the context of the Safr@n projet'
     type: Experience
@@ -210,7 +202,6 @@ items:
     start: '2011-02-08'
     end: '2011-07-20'
     participation: 5%
-    url: ""
   -
     label: 'The French Ministry of Defense Infrastructure Department wants to be assisted in challenging architectures designed by its architecture team and helping their developpers apply produced designs and guidelines in the context of the Safr@n projet'
     type: Experience
@@ -226,7 +217,6 @@ items:
     start: '2011-02-08'
     end: '2011-07-20'
     participation: 40%
-    url: ""
   -
     label: 'Banque Accord wants a Business Rule Engine Language IDE allowing its business experts to create business rules using a language tailored to its business and specific organisational needs, meant to run on Cobol and Java production environments.'
     type: Experience
@@ -242,7 +232,6 @@ items:
     start: '2010-06-14'
     end: '2010-12-07'
     participation: 50%
-    url: ""
   -
     label: 'MAIF wants feedback on state of the art design and modeling engineering environments in order to revamp its design environments.'
     type: Experience
@@ -258,7 +247,6 @@ items:
     start: '2010-05-05'
     end: '2010-07-07'
     participation: 50%
-    url: ""
   -
     label: " The AEFE suspects performance and stability issues with its Business Intelligence platform\r\nbuilt on JasperServer BI and wants to undergo load tests so as to identify what’s wrong and undergo\r\ncorrective actions"
     type: Experience
@@ -274,7 +262,6 @@ items:
     start: '2010-02-01'
     end: '2010-04-01'
     participation: 15d
-    url: ""
   -
     label: "AXA is not satisfied with the performance of its .NET Replicating Portfolio application and\r\nwants to lead corrective actions in order to achieve a better quality of service"
     type: Experience
@@ -290,7 +277,6 @@ items:
     start: '2010-03-01'
     end: '2010-03-06'
     participation: 5d
-    url: ""
   -
     label: 'SPS wants to validate that they correctly use Hibernate from a performance standpoint'
     type: Experience
@@ -306,7 +292,6 @@ items:
     start: '2010-01-01'
     end: '2010-01-03'
     participation: 2d
-    url: ""
   -
     label: 'Calyon’s ad-hoc financial reporting application built on JasperReports Open Source library suffers from unsatisfying performances. Calyon wants to know the reasons and optimize the reporting application to achieve a satisfying quality of service'
     type: Experience
@@ -322,7 +307,6 @@ items:
     start: '2010-01-01'
     end: '2010-03-01'
     participation: 6d
-    url: ""
   -
     label: 'SPS observes shifts in development processes of its future online betting platform and wants to find and implement an effective solution'
     type: Experience
@@ -338,7 +322,6 @@ items:
     start: '2009-12-01'
     end: '2009-07-03'
     participation: 10d
-    url: ""
   -
     label: 'Study for the CEA the adequacy of the Eclipse platform and more specifically the Eclipse Modeling ecosystem of tools for the future CLIMB platform, a collaborative 3D building management platform hosting regulatory and scientific computations.'
     type: Experience
@@ -354,7 +337,6 @@ items:
     start: '2009-12-01'
     end: '2010-02-01'
     participation: 7d
-    url: ""
   -
     label: 'Study and implementation of a Smart Card Private Key Infrastructure for the Geneva Hospitals.'
     type: Experience
@@ -370,7 +352,6 @@ items:
     start: '2009-07-01'
     end: '2009-09-01'
     participation: 5d/mth
-    url: ""
   -
     label: 'Integrating the V-Tiger CRM for Dexia''s PWB DCL subsidiary in order to achieve better knowledge management of customer relationship, drive the business and help with the evolution of the commercial organisation'
     type: Experience
@@ -386,7 +367,6 @@ items:
     start: '2009-08-01'
     end: '2009-10-30'
     participation: 1d/week
-    url: ""
   -
     label: 'Creating a model customization textual DSL meant to enable the creation of a MDSD toolchain supporting both incremental forward engineering and reverse SQL DDL engineering. Open sourcing the project.'
     type: Experience
@@ -418,7 +398,6 @@ items:
     start: '2009-06-01'
     end: '2009-06-15'
     participation: 2w
-    url: ""
   -
     label: 'Help Masternaut with the deployment into production of its AJAX geolocalisation application'
     type: Experience
@@ -434,7 +413,6 @@ items:
     start: '2009-03-01'
     end: '2009-03-02'
     participation: 2d
-    url: ""
   -
     label: 'Domiserve expects a huge load increase because of the CESU measure announced by the french president Nicolas Sarkozy during the Social summit on February 18, 2009.'
     type: Experience
@@ -450,7 +428,6 @@ items:
     start: '2009-03-01'
     end: '2009-05-01'
     participation: 1d/w
-    url: ""
   -
     label: 'CTO of ProxiAD IDF'
     type: Experience
@@ -505,8 +482,6 @@ items:
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2009-02-01'
     end: '2011-01-01'
-    participation: ""
-    url: ""
   -
     label: "Creation of ProxiAD’s blog gathering experts from the group aiming at enhancing the\r\nvisibility and the branding of the group"
     type: Experience
@@ -520,7 +495,6 @@ items:
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2009-02-01'
-    end: ""
     participation: 2d/month
     url: 'http://blog.proxiad.com'
   -
@@ -538,7 +512,6 @@ items:
     start: '2008-12-01'
     end: '2009-01-01'
     participation: 2d/week
-    url: ""
   -
     label: 'Revamping AXA’s risk portfolio management application'
     type: Experience
@@ -554,7 +527,6 @@ items:
     start: '2008-06-01'
     end: '2008-06-15'
     participation: 2w
-    url: ""
   -
     label: "Masternaut is a company specialized in geolocalization which would like to enhance the\r\nperformance of its realtime web GPRS data visualization software based on GWT before it goes\r\nto production"
     type: Experience
@@ -570,7 +542,6 @@ items:
     start: '2008-05-01'
     end: '2008-05-15'
     participation: 2w
-    url: ""
   -
     label: 'Revamping ProxiAD’s JavaEE, MDA and industrialization production environment'
     type: Experience
@@ -586,7 +557,6 @@ items:
     start: '2008-01-01'
     end: '2009-01-01'
     participation: 5d/month
-    url: ""
   -
     label: 'Domiserve is a company offering personal services. The technical direction wants to put in place a solution allowing them to gain control over production batch processing whose hosting is externalized.'
     type: Experience
@@ -602,7 +572,6 @@ items:
     start: '2008-01-01'
     end: '2008-01-08'
     participation: 2w
-    url: ""
   -
     label: ' Revamping Vecteur-Plus’s call for proposal dematerialization platform in order to optimize productivity, performance, modularity and functionalities. Also revamping the functional requirements.'
     type: Experience
@@ -618,7 +587,6 @@ items:
     start: '2007-08-01'
     end: '2008-04-01'
     participation: Full
-    url: ""
   -
     label: 'ProxiAD wants to develop transverse efforts such as ProxiAD’s Production System, internal technical evangelization, external communication and technological watch'
     type: Experience
@@ -632,9 +600,6 @@ items:
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2007-03-01'
-    end: ""
-    participation: ""
-    url: ""
   -
     label: 'Redesign of B-Process’ billing dematerialization marketplace architecture and maintenance of the application currently in production'
     type: Experience
@@ -650,7 +615,6 @@ items:
     start: '2006-07-01'
     end: '2007-03-01'
     participation: Full
-    url: ""
   -
     label: 'Domiserve''s extranet for personal service employment contractors and employees'
     type: Experience
@@ -666,7 +630,6 @@ items:
     start: '2006-04-01'
     end: '2006-06-01'
     participation: Full
-    url: ""
   -
     label: 'Audit of Moniteur Group’s IT services'
     type: Experience
@@ -682,7 +645,6 @@ items:
     start: '2006-03-01'
     end: '2006-05-01'
     participation: Full
-    url: ""
   -
     label: 'Audit of B-Process’ IT services after being bought by Achat Pro'
     type: Experience
@@ -698,7 +660,6 @@ items:
     start: '2006-02-01'
     end: '2006-03-01'
     participation: Full
-    url: ""
   -
     label: 'Euronext''s financial notices emitting intranet'
     type: Experience
@@ -714,7 +675,6 @@ items:
     start: '2005-11-01'
     end: '2006-02-01'
     participation: Full
-    url: ""
   -
     label: 'Creation of Boursorama’s CRM'
     type: Experience
@@ -730,7 +690,6 @@ items:
     start: '2005-08-01'
     end: '2006-02-01'
     participation: Full
-    url: ""
   -
     label: 'GIRCE IT department in Nantes wants to upgrade its skills to object technologies'
     type: Experience
@@ -746,7 +705,6 @@ items:
     start: '2005-01-01'
     end: '2005-01-08'
     participation: 1w
-    url: ""
   -
     label: 'Redesign JM-Bruneau''s ordering call center intranet'
     type: Experience
@@ -762,7 +720,6 @@ items:
     start: '2004-10-01'
     end: '2005-09-01'
     participation: Full
-    url: ""
   -
     label: 'ProxiAD is a provider of software engineering services structured as a network of regional subsidiaries in France and Bulgaria. This configuration allows the group to be extremely reactive to the local needs of its customers and to the autonomy requirements of its employees.'
     type: Experience
@@ -776,9 +733,6 @@ items:
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2004-10-01'
-    end: ""
-    participation: ""
-    url: ""
   -
     label: 'Content Management System intranet for managing Decathlon''s product catalog and rich medias'
     type: Experience
@@ -794,7 +748,6 @@ items:
     start: '2004-04-01'
     end: '2004-09-01'
     participation: Full
-    url: ""
   -
     label: 'AXSeL project, a tool for semantic analysis of programming languages (e-Learning).'
     type: Experience
@@ -810,7 +763,6 @@ items:
     start: '2003-07-01'
     end: '2003-10-01'
     participation: Full
-    url: ""
   -
     label: 'Live-Banner is a company offering dynamic flash advertising banners'
     type: Experience
@@ -826,7 +778,6 @@ items:
     start: '2002-07-01'
     end: '2002-10-01'
     participation: Full
-    url: ""
   -
     label: 'Refactoring of PMP''s data synchronization platform to support multiple users simultaneously. Moving from PSTN (Public Switched Telephone Network) to TCP-IP'
     type: Experience
@@ -842,7 +793,7 @@ items:
     start: '2001-07-01'
     end: '2001-09-01'
     participation: Full
-    url: ""
+    url: "http://www.pmp.fr/"
   -
     label: 'PMP is a startup launching an ASP data synchronization application on PalmOS for medical field sales forces.'
     type: Experience
@@ -858,4 +809,4 @@ items:
     start: '2000-07-01'
     end: '2000-09-01'
     participation: Full
-    url: ""
+    url: "http://www.pmp.fr/"
