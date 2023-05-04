@@ -9,7 +9,7 @@ items:
     responsibilities: |
       Moved focus to **Labeling Operators Management** as Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
 
-      Expert in **BPMN** and **Camunda**, led their **adoption at Argo** and successfully **migrated** legacy workflows to the 
+      Expert in **BPMN** and **Camunda**, led the **adoption at Argo** and successfully **migrated** legacy workflows to the 
       new platform resulting in uninterrupted service since the launch. Example of achievements include:
       - Introduced **REST client library generation** through OpenAPI contracts, resulting in reduced coding and 
       maintenance effort.
@@ -66,7 +66,8 @@ items:
     customer: Quicksign
     title: CTO
     responsibilities: |
-      - Built from scratch the **Machine Learning engineering team** consisting of 4 ML Engineers.
+      - Built from scratch the **AI Machine Learning engineering team** consisting of 4 ML Engineers.
+      - Gained expertise on **AI concepts** (**DCNN**, **LSTM**, **data pipelines**) and management of AI projects.
       - Evangelized, convinced, staffed, lead, built and ran multiple innovation projects such as the 
       **REST HATEOAS API**, the **ADR** (Automatic Document Recognition and Reading and **anti-fraud** system), 
       the **mobile document scanning** application and the new **BPMN** and **Kafka** based **micro services** 
