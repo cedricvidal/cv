@@ -81,31 +81,19 @@ items:
     end: '2019-07-15'
     participation: 100%
   -
-    label: 'A leader in the digital signature market, Quicksign wants to create an innovative SAAS Automatic Document Recognition (ADR or LAD/RAD in french) and Anti-Fraud system'
-    type: Experience
-    exp_type: Professional
-    employer: Freelance
-    customer: Quicksign
-    title: 'Senior architect, scalability and rule engine expert, Tech Lead'
-    responsibilities: |
-      Design the software and infrastructure architectures for a highly scalable and distributed **OCR**, **ADR** and **anti-fraud** 
-      intelligence rule storage and execution engine. Tech lead and expert for a team of highly motivated and smart dev guys.
-    tech: 'ActiveMQ; Camel; Java; Hibernate; Joda Time; ABBYY; Drools; Spring; Guava; Mockito; JForkr; C++; Automake; Autoconf; STL; Debian Packaging; Ubuntu'
-    industry: 'Digital Signature'
-    place: France
-    location: Neuilly
-    start: '2013-05-01'
-    end: '2013-12-01'
-    participation: 30%
-  -
     label: 'Lead architect and technical councellor'
     type: Experience
     exp_type: Professional
     employer: Freelance
     customer: Quicksign
-    title: 'Lead architect and technical councellor'
-    responsibilities: 'Audited the platform, defined technical guidelines and helped the board of directors to choose technical directions.'
-    tech: 'Java; C++; Linux; Windows'
+    title: 'Principal Software Engineer (Freelance)'
+    responsibilities: |
+      - Lead architect and technical councellor. Audited the platform, defined technical guidelines and helped the board of directors to
+      choose technical directions.
+      - Revamped the CI, fully revamped the previously manual build taking 2 days to a fully automated process taking less than a minute.
+      - Designed the architecture for a highly scalable and distributed SAAS Automatic Document Recognition **anti-fraud** platform using
+      **OCR** and Expert System rules engine.
+    tech: 'ActiveMQ; Camel; Java; Hibernate; Joda Time; ABBYY; Drools; Spring; Guava; Mockito; JForkr; C++; Automake; Autoconf; STL; Debian Packaging; Ubuntu'
     industry: 'Digital Signature'
     place: France
     location: Neuilly
@@ -118,7 +106,7 @@ items:
     exp_type: Professional
     employer: Freelance
     customer: Amadeus
-    title: 'Senior Architect'
+    title: 'Staff Software Engineer (Freelance)'
     responsibilities: 'Troubleshooting critical production problems, prototyping new architectures, modernizing existing codebase, performance optimization.'
     tech: 'ActiveMQ; Camel; Java; Javascript; Node.js; AngularJS; Backbone.js; CouchDB; MongoDB; MySQL; PouchDB; Neo4J'
     industry: Booking
@@ -134,7 +122,10 @@ items:
     employer: Freelance
     customer: Cleverwine
     title: 'Architect and PhoneGap/Node.JS expert'
-    responsibilities: 'Designed and developed a 100% Javascript based mobile Phonegap HTML5 and Node.js serverside architecture. Coached the team during the initial development and continue to advice for strategic technical choices spanning hosting, caching, performance.'
+    responsibilities: |
+      - Designed and developed the company's first mobile app using Phonegap HTML5 and Node.js and MongoDB on the serverside.
+      - Coached the team during the initial development and continue to advice for strategic technical choices spanning hosting, 
+      caching, performance.
     tech: 'Phonegap; Javascript; Node.js; Backbone.js; Underscore.js; JQuery Mobile; MongoDB; CDN; Edge Networking; Caching; NFC'
     industry: Wine
     place: Bordeaux
@@ -376,7 +367,7 @@ items:
 #    title: 'MDSD Architect and project leader supervising an intern'
 #    responsibilities: 'Original idea and initial prototype;Supervised the industrialization of the project (steering documents, cost evalutation, project management, user acceptance tests, ...); Open Sourced the project on Google Code : http ://code.google.com/p/emf-customizer/; Made buzz on the project and presented the project at the Eclipse Summit Europe 2009'
 #    tech: 'EMF; Xtext; MDSD; M2M; DSL; Eclipse PDT; Modeling; Eclipse; Eclipse RCP'
-#    industry: SSII
+#    industry: Software Engineering Services
 #    place: Paris
 #    location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
 #    start: '2009-06-01'
@@ -450,34 +441,20 @@ items:
       - Publishing content (magazines, events, ...).
       - ProxiAD website : Blog, articles, whitepapers.
       - Relationship to the open source community
-    industry: SSII
+    industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2011-01-01'
     end: '2012-12-30'
   -
-    label: 'Technical Leader of ProxiAD IDF'
+    label: 'Principal Software Engineer'
     type: Experience
     exp_type: Professional
     employer: ProxiAD
     customer: ProxiAD
-    title: 'Technical Leader'
-    responsibilities: |
-      - Organizing transverse technical activities.
-      - Response to RFPs, pre-sales, validation of technical responses, estimations.
-      - Organizing technical events in the Paris area.
-      - Organizing the training of colleagues.
-      - Animating the community of ProxiAD engineers.
-      - Technical workshops, internal and external technical communication, evangelizing.
-      - Ensuring the quality of the technical response.
-      - Identifying and implementation of the group’s technical strategy.
-      - Contributing to the development of technological image of the group.
-      - Representing ProxiAD during external technological events.
-      - Organising the technology and methodological watch.
-      - Publishing content (magazines, events, ...).
-      - ProxiAD website : Blog, articles, whitepapers.
-      - Relationship to the open source community
-    industry: SSII
+    title: 'Principal Software Engineer'
+    responsibilities: 
+    industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2009-02-01'
@@ -491,7 +468,7 @@ items:
 #    title: 'Project lead; Editor in chief; Blogger'
 #    responsibilities: 'Original idea and conception; Steering note; Defining the editorial; Leading the development of the website; Seeking and gathering authors.'
 #    tech: 'PHP; MySQL; Wordpress'
-#    industry: SSII
+#    industry: Software Engineering Services
 #    place: Paris
 #    location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
 #    start: '2009-02-01'
@@ -551,7 +528,7 @@ items:
 #    title: 'JavaEE & MDA Architect and expert'
 #    responsibilities: 'Definitions of goals, outcomes and challenges, conception, studying of major market MDSD solutions, architecture, MDSD leader, JavaEE/Hibernate/JPA, expert and coaching of development teams'
 #    tech: 'EMF; Acceleo; Obeo Transfo; M2M; M2T; T2M; MDSD; DSL; UML; Spring; JSF; JPA; JavaEE; Modeling; Eclipse RCP; Eclipse'
-#    industry: SSII
+#    industry: Software Engineering Services
 #    place: Paris
 #    location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
 #    start: '2008-01-01'
@@ -588,15 +565,21 @@ items:
 #    end: '2008-04-01'
 #    participation: Full
   -
-    label: 'ProxiAD wants to develop transverse efforts such as ProxiAD’s Production System, internal technical evangelization, external communication and technological watch'
+    label: |
+      ProxiAD wants to develop transverse efforts such as ProxiAD’s Production System, internal technical evangelization, 
+      external communication and technological watch
     type: Experience
     exp_type: Professional
     employer: ProxiAD
     customer: ProxiAD
-    title: 'JavaEE & MDA Architect, consultant and expert'
-    responsibilities: 'Transverse efforts for the group (Watch, technical assets) and project team coaching : 20%; Organizing technical workshops for company’s engineers, internal technical communication and evangelism : 5%; Consulting for ProxiAD’s customers (Optimization, architectural maintenance and expertise) : 75%; Lead for the revamping of ProxiAD’s JavaEE and MDSD Production System based on : EMF, oAW, M2M, M2T, T2M, MDSD, DSL, UML.'
+    title: 'Staff Software Engineer'
+    responsibilities: |
+      - JavaEE & MDA Architect, consultant and expert. Transverse efforts for the group (Watch, technical assets) and project team coaching : 20%
+      - Organizing technical workshops for company’s engineers, internal technical communication and evangelism : 5%
+      - Consulting for ProxiAD’s customers (Optimization, architectural maintenance and expertise) : 75%
+      - Lead for the revamping of ProxiAD’s JavaEE and MDSD Production System based on : EMF, oAW, M2M, M2T, T2M, MDSD, DSL, UML.
     tech: 'EMF; oAW; M2M; M2T; T2M; MDSD; DSL; UML; JavaEE; Modeling; Eclipse RCP; Eclipse'
-    industry: SSII
+    industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2007-03-01'
@@ -727,10 +710,17 @@ items:
     exp_type: Professional
     employer: ProxiAD
     customer: ProxiAD
-    title: 'Designer, developer, trainer, JavaEE & MDA architect'
-    responsibilities: 'ProxiAD  group  leader  on  the  following  technologies: JavaEE,  MDA,  JBoss, Hibernate, Spring, Maven and Java; Initial idea, designer, architect and leader of ProxiAD’s JavaEE & MDA industrialization platform; Lead engineer for MDA and JavaEE watch; Technical and quality auditor; Responsible for the group’s JBoss partnership; Technical workshops. Occasionally   an   IT   services   consultant   for   Syntonia   (a   consulting   oriented   subsidiary - http ://www.syntonia.fr)'
+    title: 'Senior Software Engineer'
+    responsibilities: |
+      - Initial idea, designer, architect and leader of ProxiAD's **Foundational JavaEE & MDA industrialization platform**. Initially for a customer but generalized to the whole group. 
+      Used by hundreds of engineers.
+      - Lead developer and **coach**  on  the  following  technologies: JavaEE,  MDA,  JBoss, Hibernate, Spring, Maven and Java
+      - Lead engineer for MDA and JavaEE watch; Technical and quality auditor
+      - Responsible for the group's **JBoss partnership**
+      - Technical workshops
+      - Occasionally consulting for [Syntonia](http://www.syntonia.fr) (a consulting oriented subsidiary)
     tech: 'JavaEE; MDA; Modeling'
-    industry: SSII
+    industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2004-10-01'
@@ -741,7 +731,7 @@ items:
     exp_type: Professional
     employer: SQLI
     customer: Decathlon
-    title: 'Engineer, designer and developer'
+    title: 'Software Engineer'
     responsibilities: 'Designing and developing technical framework modules; Designing and developing application business modules; Initiator and implementor of the migration of the build system from Ant to Maven 1; Designer and implementor of the XML based data exchange import system (based on Jakarta Commons Digester); Lead developer'
     tech: 'JavaEE; RedHat WAF-CMS 6.0; Struts; Oracle 9i; Weblogic 8.1; XML'
     industry: Retail
@@ -756,7 +746,7 @@ items:
     exp_type: Professional
     employer: EISTI
     customer: EISTI
-    title: 'Analyst, designer, developer'
+    title: 'Software Engineer'
     responsibilities: 'Analysis, Design and development of the "Pipes and Filters" architecture style; Design of a meta language XML grammar; Design of ANTLR parsing grammars for Java, Pascal and C; Initial idea, design and development of XSLT stylesheets for the detection of programming patterns'
     tech: 'Java; Tomcat; Cocoon 2; XML; XSLT; XSP; Avalon; ANTLR; CSS; HTML'
     industry: Education
@@ -771,7 +761,7 @@ items:
     exp_type: Professional
     employer: Live-Banner
     customer: Live-Banner
-    title: 'Analyst, designer, developer'
+    title: 'Software Engineer'
     responsibilities: 'Optimization of the database schema. The main achievement has been to detect that sub graphs of data could be refactored away from a relational oriented storage to a more efficient document oriented storage; Optimizing the server side banner broadcasting components; Ran load tests and compared results on prototypes with various combinations of technologies (Apache, Linux, Windows, ASP, PHP, ...); Developed in Java a Flash binary streaming transformation filter targeting resizing, font optimization, file size optimization and data injection of Flash banners (using the Pipes and filters Design Pattern). The main achievement involved identifying and leveraging a library able to parse the binary file format of flash files at a time where it was closed source and no API existed to do that.'
     tech: 'Java; C++; SQL Server; IIS; ASP; COM+; Flash; XML'
     industry: Advertising
@@ -786,7 +776,7 @@ items:
     exp_type: Professional
     employer: PMP
     customer: PMP
-    title: 'Designer, developer'
+    title: 'Software Engineer'
     responsibilities: 'Designed, and developed a client server platform; Designed and developed a XML based data synchronization protocol (single master, multiple slaves); Designed and developed an in house light XML parser in C for PalmOS; Designed and developed a VB6 multi-threaded TCP/IP server; Evolved the client Palm application using a RAD for PalmOS'
     tech: 'VB6; C; MS Access; SDK PalmOS; Codewarrior; XML'
     industry: 'Field sales force'
@@ -802,7 +792,7 @@ items:
     exp_type: Professional
     employer: PMP
     customer: PMP
-    title: Developer
+    title: 'Software Engineer'
     responsibilities: "Developed a PSTN (Public Switched Telephone Network) mono connection data\r\nsynchronization server built with VBA and MS Access; Developed the client application on PalmOS with a RAD"
     tech: 'MS Access; VBA; PalmOS'
     industry: 'Field sales force'
