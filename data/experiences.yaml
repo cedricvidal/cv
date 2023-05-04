@@ -5,7 +5,7 @@ items:
     exp_type: Professional
     employer: ArgoAI
     customer: ArgoAI
-    title: Tech Lead for Workflow Services
+    title: Staff Software Engineer (Workflow Services)
     responsibilities: |
       Moved focus to **Labeling Operators Management** as Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
 
@@ -34,11 +34,12 @@ items:
     exp_type: Professional
     employer: ArgoAI
     customer: ArgoAI
-    title: Staff Software Engineer / EM2 for Labeling
+    title: Software Engineering Manager II (ML Ops Label Engineering)
     responsibilities: |
-      Focus on **Labeling Engineering** as Staff Software Engineer then Software Engineering Manager II for the **Labeling Data Pipelines**, **Labeling Tools** 
-      and **Labeling Services** teams.
-      
+      Focus on **Machine Learning Infrastructure** (**ML Ops**) & **Label Engineering**. Briefly Staff Software Engineer then Software Engineering Manager II 
+      (Staff Software Engineer with an additional management responsibility) for the **Labeling Data Pipelines**, 
+      **Labeling Tools** and **Labeling Services** teams. Still very hands-on.
+
       Strong impact to scale **labels 400x** and **operators 10x**. Example of achievements include:
       - **In-depth knowledge** of Argo ML Labeling Tools and pipelines. Expertise in a wide range of labeling modalities, 
       pipelines, and sensor types.
