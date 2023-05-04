@@ -27,7 +27,7 @@ items:
     start: '2022-03-01'
     end: '2022-11-02'
     participation: 100%
-    details_url: 'https://bit.ly/3Sxi1pj'
+#    details_url: 'https://bit.ly/3Sxi1pj'
   -
     label: ArgoAI_LBS
     type: Experience
@@ -57,7 +57,7 @@ items:
     start: '2019-09-01'
     end: '2022-03-01'
     participation: 100%
-    details_url: 'https://bit.ly/3Sxi1pj'
+#    details_url: 'https://bit.ly/3Sxi1pj'
   -
     label: Quicksign
     type: Experience
