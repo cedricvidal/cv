@@ -107,7 +107,8 @@ items:
     employer: Freelance
     customer: Amadeus
     title: 'Staff Software Engineer (Freelance)'
-    responsibilities: 'Troubleshooting critical production problems, prototyping new architectures, modernizing existing codebase, performance optimization.'
+    responsibilities: |
+      - Troubleshooting critical production problems, prototyping new architectures, modernizing existing codebase, performance optimization.
     tech: 'ActiveMQ; Camel; Java; Javascript; Node.js; AngularJS; Backbone.js; CouchDB; MongoDB; MySQL; PouchDB; Neo4J'
     industry: Booking
     place: 'Ile St Germain, Paris'
@@ -121,7 +122,7 @@ items:
     exp_type: Professional
     employer: Freelance
     customer: Cleverwine
-    title: 'Architect and PhoneGap/Node.JS expert'
+    title: Staff Software Engineer (Freelance)
     responsibilities: |
       - Designed and developed the company's first mobile app using Phonegap HTML5 and Node.js and MongoDB on the serverside.
       - Coached the team during the initial development and continue to advice for strategic technical choices spanning hosting, 
@@ -450,6 +451,7 @@ items:
     customer: ProxiAD
     title: 'Principal Software Engineer'
     responsibilities: 
+    tech: 'EMF; Acceleo; Obeo Transfo; M2M; M2T; T2M; MDSD; DSL; UML; Spring; JSF; JPA; JavaEE; Websphere; Modeling; Eclipse; Eclipse RCP'
     industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
