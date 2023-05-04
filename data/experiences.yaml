@@ -438,7 +438,8 @@ items:
       - Publishing content (magazines, events, ...).
       - Created and led the ProxiAD website : Blog, articles, whitepapers.
       - Relationship to the open source community and some of the group's technical partnerships.
-    industry: Software Engineering Services; Fintech; Army; Banking; Insurance; Government; Online bets;  Health; Mapping; Retail; Publishing; Trading; 
+    industry: Software Engineering Services
+    industries: Fintech; Army; Banking; Insurance; Government; Online bets;  Health; Mapping; Retail; Publishing; Trading; 
     customers: Amadeus; French Ministry of Defense; Accord; MAIF; AEFE; AXA; SPS; Calyon; Research Institutes; CEA (French Atomic Energy Institute); HUG (Geneva Hospital); Dexia; Masternaut; Domiserve; Auchan; Vecteur-Plus; B-Process; Moniteur; Euronext; Boursorama; Caisse d'Epargne; JM-Bruneau
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'

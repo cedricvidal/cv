@@ -181,7 +181,7 @@
 
             </div>
 
-            <div data-ex-role="view" data-ex-label="Talks" data-ex-orders=".date" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="talks" data-ex-show-all="true" data-ex-abbreviated-count="4"></div>
+            <div data-ex-role="view" data-ex-label="Talks" data-ex-orders=".date" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="talks" data-ex-show-all="false" data-ex-abbreviated-count="14"></div>
 
         </div>
 
@@ -219,7 +219,7 @@
         <div>
             <div data-ex-role="lens" data-ex-item-types="Experience" class="experience" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
                 <h3 class="job-title">
-                    <span data-ex-content=".title" class="title"></span> at <span data-ex-content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span>
+                    <span data-ex-content=".title" class="title"></span> at <span data-ex-content="if(exists(.customer.label), .customer.label, .customer)" class="customer"></span> (<span data-ex-content=".industry" class="industry"></span>)
                 </h3>
 
                 <p class="light">
@@ -237,7 +237,7 @@
                     <a data-ex-if-exists=".details_url" data-ex-href-content=".details_url" class="details_url">More details.</a>
                 </p>
                 <p class="justified tech" data-ex-if-exists=".tech"><span class="label">Technical environment</span>: <span data-ex-content=".tech"></span></p>
-                <p class="justified industry" data-ex-if-exists=".industry"><span class="label">Industry</span>: <span data-ex-content=".industry"></span></p>
+                <p class="justified industries" data-ex-if-exists=".industries"><span class="label">Industries</span>: <span data-ex-content=".industries"></span></p>
                 <p class="justified customers" data-ex-if-exists=".customers"><span class="label">Customers</span>: <span data-ex-content=".customers"></span></p>
             </div>
 
