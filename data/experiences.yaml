@@ -239,13 +239,13 @@ items:
 #    end: '2010-07-07'
 #    participation: 50%
 #  -
-#    label: " The AEFE suspects performance and stability issues with its Business Intelligence platform\r\nbuilt on JasperServer BI and wants to undergo load tests so as to identify what’s wrong and undergo\r\ncorrective actions"
+#    label: " The AEFE suspects performance and stability issues with its Business Intelligence platform\r\nbuilt on JasperServer BI and wants to undergo load tests so as to identify what's wrong and undergo\r\ncorrective actions"
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
 #    customer: AEFE
 #    title: 'Performance expert'
-#    responsibilities: "Load tests on AEFE’s JasperServer instance; Studied JasperServer’s architecture in perspective of observed performance and scalability concerns; Formulated concerns found and lead discussions with JasperSoft teams in order to identify possible\r\nsolutions"
+#    responsibilities: "Load tests on AEFE's JasperServer instance; Studied JasperServer's architecture in perspective of observed performance and scalability concerns; Formulated concerns found and lead discussions with JasperSoft teams in order to identify possible\r\nsolutions"
 #    tech: 'JasperServer  BI;  JasperReports;  JMeter;  PostgreSQL;  Spring;  Tomcat; Ubuntu; Linux'
 #    industry: Government
 #    place: Paris
@@ -284,7 +284,7 @@ items:
 #    end: '2010-01-03'
 #    participation: 2d
 #  -
-#    label: 'Calyon’s ad-hoc financial reporting application built on JasperReports Open Source library suffers from unsatisfying performances. Calyon wants to know the reasons and optimize the reporting application to achieve a satisfying quality of service'
+#    label: 'Calyon's ad-hoc financial reporting application built on JasperReports Open Source library suffers from unsatisfying performances. Calyon wants to know the reasons and optimize the reporting application to achieve a satisfying quality of service'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -305,7 +305,7 @@ items:
 #    employer: ProxiAD
 #    customer: SPS
 #    title: 'Auditor and architect'
-#    responsibilities: 'Audit of SPS’ IT assets covering methodology, technology and organization; Technical audit of the platform covering : Technical architecture, tooling and development environment, third party components used on the project; Methodological audit covering : Verifying the proper implementation of agile Scrum methodology, development methodology, Communication, Delivery processes, QA, Design methodology, Processes automation; Organizational audit covering : teams, chain of command, decision making processes, team skills'
+#    responsibilities: 'Audit of SPS' IT assets covering methodology, technology and organization; Technical audit of the platform covering : Technical architecture, tooling and development environment, third party components used on the project; Methodological audit covering : Verifying the proper implementation of agile Scrum methodology, development methodology, Communication, Delivery processes, QA, Design methodology, Processes automation; Organizational audit covering : teams, chain of command, decision making processes, team skills'
 #    tech: 'Scrum; JavaEE; .NET; Maven; QA; Methodology'
 #    industry: Betting
 #    place: Paris
@@ -320,7 +320,7 @@ items:
 #    employer: ProxiAD
 #    customer: CEA
 #    title: 'Architect, Eclipse Model-Driven technologies expert'
-#    responsibilities: 'Studied and presented the strengthes of the Eclipse Modeling ecosystem in perspective of CLIMB’s requirements covering most notably collaborative editing of models, partitioning of models too big to fit in memory, scientific computation over models, synchronizing with legacy 3D QT based viewing assets, ...; Studied the possibility of storing IFC (Industry Foundation Classes, an industry standard used to represent 3D models of buildings) models in EMF with a focus on metamodel expressiveness, performance, progressive loading et mapping to serializable textual representations.; Interviewing stake holders involved in the project (from CSTB and CEA) to gather technical requirements and advocate the ability of EMF based technologies to cover CLIMB’s needs.'
+#    responsibilities: 'Studied and presented the strengthes of the Eclipse Modeling ecosystem in perspective of CLIMB's requirements covering most notably collaborative editing of models, partitioning of models too big to fit in memory, scientific computation over models, synchronizing with legacy 3D QT based viewing assets, ...; Studied the possibility of storing IFC (Industry Foundation Classes, an industry standard used to represent 3D models of buildings) models in EMF with a focus on metamodel expressiveness, performance, progressive loading et mapping to serializable textual representations.; Interviewing stake holders involved in the project (from CSTB and CEA) to gather technical requirements and advocate the ability of EMF based technologies to cover CLIMB's needs.'
 #    tech: 'Eclipse; Eclipse RCP; EMF; CDO; Xtext; Obeo Designer; QT; C++; OpenGL; MDSD; Modeling'
 #    industry: Building
 #    place: 'Saclay and Sophia Antipolis, France'
@@ -375,13 +375,13 @@ items:
 #    participation: 20d
 #    url: 'http://code.google.com/p/emf-customizer/'
 #  -
-#    label: 'Study technical and functional appropriateness of the Open Source V-Tiger CRM for Dexia’s PWB DCL subsidiary in order to achieve better knowledge management of customer relationship, drive the business and help with the evolution of the commercial team. As a side note, as this is a first experience for Dexia with Open Source licensed products, Dexia wants the study to cover licensing, community and Open Source specific matters.'
+#    label: 'Study technical and functional appropriateness of the Open Source V-Tiger CRM for Dexia's PWB DCL subsidiary in order to achieve better knowledge management of customer relationship, drive the business and help with the evolution of the commercial team. As a side note, as this is a first experience for Dexia with Open Source licensed products, Dexia wants the study to cover licensing, community and Open Source specific matters.'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
 #    customer: Dexia
 #    title: 'Project Leader, Open Source expert'
-#    responsibilities: "Project Management including budgeting, team management (a PHP developer\r\nand a V-Tiger expert). Leading the study, leveraging team’s skills for prototype realization and writing the overall study synthesis document. Specifically led the Open Source maturity model study of V-Tiger and advocated for Open Source to Dexia."
+#    responsibilities: "Project Management including budgeting, team management (a PHP developer\r\nand a V-Tiger expert). Leading the study, leveraging team's skills for prototype realization and writing the overall study synthesis document. Specifically led the Open Source maturity model study of V-Tiger and advocated for Open Source to Dexia."
 #    tech: 'V-Tiger; PHP'
 #    industry: Bank
 #    place: 'Défense, Paris'
@@ -456,7 +456,7 @@ items:
     start: '2009-02-01'
     end: '2011-01-01'
 #  -
-#    label: "Creation of ProxiAD’s blog gathering experts from the group aiming at enhancing the\r\nvisibility and the branding of the group"
+#    label: "Creation of ProxiAD's blog gathering experts from the group aiming at enhancing the\r\nvisibility and the branding of the group"
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -486,7 +486,7 @@ items:
 #    end: '2009-01-01'
 #    participation: 2d/week
 #  -
-#    label: 'Revamping AXA’s risk portfolio management application'
+#    label: 'Revamping AXA's risk portfolio management application'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -516,7 +516,7 @@ items:
 #    end: '2008-05-15'
 #    participation: 2w
 #  -
-#    label: 'Revamping ProxiAD’s JavaEE, MDA and industrialization production environment'
+#    label: 'Revamping ProxiAD's JavaEE, MDA and industrialization production environment'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -546,7 +546,7 @@ items:
 #    end: '2008-01-08'
 #    participation: 2w
 #  -
-#    label: ' Revamping Vecteur-Plus’s call for proposal dematerialization platform in order to optimize productivity, performance, modularity and functionalities. Also revamping the functional requirements.'
+#    label: ' Revamping Vecteur-Plus's call for proposal dematerialization platform in order to optimize productivity, performance, modularity and functionalities. Also revamping the functional requirements.'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -562,7 +562,7 @@ items:
 #    participation: Full
   -
     label: |
-      ProxiAD wants to develop transverse efforts such as ProxiAD’s Production System, internal technical evangelization, 
+      ProxiAD wants to develop transverse efforts such as ProxiAD's Production System, internal technical evangelization, 
       external communication and technological watch
     type: Experience
     exp_type: Professional
@@ -571,9 +571,9 @@ items:
     title: 'Staff Software Engineer'
     responsibilities: |
       - JavaEE & MDA Architect, consultant and expert. Transverse efforts for the group (Watch, technical assets) and project team coaching : 20%
-      - Organizing technical workshops for company’s engineers, internal technical communication and evangelism : 5%
-      - Consulting for ProxiAD’s customers (Optimization, architectural maintenance and expertise) : 75%
-      - Lead for the revamping of ProxiAD’s JavaEE and MDSD Production System based on : EMF, oAW, M2M, M2T, T2M, MDSD, DSL, UML.
+      - Organizing technical workshops for company's engineers, internal technical communication and evangelism : 5%
+      - Consulting for ProxiAD's customers (Optimization, architectural maintenance and expertise) : 75%
+      - Lead for the revamping of ProxiAD's JavaEE and MDSD Production System based on : EMF, oAW, M2M, M2T, T2M, MDSD, DSL, UML.
     tech: 'EMF; oAW; M2M; M2T; T2M; MDSD; DSL; UML; JavaEE; Modeling; Eclipse RCP; Eclipse'
     industry: Software Engineering Services
     place: Paris
@@ -581,7 +581,7 @@ items:
     start: '2007-03-01'
     end: '2009-02-01'
 #  -
-#    label: 'Redesign of B-Process’ billing dematerialization marketplace architecture and maintenance of the application currently in production'
+#    label: 'Redesign of B-Process' billing dematerialization marketplace architecture and maintenance of the application currently in production'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -611,7 +611,7 @@ items:
 #    end: '2006-06-01'
 #    participation: Full
 #  -
-#    label: 'Audit of Moniteur Group’s IT services'
+#    label: 'Audit of Moniteur Group's IT services'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
@@ -626,13 +626,13 @@ items:
 #    end: '2006-05-01'
 #    participation: Full
 #  -
-#    label: 'Audit of B-Process’ IT services after being bought by Achat Pro'
+#    label: 'Audit of B-Process' IT services after being bought by Achat Pro'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
 #    customer: B-Process
 #    title: 'Auditor, JavaEE Architect'
-#    responsibilities: 'Audit of B-Process’ technical and human assets; Proposed strategic technological advice; Built modernization scenarios ranging from low investment to full revamping with impact study for each'
+#    responsibilities: 'Audit of B-Process' technical and human assets; Proposed strategic technological advice; Built modernization scenarios ranging from low investment to full revamping with impact study for each'
 #    tech: 'JavaEE; JBoss AS 3; EJB2; Ant; Oracle 8i; XML; XSL'
 #    industry: Dematerialization
 #    place: Paris
@@ -656,13 +656,13 @@ items:
 #    end: '2006-02-01'
 #    participation: Full
 #  -
-#    label: 'Creation of Boursorama’s CRM'
+#    label: 'Creation of Boursorama's CRM'
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
 #    customer: Boursorama
 #    title: 'Trainer, JavaEE architect'
-#    responsibilities: 'Trained Boursorama’s teams (10 people) on subjects covering analysis, design and object modeling with UML; Coaching design teams (between 3 and 5 people) and running modeling quality audits; Coaching development teams (between 4 et 10 people) et running code quality audits; Optimization of CRM’s performances'
+#    responsibilities: 'Trained Boursorama's teams (10 people) on subjects covering analysis, design and object modeling with UML; Coaching design teams (between 3 and 5 people) and running modeling quality audits; Coaching development teams (between 4 et 10 people) et running code quality audits; Optimization of CRM's performances'
 #    tech: 'JavaEE; JBoss AS 4; Clustering; Apache 2; Struts 1.2; Spring; Hibernate; Oracle 10g; Maven; CVS; Eclipse; JMS; Axis; XML-RPC; JBoss Cache'
 #    industry: Bank
 #    place: Paris
@@ -692,7 +692,7 @@ items:
 #    employer: ProxiAD
 #    customer: JM-Bruneau
 #    title: ' Architect, designer, developer and trainer'
-#    responsibilities: "Design and development of the architecture (3-Tiers); Design of the plateform and development methodology; Trained ProxiAD and JM-Bruneau teams to JavaEE web development and UML modeling (8 people); Analysis design and team leader (4 people); Coaching Encadrement des ´equipes de d´eveloppement (4 people); Optimization of application’s performances (Tuning Hibernate, Load-balancing, Validation); A notable achievement involves advocating and implementing a Spring/Hibernate/MDA based\r\narchitecture as opposed to an EJB based one in November  2004 against very strong  adversary\r\nlobbying"
+#    responsibilities: "Design and development of the architecture (3-Tiers); Design of the plateform and development methodology; Trained ProxiAD and JM-Bruneau teams to JavaEE web development and UML modeling (8 people); Analysis design and team leader (4 people); Coaching Encadrement des ´equipes de d´eveloppement (4 people); Optimization of application's performances (Tuning Hibernate, Load-balancing, Validation); A notable achievement involves advocating and implementing a Spring/Hibernate/MDA based\r\narchitecture as opposed to an EJB based one in November  2004 against very strong  adversary\r\nlobbying"
 #    tech: 'JavaEE; JBoss AS 4; Struts 1.2; Spring; Spring IoC; Spring AOP; Hibernate; PostgreSQL; Maven; CruiseControl; CVS; XML; XSL; JUnit; Load-Balancing; Eclipse; Clustering; JBoss Cache'
 #    industry: Retail
 #    place: 'Les Ulis, Evry'
