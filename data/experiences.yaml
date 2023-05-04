@@ -22,7 +22,7 @@ items:
       Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; Redis
       REST; Micro Services; Elasticsearch; Terraform
     industry: 'Self Driving'
-    place: 'Palo Alto'
+    place: 'Remote, Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
     start: '2022-03-01'
     end: '2022-11-02'
@@ -53,7 +53,7 @@ items:
       - Led efforts to identify and implement **AWS cost savings**.
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; Airflow; Python; Micro Services; Elasticsearch; Terraform'
     industry: 'Self Driving'
-    place: 'Palo Alto'
+    place: 'Remote, Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
     start: '2019-09-01'
     end: '2022-03-01'
@@ -76,7 +76,7 @@ items:
       - Put the **JIRA** based project tracking practices in place, later converted to **agile** with the 
       help of external consultants and hired POs.
     tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Flask; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
-    industry: 'Digital Signature'
+    industry: 'Fintech'
     place: France
     location: "38, rue du Sentier\r\nParis\r\nFrance"
     start: '2014-01-01'
@@ -96,7 +96,7 @@ items:
       - Designed the architecture for a highly scalable and distributed SAAS Automatic Document Recognition **anti-fraud** platform using
       **OCR** and Expert System rules engine.
     tech: 'ActiveMQ; Camel; Java; Hibernate; Joda Time; ABBYY; Drools; Spring; Guava; Mockito; JForkr; C++; Automake; Autoconf; STL; Debian Packaging; Ubuntu'
-    industry: 'Digital Signature'
+    industry: 'Fintech'
     place: France
     location: Neuilly
     start: '2012-01-23'
