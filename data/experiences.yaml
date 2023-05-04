@@ -427,20 +427,16 @@ items:
     customer: ProxiAD
     title: CTO
     responsibilities: |
-      - Organizing transverse technical activities.
       - Response to RFPs, pre-sales, validation of technical responses, estimations.
       - Organizing technical events in the Paris area.
-      - Organizing the training of colleagues.
-      - Animating the community of ProxiAD engineers.
       - Technical workshops, internal and external technical communication, evangelizing.
-      - Ensuring the quality of the technical response.
-      - Identifying and implementation of the group’s technical strategy.
+      - Identifying and implementation of the group's technical strategy.
       - Contributing to the development of technological image of the group.
       - Representing ProxiAD during external technological events.
       - Organising the technology and methodological watch.
       - Publishing content (magazines, events, ...).
-      - ProxiAD website : Blog, articles, whitepapers.
-      - Relationship to the open source community
+      - Created and led the ProxiAD website : Blog, articles, whitepapers.
+      - Relationship to the open source community and some of the group's technical partnerships.
     industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
@@ -716,8 +712,6 @@ items:
       Used by hundreds of engineers.
       - Lead developer and **coach**  on  the  following  technologies: JavaEE,  MDA,  JBoss, Hibernate, Spring, Maven and Java
       - Lead engineer for MDA and JavaEE watch; Technical and quality auditor
-      - Responsible for the group's **JBoss partnership**
-      - Technical workshops
       - Occasionally consulting for [Syntonia](http://www.syntonia.fr) (a consulting oriented subsidiary)
     tech: 'JavaEE; MDA; Modeling'
     industry: Software Engineering Services
@@ -732,8 +726,12 @@ items:
     employer: SQLI
     customer: Decathlon
     title: 'Software Engineer'
-    responsibilities: 'Designing and developing technical framework modules; Designing and developing application business modules; Initiator and implementor of the migration of the build system from Ant to Maven 1; Designer and implementor of the XML based data exchange import system (based on Jakarta Commons Digester); Lead developer'
-    tech: 'JavaEE; RedHat WAF-CMS 6.0; Struts; Oracle 9i; Weblogic 8.1; XML'
+    responsibilities: |
+      - Designing and developing technical framework modules
+      - Designing and developing application business modules
+      - Initiator and implementor of the migration of the build system from Ant to Maven 1
+      - Designer and implementor of a streaming oriented XML based data exchange import system
+    tech: 'JavaEE; RedHat WAF-CMS 6.0; Struts; Oracle 9i; Weblogic 8.1; XML; Jakarta Commons Digester'
     industry: Retail
     place: Lille
     location: 'Decathlon Campus, Lille, France'
@@ -747,7 +745,11 @@ items:
     employer: EISTI
     customer: EISTI
     title: 'Software Engineer'
-    responsibilities: 'Analysis, Design and development of the "Pipes and Filters" architecture style; Design of a meta language XML grammar; Design of ANTLR parsing grammars for Java, Pascal and C; Initial idea, design and development of XSLT stylesheets for the detection of programming patterns'
+    responsibilities: |
+      - Analysis, Design and development of the **Pipes and Filters** architecture style
+      - Design of a meta language XML grammar
+      - Design of **ANTLR parsing grammars** for Java, Pascal and C
+      - Initial idea, design and development of XSLT stylesheets for the detection of programming patterns
     tech: 'Java; Tomcat; Cocoon 2; XML; XSLT; XSP; Avalon; ANTLR; CSS; HTML'
     industry: Education
     place: 'Cergy Pontoise, France'
@@ -762,7 +764,13 @@ items:
     employer: Live-Banner
     customer: Live-Banner
     title: 'Software Engineer'
-    responsibilities: 'Optimization of the database schema. The main achievement has been to detect that sub graphs of data could be refactored away from a relational oriented storage to a more efficient document oriented storage; Optimizing the server side banner broadcasting components; Ran load tests and compared results on prototypes with various combinations of technologies (Apache, Linux, Windows, ASP, PHP, ...); Developed in Java a Flash binary streaming transformation filter targeting resizing, font optimization, file size optimization and data injection of Flash banners (using the Pipes and filters Design Pattern). The main achievement involved identifying and leveraging a library able to parse the binary file format of flash files at a time where it was closed source and no API existed to do that.'
+    responsibilities: |
+      - Refactored the database schema. The main achievement has been to detect that sub graphs of data could be refactored away 
+      from a relational oriented storage to a more efficient **document oriented storage**
+      - **Optimizing** the server side banner broadcasting components
+      - Ran **load tests** and compared results on prototypes with various combinations of technologies (Apache, Linux, Windows, ASP, PHP, ...)
+      - Developed in Java a **Flash binary streaming transformation filter** targeting resizing, font optimization, file size optimization 
+      and data injection of Flash banners (using the Pipes and filters Design Pattern).
     tech: 'Java; C++; SQL Server; IIS; ASP; COM+; Flash; XML'
     industry: Advertising
     place: 'Bastille, Paris'
@@ -777,7 +785,12 @@ items:
     employer: PMP
     customer: PMP
     title: 'Software Engineer'
-    responsibilities: 'Designed, and developed a client server platform; Designed and developed a XML based data synchronization protocol (single master, multiple slaves); Designed and developed an in house light XML parser in C for PalmOS; Designed and developed a VB6 multi-threaded TCP/IP server; Evolved the client Palm application using a RAD for PalmOS'
+    responsibilities: |
+      - Designed, and developed a client server platform
+      - Designed and developed a **XML based data synchronization protocol** (single master, multiple slaves)
+      - Designed and developed an in house light **XML parser in C** for PalmOS
+      - Designed and developed a VB6 multi-threaded TCP/IP server
+      - Evolved the client Palm application using a RAD for PalmOS
     tech: 'VB6; C; MS Access; SDK PalmOS; Codewarrior; XML'
     industry: 'Field sales force'
     place: Paris
@@ -793,7 +806,9 @@ items:
     employer: PMP
     customer: PMP
     title: 'Software Engineer'
-    responsibilities: "Developed a PSTN (Public Switched Telephone Network) mono connection data\r\nsynchronization server built with VBA and MS Access; Developed the client application on PalmOS with a RAD"
+    responsibilities: |
+      - Developed a PSTN (Public Switched Telephone Network) mono connection data synchronization server built with VBA and MS Access
+      - Developed the client application on PalmOS with a RAD
     tech: 'MS Access; VBA; PalmOS'
     industry: 'Field sales force'
     place: Paris
