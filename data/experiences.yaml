@@ -15,7 +15,7 @@ items:
       maintenance effort.
       - **Praised by the team** for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with 
       rigorous PR reviews.
-      - Actively contributes to building a **culture of humility, excellence**, and support of each other with a high-quality bar.
+      - Actively contributes to building a **culture of humility**, **ego-less**, **excellence**, and **mutual-aid** with a high-quality bar.
       - First-hand involvement in **customer satisfaction** and product definition by closely collaborating with customers from 
       Map Ops, Map Tools, and product UX team.
     tech: >
@@ -278,7 +278,7 @@ items:
 #    title: 'Hibernate expert'
 #    responsibilities: "Writing a Hibernate best practices guide; Training teams already used to average Hibernate usage to advanced Hibernate practices learnt from years of using Hibernate in multiple scenarios; Checking the proper usage of Hibernate in SPS application code; Checking and correction of reverse engineering templates used by SPS to generate the Hibernate\r\ndomain from its database schema"
 #    tech: 'Hibernate; JPA; PostgreSQL'
-#    industry: Betting
+#    industry: Online bets
 #    place: Paris
 #    location: 'SPS, 57 Rue Pierre Charron, 75008 Paris'
 #    start: '2010-01-01'
@@ -399,7 +399,7 @@ items:
 #    title: 'JBoss/EJB3/Hibernate Expert'
 #    responsibilities: 'Validating the proper implementation of recommandations advised in May 2008; Performance  analysis  of  the  plateform  :  Contention  search,  JBoss  &  AJP  tuning,  memory consumption analysis; Robustness analysis of the plateform : Leak search, code audit; Formulated recommendations and wrote best practices based on problems identified on site'
 #    tech: 'GWT; JavaEE; Redhat Linux; JPA; Hibernate; JBoss AS 4; EJB3; Corba; XML-RPC; JMS; TCP'
-#    industry: SAAS
+#    industry: Mapping
 #    place: Rouen
 #    location: 'Rouen, France'
 #    start: '2009-03-01'
@@ -438,7 +438,8 @@ items:
       - Publishing content (magazines, events, ...).
       - Created and led the ProxiAD website : Blog, articles, whitepapers.
       - Relationship to the open source community and some of the group's technical partnerships.
-    industry: Software Engineering Services
+    industry: Software Engineering Services; Fintech; Army; Banking; Insurance; Government; Online bets;  Health; Mapping; Retail; Publishing; Trading; 
+    customers: Amadeus; French Ministry of Defense; Accord; MAIF; AEFE; AXA; SPS; Calyon; Research Institutes; CEA (French Atomic Energy Institute); HUG (Geneva Hospital); Dexia; Masternaut; Domiserve; Auchan; Vecteur-Plus; B-Process; Moniteur; Euronext; Boursorama; Caisse d'Epargne; JM-Bruneau
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2011-01-01'
@@ -677,7 +678,7 @@ items:
 #    type: Experience
 #    exp_type: Professional
 #    employer: ProxiAD
-#    customer: 'Caisse d''Epargne'
+#    customer: 'Caisse d'Epargne'
 #    title: Trainer
 #    responsibilities: 'Wrote training materials; Trained teams on subjects covering Object oriented analysis, design and modeling with UML 1.4'
 #    tech: 'UML; Modeling'
