@@ -1,5 +1,27 @@
 items:
   -
+    label: Natural Language
+    type: Experience
+    exp_type: Professional
+    employer: Self
+    customer: Self
+    title: Natural Language Engineer
+    responsibilities: |
+      Using my free time while searching for a new job opportunity to study **Natural Language processing**, 
+      the Transformers architecture ([Attention is all you need paper](https://arxiv.org/abs/1706.03762)),
+      embedding algorithms, dimensionality reduction techniques, sentence to sentence, classification, 
+      zero shot learning, finetuning, prompting, contextualization, **Vector Databases** technologies and 
+      Knowledge Graphs. Built **experiments** for various industries:
+        - **VR Training**: Conversational avatar for situational VR field training.
+        - **Healthcare**: Copilot for nurses.
+        - **Job Search**: Job listing crawling Chrome extension AI Copilot.
+    tech:
+      OpenAI; ChatGPT; gpt-3.5-turbo; LLM; OpenSearch; Vector Databases; HuggingFace; LangChain; BERT; Flask; Python; Pandas; Azure Speech services
+    place: 'Remote, Foster City'
+    location: 'Foster City, CA 94404'
+    start: '2023-01-01'
+    participation: 100%
+  -
     label: ArgoAI_WS
     type: Experience
     exp_type: Professional
@@ -36,11 +58,10 @@ items:
     customer: ArgoAI
     title: Software Engineering Manager II (ML Ops Label Engineering)
     responsibilities: |
-      Focus on **Machine Learning Infrastructure** (**ML Ops**) & **Label Engineering**. Briefly Staff Software Engineer then Software Engineering Manager II 
-      (Staff Software Engineer with an additional management responsibility) for the **Labeling Data Pipelines**, 
+      Focus on **Machine Learning Infrastructure** (**ML Ops**) & **Label Engineering**, spanning **Labeling Data Pipelines**, 
       **Labeling Tools** and **Labeling Services** teams. Still very hands-on.
 
-      Strong impact to scale **labels 400x** and **operators 10x**. Example of achievements include:
+      Strong impact to scale **labels 400x** and **Daily Active Users 10x**. Example of achievements include:
       - **In-depth knowledge** of Argo ML Labeling Tools and pipelines. Expertise in a wide range of labeling modalities, 
       pipelines, and sensor types.
       - Increased **team productivity** and reduced **maintenance costs** by replacing legacy hand-coded labeling REST API with 
@@ -430,16 +451,12 @@ items:
     customer: ProxiAD
     title: CTO
     responsibilities: |
+      - Organizing technical events in the Paris area (Eclipse Day and Eclipse Demo events).
+      - Led the ProxiAD website's communication : created the blog, published and reviewed articles and whitepapers (200 blog posts over 4 years).
+      - Relationship to the Open Source community and partnerships (RedHat, JBoss, Eclipse, IBM, Obeo).
       - Response to RFPs, pre-sales, validation of technical responses, estimations.
-      - Organizing technical events in the Paris area.
-      - Technical workshops, internal and external technical communication, evangelizing.
-      - Identifying and implementation of the group's technical strategy.
-      - Contributing to the development of technological image of the group.
-      - Representing ProxiAD during external technological events.
-      - Organising the technology and methodological watch.
-      - Publishing content (magazines, events, ...).
-      - Created and led the ProxiAD website : Blog, articles, whitepapers.
-      - Relationship to the open source community and some of the group's technical partnerships.
+      - Identifying and implementing the group's technical strategy.
+      - Technology watch.
     industry: Software Engineering Services
     industries: Fintech; Army; Banking; Insurance; Government; Online bets;  Health; Mapping; Retail; Publishing; Trading; 
     customers: Amadeus; French Ministry of Defense; Accord; MAIF; AEFE; AXA; SPS; Calyon; Research Institutes; CEA (French Atomic Energy Institute); HUG (Geneva Hospital); Dexia; Masternaut; Domiserve; Auchan; Vecteur-Plus; B-Process; Moniteur; Euronext; Boursorama; Caisse d'Epargne; JM-Bruneau

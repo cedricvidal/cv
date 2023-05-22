@@ -122,7 +122,6 @@ items:
     place: 'Pavillon Royal, Paris'
     location: 'Le Pavillon Royal, Carrefour du bout du Lac, 75116 Paris'
     date: '2010-11-05'
-    url: 'http://www.eclipsedayparis.com/'
   -
     label: 'Eclipse Day Paris 2010 ProxiAD Talk'
     type: Talk
@@ -131,7 +130,6 @@ items:
     place: 'Pavillon Royal, Paris'
     location: 'Le Pavillon Royal, Carrefour du bout du Lac, 75116 Paris'
     date: '2010-11-05'
-    url: 'http://www.eclipsedayparis.com/'
     slideshare: 'https://www.slideshare.net/cedric.vidal/eclipse-day-paris-2010-proxiad-cedric-vidal-10'
   -
     label: 'MD Day 2009'
@@ -141,7 +139,6 @@ items:
     place: 'Microsoft Conference Center in Issy-les-Moulineaux'
     location: 'Quai du Président Roosevelt, 92130 Issy-les-Moulineaux, France'
     date: '2009-11-26'
-    url: 'http://www.mdday.fr/'
     slideshare: 'http://www.slideshare.net/cedric.vidal/md-day-2009-cedric-vidal-10'
     thumbnail: 'http://cdn.slidesharecdn.com/mdday2009-cedricvidal-1-0-091127110413-phpapp01-thumbnail-2?1259341824'
   -
