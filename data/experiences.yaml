@@ -1,25 +1,81 @@
 items:
   -
+    label: Microsoft_CloudAdvocate
+    type: Experience
+    exp_type: Professional
+    employer: Microsoft
+    customer: Microsoft
+    title: Principal Cloud Advocate
+    responsibilities: |
+      Working on **AI coding agents** and **agentic evaluation platforms**, with a focus on how autonomous
+      systems should be evaluated as they move from single turn outputs to full task completion.
+
+      My work centers on measuring **agent behavior**, **reliability**, and **developer success** across
+      multi step workflows, and on defining **evaluation primitives** that scale across models and agent
+      architectures.
+    tech: 'AI Coding Agents; Agentic Workflows; AI Evaluation; LLM; GenAI; Azure; GitHub; Python'
+    industry: 'Cloud / AI'
+    place: 'Remote, SF Bay Area'
+    location: 'San Francisco Bay Area, CA'
+    start: '2026-01-01'
+    participation: 100%
+  -
+    label: Microsoft_StartupsAdvocate
+    type: Experience
+    exp_type: Professional
+    employer: Microsoft
+    customer: Microsoft
+    title: Principal AI Advocate for Startups
+    responsibilities: |
+      Helping **startups** leverage Microsoft's **AI platforms** and emerging **generative AI** technologies.
+
+      Beginning in mid-2025, started working on early explorations around **AI coding agents** and
+      **agentic evaluation**, focusing on how multi-step, autonomous systems should be measured as they
+      move beyond single-turn outputs toward full task completion.
+
+      This work laid the groundwork for my current focus on **agentic evaluation platforms**, including
+      defining **evaluation primitives** for agent behavior, reliability, and developer success across
+      multi-step workflows.
+
+      In parallel, organized and hosted the **AI Show & Tell – Founders Edition** at the GitHub Reactor
+      in San Francisco, bringing together founders and practitioners to share real-world agentic and
+      generative AI systems.
+    tech: 'Azure; Azure OpenAI; OpenAI; LLM; RAG; GenAI; Agentic Workflows; AI Evaluation; Python; GitHub'
+    industry: 'Cloud / AI'
+    place: 'Hybrid, SF Bay Area'
+    location: 'San Francisco Bay Area, CA'
+    start: '2023-07-01'
+    end: '2025-12-31'
+    participation: 100%
+  -
     label: Natural Language
     type: Experience
     exp_type: Professional
     employer: Self
     customer: Self
-    title: Natural Language Engineer
+    title: Natural Language Engineer (Professional Development)
     responsibilities: |
-      Using my free time while searching for a new job opportunity to study **Natural Language processing**, 
+      Took a deliberate transition period to synthesize lessons from building and operating large-scale,
+      safety-critical AI systems and to intentionally **retool my technical focus** from computer vision
+      and ML operations toward **language-based AI systems**: studying **Natural Language Processing**,
       the Transformers architecture ([Attention is all you need paper](https://arxiv.org/abs/1706.03762)),
-      embedding algorithms, dimensionality reduction techniques, sentence to sentence, classification, 
-      zero shot learning, finetuning, prompting, contextualization, **Vector Databases** technologies and 
-      Knowledge Graphs. Built **experiments** for various industries:
+      large language models, embedding algorithms, dimensionality reduction techniques, retrieval-based
+      systems, zero shot learning, finetuning, prompting, contextualization, **Vector Databases**
+      technologies and Knowledge Graphs. Applied this work by building multiple **end-to-end prototypes**,
+      including conversational interfaces and AI copilots embedded in real-world workflows:
         - **VR Training**: Conversational avatar for situational VR field training.
         - **Healthcare**: Copilot for nurses.
         - **Job Search**: Job listing crawling Chrome extension AI Copilot.
+
+      This period clarified the direction of my next chapter and sharpened my focus on system-level
+      questions around **reliability**, **evaluation**, and how complex AI systems behave once deployed
+      beyond isolated demos.
     tech:
       OpenAI; ChatGPT; gpt-3.5-turbo; LLM; OpenSearch; Vector Databases; HuggingFace; LangChain; BERT; Flask; Python; Pandas; Azure Speech services
     place: 'Remote, Foster City'
     location: 'Foster City, CA 94404'
-    start: '2023-01-01'
+    start: '2022-11-02'
+    end: '2023-06-30'
     participation: 100%
   -
     label: ArgoAI_WS
@@ -29,10 +85,13 @@ items:
     customer: ArgoAI
     title: Staff Software Engineer (Workflow Services)
     responsibilities: |
-      Moved focus to **Labeling Operators Management** as Tech Lead / Staff Software Engineer for the **Workflow Services** team until the Argo AI shutdown in Oct 2022.
+      Led the design and rollout of Argo AI's **next-generation workflow orchestration platform** as Tech Lead / Staff Software Engineer
+      for the **Workflow Services** team until the Argo AI shutdown in Oct 2022, migrating critical production workflows from legacy
+      systems to a more robust, **event-driven** architecture with **zero service interruption**.
 
-      Expert in **BPMN** and **Camunda**, led the **adoption at Argo** and successfully **migrated** legacy workflows to the 
-      new platform resulting in uninterrupted service since the launch. Example of achievements include:
+      Owned **workflow correctness, reliability, and evolution** across complex, safety-critical operational pipelines, working closely
+      with product, UX, and downstream platform teams. Expert in **BPMN** and **Camunda**, led the **adoption at Argo** and successfully
+      **migrated** legacy workflows to the new platform resulting in uninterrupted service since the launch. Example of achievements include:
       - Introduced **REST client library generation** through OpenAPI contracts, resulting in reduced coding and 
       maintenance effort.
       - **Praised by the team** for coaching, supporting, teaching, and expertise in coding, TDD, and system design, with 
@@ -72,6 +131,8 @@ items:
       approach called **RUM (Real User Metrics)**. **Reduced production** issues by hardening production release procedures.
       - Drove the migration of tools and services from Marathon to **Kubernetes**.
       - Led efforts to identify and implement **AWS cost savings**.
+      - Contributed to cross-functional efforts around **international rollout** and **GDPR readiness**, balancing engineering
+      velocity with safety, compliance, and long-term system health.
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; DBT; Airflow; Python; Micro Services; Elasticsearch; Terraform'
     industry: 'Self Driving'
     place: 'Remote, Palo Alto'
@@ -88,14 +149,26 @@ items:
     customer: Quicksign
     title: CTO
     responsibilities: |
-      - Built from scratch the **AI Machine Learning engineering team** consisting of 4 ML Engineers.
-      - Gained expertise on **AI concepts** (**DCNN**, **LSTM**, **data pipelines**) and management of AI projects.
-      - Evangelized, convinced, staffed, lead, built and ran multiple innovation projects such as the 
-      **REST HATEOAS API**, the **ADR** (Automatic Document Recognition and Reading and **anti-fraud** system), 
-      the **mobile document scanning** application and the new **BPMN** and **Kafka** based **micro services** 
-      platform projects.
-      - Put the **JIRA** based project tracking practices in place, later converted to **agile** with the 
+      Joined Quicksign as CTO following an initial incubation phase, with end-to-end ownership of **product
+      architecture**, **engineering strategy**, and technical execution.
+
+      - Designed and built Quicksign's core **ADR** (Automatic Document Recognition and Reading and **anti-fraud**)
+      platform from first principles, initially using rule-based and **OCR** approaches to secure early customers,
+      then leading a transition to **machine-learning–based** systems (**DCNN**, **LSTM**, **data pipelines**) to
+      support scale and generalization across countries and document types.
+      - Built and led the **engineering organization from the ground up**, including the **AI Machine Learning
+      engineering team** of 4 ML Engineers, evolving the platform toward **deep learning**–based document
+      understanding to enable international expansion.
+      - Led a major architectural redesign of Quicksign's onboarding and workflow engine, introducing
+      **event-driven**, **CQRS** and **BPMN**-based **Kafka** micro services architectures to meet strict
+      regulatory, auditability, and performance requirements — enabling highly customizable customer workflows
+      while maintaining low-latency access and regulatory proof.
+      - Evangelized, staffed and ran multiple innovation projects such as the **REST HATEOAS API** and the
+      **mobile document scanning** application.
+      - Put the **JIRA** based project tracking practices in place, later converted to **agile** with the
       help of external consultants and hired POs.
+      - Represented Quicksign externally through **technical talks and conferences**, including presentations on
+      event-driven architectures and regulated system design.
     tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Flask; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
     industry: 'Fintech'
     place: France
@@ -109,13 +182,16 @@ items:
     exp_type: Professional
     employer: Freelance
     customer: Quicksign
-    title: 'Principal Software Engineer (Freelance)'
+    title: 'Founding Architect / CTO-as-a-Service (Freelance)'
     responsibilities: |
-      - Lead architect and technical councellor. Audited the platform, defined technical guidelines and helped the board of directors to
+      - Operated as an independent architect and **CTO-as-a-service**, working on early-stage system design and
+      product incubation. Audited the platform, defined technical guidelines and helped the board of directors to
       choose technical directions.
+      - Designed and built the **first prototype** of Quicksign's **ADR** (Automatic Document Recognition)
+      **anti-fraud** system using **OCR** and an Expert System rules engine, translating early product requirements
+      into a working end-to-end system and laying the technical foundation that later scaled into a core product
+      (I later joined Quicksign as CTO).
       - Revamped the CI, fully revamped the previously manual build taking 2 days to a fully automated process taking less than a minute.
-      - Designed the architecture for a highly scalable and distributed SAAS Automatic Document Recognition **anti-fraud** platform using
-      **OCR** and Expert System rules engine.
     tech: 'ActiveMQ; Camel; Java; Hibernate; Joda Time; ABBYY; Drools; Spring; Guava; Mockito; JForkr; C++; Automake; Autoconf; STL; Debian Packaging; Ubuntu'
     industry: 'Fintech'
     place: France
@@ -451,6 +527,8 @@ items:
     customer: ProxiAD
     title: CTO
     responsibilities: |
+      - Responsible for **technical direction**, **architectural standards**, and **mentoring senior engineers**,
+      while representing the company externally through technical writing, conference organization, and industry events.
       - Organizing technical events in the Paris area (Eclipse Day and Eclipse Demo events).
       - Led the ProxiAD website's communication : created the blog, published and reviewed articles and whitepapers (200 blog posts over 4 years).
       - Relationship to the Open Source community and partnerships (RedHat, JBoss, Eclipse, IBM, Obeo).
@@ -750,6 +828,9 @@ items:
     customer: Decathlon
     title: 'Software Engineer'
     responsibilities: |
+      Worked on an enterprise **product catalog** and intranet platform for Decathlon, owning analysis, design, and
+      implementation on a **Red Hat–based web stack**. This role provided early exposure to production systems and
+      enterprise constraints, shaping my understanding of scalability, maintainability, and system-level tradeoffs.
       - Designing and developing technical framework modules
       - Designing and developing application business modules
       - Initiator and implementor of the migration of the build system from Ant to Maven 1
