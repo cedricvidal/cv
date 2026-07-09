@@ -1,5 +1,11 @@
 items:
   -
+    label: Microsoft
+    id: ""
+    type: Company
+    logo: microsoft.png
+    website: 'https://www.microsoft.com/'
+  -
     label: AXA
     id: ""
     type: Company
