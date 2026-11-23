@@ -1,5 +1,25 @@
 items:
   -
+    label: 'AI Show & Tell - San Francisco'
+    type: Talk
+    description: 'Your Product Was Built for Humans. Is It Ready for Agents?'
+    role: Speaker
+    place: 'GitHub, San Francisco'
+    location: '88 Colin P Kelly Jr St, San Francisco, CA 94107, USA'
+    date: '2026-09-28'
+    url: 'https://luma.com/wx7493ut'
+    video: 'https://www.youtube.com/watch?v=DHzqVXdG5W0'
+  -
+    label: 'Global AI New York'
+    type: Talk
+    description: 'From Findings to Fixes: How SCOPE and Azure Cosmos DB Improved the Agentic Product Experience'
+    role: Speaker
+    place: 'Microsoft Research Lab, New York'
+    location: '300 Lafayette St, New York, NY 10012, USA'
+    date: '2026-09-21'
+    url: 'https://luma.com/ai-vyvc'
+    video: 'https://www.youtube.com/watch?v=SxaKOmqX-rk'
+  -
     label: 'Alpes JUG'
     type: Talk
     description: 'Do Microservices dream about CQRS, Kafka Stream and BPMN ?'
