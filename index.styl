@@ -1,337 +1,895 @@
-// MIXINS
-//Dummy Variable
-$x = false;
-// The top, left, right, and bottom are optional
-setup(display, position, margin, top = null, right = null, bottom = null, left = null)  
-    display display
-    position position
-    margin margin
-    top top
-    left left
-    right right
-    bottom bottom
+$ink = #162335
+$muted = #667085
+$paper = #ffffff
+$canvas = #eef2f6
+$navy = #13293d
+$navy-deep = #0b1c2c
+$accent = #27c2b8
+$accent-soft = #dff8f5
+$line = #dbe3ea
+$shadow = 0 24px 70px rgba(15, 35, 55, 0.16)
 
-font(font-family, font-size, letter-spacing, font-weight, line-height = 1)
-    font-family font-family
-    font-size font-size
-    letter-spacing letter-spacing
-    font-weight font-weight
-    line-height line-height
+*
+    box-sizing border-box
 
-// GENERAL FONTS AND CLASSES AND SETUP STUFF
-* {box-sizing: border-box;}
+html
+    scroll-behavior smooth
+    overflow-x hidden
+
+body
+    margin 0
+    color $ink
+    background $canvas
+    font-family 'Inter', sans-serif
+    font-size 15px
+    font-weight 400
+    line-height 1.65
+    -webkit-font-smoothing antialiased
+    overflow-x hidden
+
+body:before
+    content ""
+    position fixed
+    z-index -1
+    inset 0
+    background:
+        radial-gradient(circle at 8% 8%, rgba(39, 194, 184, 0.13), transparent 28%),
+        radial-gradient(circle at 92% 18%, rgba(67, 97, 238, 0.09), transparent 30%)
+
+a
+    color #087f78
+    text-decoration none
+    text-underline-offset 3px
+
+a:hover
+    color #045c57
+    text-decoration underline
 
 .rela-block
-    setup(block, relative, auto)
+    display block
+    position relative
+    margin auto
+
 .rela-inline
-    setup(inline-block, relative, auto)
+    display inline-block
+    position relative
+
 .floated
-    setup(inline-block, relative, $x)
+    display inline-block
+    position relative
     float left
-    
+
 .abs-center
-    setup($x, absolute, $x, 50%, $x, $x, 50%)
+    position absolute
+    top 50%
+    left 50%
+    width 88%
     transform translate(-50%, -50%)
     text-align center
-    width 88%
-    
-// --- COLORS ---
 
-// --- PAGE STYLINGS ---
-body
-    font('Open Sans',16px,0px,100,28px)
-    background: url('http://kingofwallpapers.com/leaves/leaves-016.jpg') right no-repeat
-    background-size: cover
-    &:before
-        content ""
-        setup($x,fixed,0,0,0,0,0)
-        background-color rgba(255,255,255,0.92)
+.caps
+    text-transform uppercase
 
-.caps {text-transform: uppercase;}
-.justified {text-align: justify;}
-p.light {color: #777;}
-h2 {font('Open Sans',30px,5px,600,40px); color: black}
-h3 {font('Open Sans',21px,1px,600,28px); color: black}
+.justified
+    text-align left
+
+p.light
+    color $muted
+
+h2, h3
+    margin 0
+    color $ink
+    font-family 'Manrope', sans-serif
+
+h2
+    font-size 30px
+    font-weight 700
+    line-height 1.25
+
+h3
+    font-size 19px
+    font-weight 700
+    line-height 1.4
 
 .page
-    background-color white
-
-@media screen
-    *
-        transition: 0.35s ease
-    .print-only
-        display: none
-    .print-footer, .print-left-border
-        display: none
-    .page
-        width 90%
-        max-width 1200px
-        min-height var(--side-bar-bottom)
-        margin 80px auto
-        box-shadow 6px 10px 28px 0px rgba(0,0,0,0.4)
-
-@media print
-    *
-        -webkit-transition: none !important;
-        transition: none !important;
-    body
-        font('Open Sans',13px,0px,100,22px)
-    .noprint, .print-button
-        display: none !important
-    .exhibit-collectionView-header, .exhibit-collectionView-footer
-        display: none !important
-    h2
-        font('Open Sans',22px,3px,600,28px); color: black
-    h3
-        font('Open Sans',17px,1px,600,23px); color: black
-
-.print-footer
-    position: fixed
-    bottom: 0
-    left: 50%
-    transform: translateX(-50%)
-
-.print-left-border
-    position: fixed
-    left: 20
-    top: 50%
-    transform: translateX(-50%) rotate(-90deg);
-
-.print-button
-    position: fixed
-    right: 20
-    top: 20
-    img
-        width: 50
-        height: 50
-    text-align: right
-    p
-        margin-top: 10
-        width: 100
-        font-size: 100%
-        visibility: hidden
-        font-size: 70%
-        line-height: 100%
-
-.print-button:hover
-    img
-        transform: scale(1.2)
-    p
-        visibility: visible
-
-.exhibit-toolboxWidget-popup
-    display: none !important
-
-ol.exhibit-tileView-body
-    list-style-type: none
-    padding-inline-start: 0px
-
-// START MARKDOWN SUPPORT
-
-.markdown
-    li, p
-        margin-bottom: 5px;
-    li, .markdown ol
-        list-style-type: disc !important
-        padding-inline-start: 10px
-    ul
-        padding-inline-start: 30px
-    strong
-        font-weight: bold
-
-// END MARKDOWN SUPPORT
-
-.addressbox
-    margin-bottom: 15px
-
-.exhibit-controlPanel
-    display: none !important
+    overflow hidden
+    width calc(100% - 48px)
+    max-width 1240px
+    min-height var(--side-bar-bottom)
+    margin 48px auto
+    background $paper
+    border 1px solid rgba(22, 35, 53, 0.06)
+    border-radius 24px
+    box-shadow $shadow
 
 .top-bar
-    height 220px
+    height 260px
     overflow hidden
-    background-color #848484
     color white
-    & .top-bar-image
-        object-fit cover
-        display: block
-        width 100%
-        height 100%
-        max-width: 100%
-        opacity: 0.5
+    background $navy
+
+.top-bar:after
+    content ""
+    position absolute
+    inset 0
+    background linear-gradient(90deg, rgba(11, 28, 44, 0.92) 0%, rgba(11, 28, 44, 0.55) 54%, rgba(11, 28, 44, 0.22) 100%)
+
+.top-bar-image
+    display block
+    width 100%
+    height 100%
+    object-fit cover
+    object-position center 44%
+    filter saturate(0.65) contrast(1.05)
 
 .name
-    color: white
-    setup($x,absolute,$x,$x,0,0,calc(350px + 5%))
-    height 120px
+    position absolute
+    z-index 2
+    top 0
+    right 0
+    bottom 0
+    left 390px
+    color white
+    font-family 'Manrope', sans-serif
+    font-size clamp(42px, 5vw, 66px)
+    font-weight 700
+    letter-spacing 0.08em
+    line-height 1
     text-align center
-    font('Raleway',58px,8px,100,60px)
-    & div {width: 94%}
+    text-shadow 0 3px 20px rgba(0, 0, 0, 0.22)
 
-@media screen and (max-width: 1150px)
-    .name {color: white; font('Raleway',38px,6px,100,48px)}
+.name div
+    width 94%
 
 .side-bar
-    setup($x,absolute,$x,60px,$x,0,5%)
-    width 350px
-    background-color #F7E0C1
-    padding 320px 30px 50px
+    position absolute
+    z-index 3
+    top 48px
+    bottom 0
+    left 40px
+    width 310px
+    padding 270px 28px 48px
+    color rgba(255, 255, 255, 0.82)
+    background linear-gradient(165deg, $navy 0%, $navy-deep 100%)
+    border-radius 20px 20px 0 0
+    box-shadow 0 18px 45px rgba(5, 24, 38, 0.28)
+
+.profile-panel
+    position static
+
+.sidebar-details
+    position relative
+
+.side-bar a
+    color #8ee8e2
+
+.side-bar a:hover
+    color white
 
 .mugshot
-    setup($x,absolute,$x,50px,$x,$x,70px)
-    height 210px
-    width 210px
-    & .logo {margin: -23px;}
-    
+    position absolute
+    top 42px
+    left 50%
+    width 190px
+    height 190px
+    transform translateX(-50%)
+
 .logo
-    $midSize = 250px;    // Controls overall size
-    setup($x,absolute,$x,0,$x,$x,0)
-    z-index 100
-    margin 0
-    color black
-    height $midSize
-    width $midSize
-    & .logo-svg
-        height 100%
-        width 100%
-        stroke black
-        cursor pointer
-    & .logo-text
-        setup($x, absolute, $x, 58%, 16%)
-        cursor pointer
-        font("Montserrat", $midSize/5 + $midSize/50, 0px, 400, $midSize/5 + $midSize/30)
-    & .identity
-        object-fit cover
-        height 100%
-        width 100%
-        border-radius 50%
+    position absolute
+    inset 0
+    z-index 1
+    width 190px
+    height 190px
+    padding 7px
+    background linear-gradient(145deg, #72e0d9, #23978f)
+    border-radius 50%
+    box-shadow 0 16px 38px rgba(0, 0, 0, 0.28)
+
+.logo .identity
+    width 100%
+    height 100%
+    object-fit cover
+    border 5px solid $navy
+    border-radius 50%
+
+.logo .logo-svg
+    width 100%
+    height 100%
+
+.addressbox
+    margin 0 0 28px
+    padding 0 0 26px
+    border-bottom 1px solid rgba(255, 255, 255, 0.13)
+
+.addressbox address
+    font-style normal
+
+.addressbox .fn
+    display block
+    margin-bottom 5px
+    color white
+    font-family 'Manrope', sans-serif
+    font-size 20px
+    font-weight 700
 
 .social
-    padding-left 60px
-    margin-bottom 20px
-    cursor pointer
-    &:before
-        content ""
-        setup($x,absolute,$x,-4px,$x,$x,10px)
-        height 35px
-        width 35px
-        background-size cover !important
-    &.x:before{background: url('icons/color/x.svg') center no-repeat}
-    &.linked-in:before{background: url('icons/color/linkedin.svg') center no-repeat;}
-    &.github:before{background: url('icons/color/github.svg') center no-repeat;}
-        
+    min-height 34px
+    margin 0 0 10px
+    padding 5px 8px 5px 44px
+    border-radius 9px
+    transition background-color 180ms ease, transform 180ms ease
+
+.social-links
+    display block
+
+.social:hover
+    background rgba(255, 255, 255, 0.08)
+    transform translateX(3px)
+
+.social:before
+    content ""
+    position absolute
+    top 5px
+    left 8px
+    width 24px
+    height 24px
+    background-position center
+    background-repeat no-repeat
+    background-size contain
+    filter brightness(0) invert(1)
+    opacity 0.76
+
+.social.x:before
+    background-image url('icons/bw/twitter.svg')
+
+.social.linked-in:before
+    background-image url('icons/bw/linkedin.svg')
+
+.social.github:before
+    background-image url('icons/bw/github.svg')
+
 .side-header
-    font('Open Sans',18px,4px,600,28px)
-    margin 60px auto 10px
-    padding-bottom 5px
-    border-bottom 1px solid #888
-    
-.list-thing {padding-left: 25px; margin-bottom: 10px}
+    margin 40px 0 16px
+    padding-bottom 9px
+    color white
+    border-bottom 1px solid rgba(255, 255, 255, 0.16)
+    font-family 'Manrope', sans-serif
+    font-size 12px
+    font-weight 700
+    letter-spacing 0.18em
+
+.side-header:after
+    content ""
+    position absolute
+    bottom -1px
+    left 0
+    width 46px
+    height 2px
+    background $accent
+
+.list-thing
+    margin-bottom 16px
+    padding-left 16px
+    border-left 2px solid rgba(39, 194, 184, 0.55)
+
+.education
+    margin-top 0
+
+.education .title
+    width auto
+    text-align left
 
 .content-container
-    margin-right 0
-    width calc(95% - 350px)
-    padding 25px 40px 50px
-    & > * {margin: 0 auto 25px}
-    & > h3 {margin: 0 auto 5px}
-    & > p.long-margin {margin: 0 auto 50px}
+    min-height 100vh
+    width calc(100% - 390px)
+    margin 0 0 0 390px
+    padding 46px 52px 72px
 
-.experience, .education
-    margin-top 20px
-    & * {margin: 0 auto 15px}
-    & h3 {margin: 0 auto 5px}
+.content-container > *
+    margin 0 auto 28px
 
-#ex-vp-edu, #ex-vp-talk, #ex-vp-pub, #ex-vp-oss
-    & .exhibit-collectionView-header
-        display: none;
+.content-container .exhibit-collectionView-header,
+.content-container .exhibit-collectionView-footer
+    display none
+
+.content-container > h3
+    margin-bottom 5px
+
+.content-container > p.long-margin
+    margin-bottom 50px
 
 .title
-    width 80%
+    width 92%
     text-align center
 
-@media print
-    .name
-        left calc(260px + 5%)
-        font('Raleway',48px,7px,100,52px)
-    .side-bar
-        width 260px
-        padding 270px 18px 50px
-    .mugshot
-        left 45px
-        width 170px
-        height 170px
-        & .logo
-            width 200px
-            height 200px
-            margin -15px
-    .side-header
-        font('Open Sans',15px,3px,600,23px)
-    .content-container
-        width calc(95% - 260px)
-    .title
-        width 90%
+.content-container > .title
+    max-width 670px
+    color $navy
+    font-size clamp(25px, 3vw, 36px)
+    letter-spacing -0.025em
+    text-transform none
 
 .separator
-    width 240px
-    height 2px
-    background-color #999
-    
+    width 82px
+    height 4px
+    background $accent
+    border-radius 99px
+
 .greyed
-    background-color #DDD
+    display flex
+    align-items center
+    gap 14px
     width 100%
-    max-width 580px
-    text-align center
-    font('Open Sans',18px,6px,600,28px)
-    
-.tech, .industries, .customers
-    font('Open Sans',12px,1px,300,18px)
-    & > .label
-        font-weight: bold
+    max-width none
+    color $navy
+    background transparent
+    font-family 'Manrope', sans-serif
+    font-size 13px
+    font-weight 800
+    letter-spacing 0.18em
+    text-align left
 
-.diploma, .pub-title, .project-title, .project-title
-    font-weight: bold
+.greyed:after
+    content ""
+    flex 1
+    height 1px
+    background $line
 
-.pub-desc
-    & .pub-image
-        width 50px
-        background-color: white
-        margin 5px 5px 5px 0
-        padding 4px 4px 4px 4px
-        border 1px solid darkgrey
-        float left
-    & .pub-text
-        display: inline
+.experience
+    position relative
+    margin 0 0 18px
+    padding 24px 26px 22px 30px
+    background #fbfcfd
+    border 1px solid $line
+    border-radius 14px
+    box-shadow 0 5px 18px rgba(26, 50, 72, 0.045)
+    transition border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease
 
-.project-desc
-    & .project-image
-        width 100px
-        background-color: white
-        margin 5px 5px 5px 0
-        padding 4px 4px 4px 4px
-        border 1px solid darkgrey
-        float left
-    & .project-text
-        display: inline
+.experience:before
+    content ""
+    position absolute
+    top 24px
+    bottom 24px
+    left 0
+    width 4px
+    background $accent
+    border-radius 0 8px 8px 0
 
-.exhibit-cloudFacet-body
-    overflow: auto
-    height: 200px
-    border: 0px solid #DDDDDD
+.experience:hover
+    border-color rgba(39, 194, 184, 0.48)
+    box-shadow 0 12px 30px rgba(26, 50, 72, 0.09)
+    transform translateY(-2px)
 
-.content-container {
-    min-height: 100vh;
-}
+.experience > *
+    margin 0 0 12px
+
+.experience > *:last-child
+    margin-bottom 0
+
+.experience h3
+    margin 0 0 3px
+
+.job-title .title
+    width auto
+    color $navy
+    text-align left
 
 .industry
-    font-style: italic
-    & .industry-name
-        color: #51525c
+    color $muted
+    font-family 'Inter', sans-serif
+    font-size 13px
+    font-style normal
+    font-weight 500
 
-.fn
-    font-weight: bold
+.industry .industry-name
+    color inherit
+
+.responsibilities
+    color #344054
+
+.markdown li, .markdown p
+    margin-bottom 6px
+
+.markdown li, .markdown .markdown ol
+    list-style-type disc !important
+    padding-inline-start 10px
+
+.markdown ul
+    padding-inline-start 20px
+
+.markdown li::marker
+    color $accent
+
+.markdown strong
+    color $ink
+    font-weight 700
+
+.tech, .industries, .customers
+    color $muted
+    font-size 12px
+    letter-spacing 0.01em
+    line-height 1.55
+
+.tech > .label, .industries > .label, .customers > .label
+    color $ink
+    font-weight 700
+
+.diploma, .pub-title, .project-title
+    color white
+    font-weight 700
+
+.publication, .talk, .project
+    margin-bottom 20px
+    padding-bottom 20px
+    border-bottom 1px solid rgba(255, 255, 255, 0.11)
+
+.publication:last-child, .talk:last-child, .project:last-child
+    border-bottom 0
+
+.pub-desc:after, .project-desc:after
+    content ""
+    display table
+    clear both
+
+.pub-desc .pub-image
+    float left
+    width 50px
+    margin 5px 10px 5px 0
+    padding 4px
+    background white
+    border 0
+    border-radius 7px
+
+.pub-desc .pub-text, .project-desc .project-text
+    display inline
+
+.project-desc .project-image
+    float left
+    width 86px
+    margin 5px 10px 5px 0
+    padding 4px
+    background white
+    border 0
+    border-radius 7px
+
+.exhibit-controlPanel, .exhibit-toolboxWidget-popup
+    display none !important
+
+ol.exhibit-tileView-body
+    margin 0
+    padding-inline-start 0
+    list-style-type none
+
+#ex-vp-edu .exhibit-collectionView-header,
+#ex-vp-talk .exhibit-collectionView-header,
+#ex-vp-pub .exhibit-collectionView-header,
+#ex-vp-oss .exhibit-collectionView-header
+    display none
+
+.exhibit-collectionView-footer
+    color rgba(255, 255, 255, 0.7)
+
+.side-bar div.exhibit-facet,
+.side-bar div.exhibit-text-facet,
+.side-bar div.exhibit-cloudFacet
+    margin 0 0 14px
+    padding 12px
+    background rgba(255, 255, 255, 0.055)
+    border 1px solid rgba(255, 255, 255, 0.1)
+    border-radius 10px
+
+.side-bar div.exhibit-facet-header,
+.side-bar div.exhibit-cloudFacet-header
+    padding 0 0 8px
+    color white
+    background transparent
+    border 0
+
+.side-bar span.exhibit-facet-header-title
+    color rgba(255, 255, 255, 0.86)
+    font-size 12px
+    font-weight 700
+
+.side-bar div.exhibit-facet-body-frame
+    border 0
+
+.side-bar input
+    width 100%
+    padding 8px 10px
+    color $ink
+    background white
+    border 0
+    border-radius 7px
+    outline none
+
+.side-bar input:focus
+    box-shadow 0 0 0 3px rgba(39, 194, 184, 0.28)
+
+.exhibit-cloudFacet-body
+    height 190px
+    overflow auto
+    border 0
+
+.mobile-filter-toggle, .mobile-filter-toggle-label
+    display none
+
+.print-footer
+    position fixed
+    bottom 0
+    left 50%
+    transform translateX(-50%)
+
+.print-left-border
+    position fixed
+    top 50%
+    left 20px
+    transform translateX(-50%) rotate(-90deg)
+
+.print-button
+    position fixed
+    z-index 10
+    top 20px
+    right 20px
+    padding 10px
+    background rgba(255, 255, 255, 0.92)
+    border 1px solid $line
+    border-radius 12px
+    box-shadow 0 8px 22px rgba(26, 50, 72, 0.13)
+    text-align right
+    backdrop-filter blur(8px)
+
+.print-button img
+    display block
+    width 32px
+    height 32px
+    cursor pointer
+
+.print-button p
+    position absolute
+    top 48px
+    right 0
+    width 180px
+    margin 0
+    padding 9px 11px
+    visibility hidden
+    color $muted
+    background white
+    border-radius 8px
+    box-shadow 0 8px 20px rgba(26, 50, 72, 0.13)
+    font-size 11px
+    line-height 1.4
+
+.print-button:hover p
+    visibility visible
+
+@media screen
+    .print-only, .print-footer, .print-left-border
+        display none
+
+@media screen and (max-width 900px)
+    .page
+        width calc(100% - 24px)
+        margin 12px auto
+        border-radius 18px
+
+    .top-bar
+        height 230px
+
+    .name
+        display none
+
+    .side-bar
+        left 24px
+        width 250px
+        padding 230px 20px 40px
+
+    .mugshot
+        width 158px
+        height 158px
+
+    .logo
+        width 158px
+        height 158px
+
+    .content-container
+        width calc(100% - 298px)
+        margin-left 298px
+        padding 38px 28px 60px
+
+@media screen and (max-width 680px)
+    body
+        font-size 14px
+
+    .page
+        display flex
+        flex-direction column
+        overflow visible
+        width 100%
+        min-height 0
+        margin 0
+        border 0
+        border-radius 0
+        box-shadow none
+
+    .top-bar
+        order 0
+        height 200px
+
+    .top-bar:after
+        background linear-gradient(0deg, rgba(11, 28, 44, 0.9), rgba(11, 28, 44, 0.25))
+
+    .name
+        display none
+
+    .side-bar
+        display contents
+
+    .profile-panel
+        position relative
+        order 1
+        width 100%
+        min-width 0
+        padding 76px 20px 18px
+        color rgba(255, 255, 255, 0.82)
+        background linear-gradient(165deg, $navy 0%, $navy-deep 100%)
+
+    .profile-panel a
+        color #8ee8e2
+
+    .profile-panel .addressbox
+        margin-bottom 12px
+        padding-bottom 12px
+
+    .social-links
+        display flex
+        gap 6px
+
+    .social
+        flex 1
+        min-width 0
+        margin 0
+        padding 34px 3px 4px
+        font-size 11px
+        text-align center
+
+    .social a
+        display block
+        overflow hidden
+        width 100%
+        height 1px
+        font-size 0
+
+    .social:before
+        top 5px
+        left 50%
+        width 28px
+        height 28px
+        transform translateX(-50%)
+
+    .social:hover
+        transform translateY(-2px)
+
+    .sidebar-details
+        order 3
+        width 100%
+        padding 8px 24px 48px
+        color rgba(255, 255, 255, 0.82)
+        background $navy-deep
+
+    .sidebar-details a
+        color #8ee8e2
+
+    .mugshot
+        top -66px
+        width 132px
+        height 132px
+
+    .logo
+        width 132px
+        height 132px
+
+    .content-container
+        order 2
+        width 100%
+        min-width 0
+        min-height 0
+        margin 0
+        padding 30px 18px 54px
+
+    .mobile-filter-toggle
+        position fixed
+        opacity 0
+        pointer-events none
+
+    .mobile-filter-toggle-label
+        display block
+        position fixed
+        z-index 30
+        right 18px
+        bottom 18px
+        padding 11px 17px
+        color white
+        background $navy
+        border 1px solid rgba(255, 255, 255, 0.22)
+        border-radius 999px
+        box-shadow 0 10px 28px rgba(5, 24, 38, 0.3)
+        font-family 'Manrope', sans-serif
+        font-size 12px
+        font-weight 700
+        letter-spacing 0.08em
+        text-transform uppercase
+        cursor pointer
+
+    .experience-filters-content
+        position fixed
+        z-index 29
+        right 14px
+        bottom 72px
+        width calc(100vw - 28px)
+        max-width 360px
+        max-height 72vh
+        overflow auto
+        padding 0 16px 16px
+        color rgba(255, 255, 255, 0.84)
+        background $navy
+        border 1px solid rgba(255, 255, 255, 0.14)
+        border-radius 16px
+        box-shadow 0 20px 50px rgba(5, 24, 38, 0.38)
+        opacity 0
+        pointer-events none
+        transform translateY(16px) scale(0.98)
+        transform-origin bottom right
+        transition opacity 180ms ease, transform 180ms ease
+
+    .mobile-filter-toggle:checked + .mobile-filter-toggle-label
+        background $accent
+        color $navy-deep
+
+    .mobile-filter-toggle:checked + .mobile-filter-toggle-label + .experience-filters-content
+        opacity 1
+        pointer-events auto
+        transform translateY(0) scale(1)
+
+    .content-container > .title
+        width 100%
+        font-size 24px
+
+    .content-container h3,
+    .content-container p
+        overflow-wrap anywhere
+
+    .experience
+        max-width 100%
+        padding 21px 19px 19px 23px
+
+    .print-button
+        display none
 
 @media print
+    @page
+        margin 0.5in
+
+    *
+        transition none !important
+
+    body
+        color #111
+        background white
+        font-family 'Inter', sans-serif
+        font-size 11px
+        line-height 1.45
+        -webkit-print-color-adjust exact
+        print-color-adjust exact
+
+    body:before
+        display none
+
+    .noprint, .print-button
+        display none !important
+
+    .page
+        overflow visible
+        width 100%
+        max-width none
+        min-height 0
+        margin 0
+        border 0
+        border-radius 18px
+        box-shadow none
+
+    .print-left-border
+        z-index 20
+        top 50%
+        bottom auto
+        left 8px
+        color $navy
+        font-size 8px
+        white-space nowrap
+        writing-mode vertical-rl
+        transform translateY(-50%) rotate(180deg)
+
+    .top-bar
+        height 150px
+        border-radius 18px 18px 0 0
+
+    .name
+        left 230px
+        font-size 36px
+
+    .side-bar
+        top 34px
+        left 20px
+        width 210px
+        padding 190px 14px 30px
+        color rgba(255, 255, 255, 0.82)
+        background linear-gradient(165deg, $navy 0%, $navy-deep 100%)
+        border-radius 16px 16px 0 0
+        box-shadow none
+
+    .side-bar a
+        color #8ee8e2
+
+    .mugshot
+        top 24px
+        width 140px
+        height 140px
+
+    .logo
+        width 140px
+        height 140px
+        padding 4px
+
+    .logo .identity
+        border-width 3px
+
+    .addressbox
+        border-color rgba(255, 255, 255, 0.13)
+
+    .addressbox .fn, .side-header, .diploma, .pub-title, .project-title
+        color white
+
+    .social
+        padding-left 36px
+
+    .social:before
+        filter brightness(0) invert(1)
+
+    .side-header
+        margin-top 28px
+        border-color rgba(255, 255, 255, 0.16)
+        font-size 10px
+
+    .publication, .talk, .project
+        border-color rgba(255, 255, 255, 0.11)
+
+    .content-container
+        width calc(100% - 250px)
+        margin-left 250px
+        padding 24px 20px 40px
+
+    .content-container > .title
+        font-size 23px
+
+    .experience
+        margin-bottom 10px
+        padding 14px 16px 13px 20px
+        background white
+        border-color #ccc
+        box-shadow none
+        break-inside avoid
+
+    .experience:hover
+        transform none
+        box-shadow none
+
+    .exhibit-collectionView-header, .exhibit-collectionView-footer
+        display none !important
+
+    h3
+        font-size 14px
+
     .greyed
-        font('Open Sans',15px,5px,600,23px)
+        font-size 11px
+
     .tech, .industries, .customers
-        font('Open Sans',10px,1px,300,15px)
+        font-size 9px
