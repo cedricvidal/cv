@@ -1,0 +1,19 @@
+{
+  "name": "Cédric Vidal's CV",
+  "short_name": "Cédric Vidal",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#13293d",
+  "background_color": "#eef2f6",
+  "display": "standalone"
+}
