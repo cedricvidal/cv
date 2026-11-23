@@ -5,15 +5,19 @@ items:
     exp_type: Professional
     employer: Microsoft
     customer: Microsoft
-    title: Principal Cloud Advocate
+    title: Principal Cloud Advocate | MS Scope AX Eval Platform Lead
     responsibilities: |
-      Working on **AI coding agents** and **agentic evaluation platforms**, with a focus on how autonomous
-      systems should be evaluated as they move from single turn outputs to full task completion.
+      Led engineering for [**SCOPE**](https://microsoft.github.io/scope), Microsoft's open-source **Agent
+      Experience (AX) evaluation platform** for AI product managers, scientists, and builders, helping teams
+      understand whether AI coding agents succeed with their products and what to improve.
 
-      My work centers on measuring **agent behavior**, **reliability**, and **developer success** across
-      multi step workflows, and on defining **evaluation primitives** that scale across models and agent
-      architectures.
-    tech: 'AI Coding Agents; Agentic Workflows; AI Evaluation; LLM; GenAI; Azure; GitHub; Python'
+      Set the technical direction and roadmap, architecting realistic developer-task evaluation across
+      coding agents and turning agent behavior into actionable insight.
+
+      Brought SCOPE from an internal tool to open-source release and first product-team adoption, while
+      scaling long-running, non-deterministic workloads, safely sandboxing autonomous agents, and measuring
+      improvements across repeated runs.
+    tech: 'Technical Leadership; AI Coding Agents; Agentic Workflows; AI Evaluation; Distributed Systems; LLM; GenAI; Azure; GitHub; Python'
     industry: 'Cloud / AI'
     place: 'Remote, SF Bay Area'
     location: 'San Francisco Bay Area, CA'
