@@ -64,6 +64,34 @@
             var email = "cedric" + "@" + "vidal" + "." + "biz";
             emailElt.setAttribute("href", "mailto:" + email);
             emailElt.innerHTML = email;
+
+            var pageElt = document.querySelector('.page');
+            var sideBarElt = document.querySelector('.side-bar');
+
+            function syncPageHeight() {
+                var lastSideBarChild = sideBarElt.lastElementChild;
+                var sideBarPaddingBottom = parseFloat(window.getComputedStyle(sideBarElt).paddingBottom);
+
+                pageElt.style.setProperty(
+                    '--side-bar-bottom',
+                    sideBarElt.offsetTop +
+                    lastSideBarChild.offsetTop +
+                    lastSideBarChild.offsetHeight +
+                    sideBarPaddingBottom +
+                    'px'
+                );
+            }
+
+            syncPageHeight();
+
+            if (window.ResizeObserver) {
+                var sideBarObserver = new ResizeObserver(syncPageHeight);
+                Array.prototype.forEach.call(sideBarElt.children, function(sideBarChild) {
+                    sideBarObserver.observe(sideBarChild);
+                });
+            } else {
+                window.addEventListener('resize', syncPageHeight);
+            }
         }
 --></script>
 
@@ -91,8 +119,7 @@
             <address class="vcard">
                 <div><span class="fn">C&eacute;dric Vidal</span></div>
                 <div class="adr">
-                    <span class="postal-code">94404</span>
-                    <span class="locality">Foster City</span>, <span class="region">CA</span>, <span class="country">USA</span>
+                    <span class="locality">San Francisco</span>, <span class="region">CA</span>, <span class="country">USA</span>
                 </div>
                 <div>E-mail : <a id="email" class="email">cedric at vidal dot biz</a></div>
                 <div>Web : <a class="url" href="https://vidal.biz/">vidal.biz</a></div>
@@ -100,7 +127,7 @@
 	    </address>
         </div>
 
-        <p class="rela-block social twitter"><a href="https://twitter.com/cedricvidal">cedricvidal</a></p>
+        <p class="rela-block social x"><a href="https://x.com/cedricvidal">cedricvidal</a></p>
         <p class="rela-block social linked-in"><a href="https://www.linkedin.com/in/cedricvidal">cedricvidal</a></p>
         <p class="rela-block social github"><a href="https://github.com/cedricvidal/">cedricvidal</a></p>
 
@@ -125,7 +152,7 @@
 
         <p class="rela-block caps side-header noprint">Expertise</p>
         <div class="noprint">
-            <div data-ex-role="facet" data-ex-facet-class="Cloud" data-ex-expression=".tech" data-ex-show-missing="false" data-ex-collection-id="experiences"></div>
+            <div data-ex-role="facet" data-ex-facet-class="RecencyCloud" data-ex-expression=".tech" data-ex-show-missing="false" data-ex-collection-id="experiences"></div>
         </div>
 
         <div class="noprint">
