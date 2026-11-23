@@ -106,6 +106,26 @@
             }
 
             window.addEventListener('resize', syncPageHeight);
+
+            function enhanceFilterInput() {
+                var textFilterInput = document.querySelector('.exhibit-text-facet input');
+                if (!textFilterInput) {
+                    return false;
+                }
+
+                textFilterInput.setAttribute('placeholder', 'search experience logs...');
+                textFilterInput.setAttribute('aria-label', 'Search experience logs');
+                return true;
+            }
+
+            if (!enhanceFilterInput() && window.MutationObserver) {
+                var filterObserver = new MutationObserver(function() {
+                    if (enhanceFilterInput()) {
+                        filterObserver.disconnect();
+                    }
+                });
+                filterObserver.observe(sideBarElt, { childList: true, subtree: true });
+            }
         }
 --></script>
 
@@ -188,12 +208,18 @@
         <input class="mobile-filter-toggle" id="mobile-filter-toggle" type="checkbox" />
         <label class="mobile-filter-toggle-label noprint" for="mobile-filter-toggle">Filters</label>
         <div class="experience-filters-content noprint">
-        <p class="rela-block caps side-header noprint">Expertise</p>
+        <p class="rela-block caps side-header noprint">Query Console</p>
+        <div class="filter-console-intro">
+            <span class="filter-console-status"><i></i> INDEX READY</span>
+            <p><b>&gt;</b> Select signals to filter the experience stream.</p>
+        </div>
+        <p class="filter-group-label">01 / EXPERTISE SIGNALS</p>
         <div class="noprint">
             <div data-ex-role="facet" data-ex-facet-class="RecencyCloud" data-ex-expression=".techFacet" data-ex-show-missing="false" data-ex-collection-id="experiences"></div>
         </div>
 
         <div class="noprint">
+            <p class="filter-group-label">02 / LOG SEARCH</p>
             <div class="noprint" data-ex-role="facet" data-ex-facet-class="TextSearch" data-ex-facet-label="Filter by text" data-ex-collection-id="experiences"></div>
             <!--div class="noprint" data-ex-role="facet" data-ex-expression=".customer" data-ex-facet-label="Filter by customer" data-ex-collection-id="experiences"></div-->
             <div class="noprint" data-ex-role="facet" data-ex-expression=".employer" data-ex-facet-label="Filter by company" data-ex-collection-id="experiences"></div>
