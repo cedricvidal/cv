@@ -449,6 +449,21 @@ h3 {
 .project-desc .project-text {
   display: inline;
 }
+.publication-url {
+  display: inline;
+  margin-left: 4px;
+  color: #7dffb2;
+  border-bottom: 1px dotted rgba(125,255,178,0.45);
+}
+.publication-url:after {
+  content: " ↗";
+  color: #45e8df;
+  font-size: 0.8em;
+}
+.publication-url:hover {
+  text-decoration: none;
+  border-bottom-color: #7dffb2;
+}
 .project-desc .project-image {
   float: left;
   width: 82px;
