@@ -20,10 +20,9 @@ items:
   -
     label: 'Multimodal deep networks for text and image-based document classification'
     type: Publication
-    description: 'Submitted to'
+    description: 'Submitted to [APIA 2019 conference](https://www.irit.fr/pfia2019/apia/)'
     magazine: ""
     date: '2019-04-05'
-    url: 'https://www.irit.fr/pfia2019/apia/'
-    url_label: 'APIA 2019 conference'
+    url: ""
     download: 'https://vidal.biz/publications/201904-quicksign-multimodal-text-image-classification.pdf'
     image: img/multimodal-text-image-classification.png
