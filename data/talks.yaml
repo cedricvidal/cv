@@ -1,20 +1,24 @@
 items:
   -
-    label: 'Your Product Was Built for Humans. Is It Ready for Agents? (Jay Gordon & Cedric Vidal)'
+    label: 'AI Show & Tell - San Francisco'
     type: Talk
-    description: 'How SCOPE and Azure Cosmos DB evaluated coding-agent product experiences, leading to 33 Agent Kit rule changes and 51 documentation fixes.'
+    description: 'Your Product Was Built for Humans. Is It Ready for Agents?'
     role: Speaker
-    place: 'Global AI Community'
-    date: '2026-10-28'
-    video: 'https://www.youtube.com/watch?v=SxaKOmqX-rk'
-  -
-    label: 'Your Product Was Built for Humans. Is It Ready for Agents? (Cedric Vidal)'
-    type: Talk
-    description: 'What happened when coding agents became users of Azure Cosmos DB, and the 33 rule changes and 51 documentation fixes that followed.'
-    role: Speaker
-    place: 'Global AI Community'
-    date: '2026-10-28'
+    place: 'GitHub, San Francisco'
+    location: '88 Colin P Kelly Jr St, San Francisco, CA 94107, USA'
+    date: '2026-09-28'
+    url: 'https://luma.com/wx7493ut'
     video: 'https://www.youtube.com/watch?v=DHzqVXdG5W0'
+  -
+    label: 'Global AI New York'
+    type: Talk
+    description: 'From Findings to Fixes: How SCOPE and Azure Cosmos DB Improved the Agentic Product Experience'
+    role: Speaker
+    place: 'Microsoft Research Lab, New York'
+    location: '300 Lafayette St, New York, NY 10012, USA'
+    date: '2026-09-21'
+    url: 'https://luma.com/ai-vyvc'
+    video: 'https://www.youtube.com/watch?v=SxaKOmqX-rk'
   -
     label: 'Alpes JUG'
     type: Talk
