@@ -27,6 +27,17 @@ ExhibitYAML.parse = function(url, s, callback) {
 
     try {
         o = YAML.parse(s);
+        if (o !== null && o.items instanceof Array) {
+            o.items.forEach(function(item) {
+                if (typeof item.tech === "string") {
+                    item.techFacet = item.tech.split(";").map(function(tech) {
+                        return tech.trim();
+                    }).filter(function(tech) {
+                        return tech.length > 0;
+                    });
+                }
+            });
+        }
     } catch(e) {
         Exhibit.UI.showJsonFileValidation(Exhibit._("%general.badJsonMessage", url, e.message), url);
     }

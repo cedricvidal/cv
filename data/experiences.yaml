@@ -17,7 +17,7 @@ items:
       Brought SCOPE from an internal tool to open-source release and first product-team adoption, while
       scaling long-running, non-deterministic workloads, safely sandboxing autonomous agents, and measuring
       improvements across repeated runs.
-    tech: 'Technical Leadership; AI Coding Agents; Agentic Workflows; AI Evaluation; Distributed Systems; LLM; GenAI; Azure; GitHub; Python'
+    tech: 'Technical Leadership; AI Coding Agents; Agentic Workflows; AI Evaluation; Distributed Systems; LLM; GenAI; Azure; GitHub; Python; Typescript; Rust; Kubernetes; KEDA'
     industry: 'Cloud / AI'
     place: 'Remote, SF Bay Area'
     location: 'San Francisco Bay Area, CA'
