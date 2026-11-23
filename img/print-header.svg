@@ -1,5 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="172" viewBox="0 0 1200 172">
+  <defs>
+    <linearGradient id="hero-overlay" x1="0" x2="1">
+      <stop offset="0" stop-color="#030807" stop-opacity=".98"/>
+      <stop offset=".32" stop-color="#030807" stop-opacity=".88"/>
+      <stop offset=".68" stop-color="#030807" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#030807" stop-opacity=".86"/>
+    </linearGradient>
+    <linearGradient id="hero-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#030807" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#030807" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
   <rect width="1200" height="172" rx="5" fill="#07100e"/>
+  <image href="header.jpeg" x="0" y="28" width="1200" height="144" preserveAspectRatio="xMidYMid slice" opacity=".58"/>
+  <rect x="0" y="28" width="1200" height="144" fill="url(#hero-overlay)"/>
+  <rect x="0" y="28" width="1200" height="144" fill="url(#hero-floor)"/>
   <rect x="0.5" y="0.5" width="1199" height="171" rx="4.5" fill="none" stroke="#244d3b"/>
   <rect width="1200" height="28" rx="5" fill="#05090a"/>
   <path d="M0 28.5h1200M0 149.5h1200" stroke="#244d3b"/>
@@ -8,10 +23,10 @@
   <circle cx="42" cy="14" r="3" fill="#29322f" stroke="#485551"/>
   <text x="58" y="17" fill="#71817e" font-family="IBM Plex Mono, monospace" font-size="7" letter-spacing="1">cedric@vidal:~/career/intelligence</text>
   <text x="1180" y="17" fill="#7dffb2" font-family="IBM Plex Mono, monospace" font-size="7" text-anchor="end" letter-spacing="1">SESSION 01</text>
-  <text x="350" y="59" fill="#45e8df" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="600" letter-spacing="2">AI ENGINEERING // LEADERSHIP // PRODUCT</text>
-  <text x="350" y="105" fill="#effff8" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700">Cédric Vidal</text>
-  <text x="350" y="127" fill="#7dffb2" font-family="IBM Plex Mono, monospace" font-size="8">&gt;</text>
-  <text x="363" y="127" fill="#9eada9" font-family="IBM Plex Mono, monospace" font-size="8">building systems that augment human potential_</text>
+  <text x="350" y="59" fill="#45e8df" font-family="IBM Plex Mono, monospace" font-size="9" font-weight="600" letter-spacing="2.2">AI ENGINEERING // LEADERSHIP // PRODUCT</text>
+  <text x="350" y="108" fill="#effff8" font-family="Space Grotesk, Arial, sans-serif" font-size="50" font-weight="700">Cédric Vidal</text>
+  <text x="350" y="134" fill="#7dffb2" font-family="IBM Plex Mono, monospace" font-size="10">&gt;</text>
+  <text x="366" y="134" fill="#9eada9" font-family="IBM Plex Mono, monospace" font-size="10">building systems that augment human potential_</text>
   <circle cx="350" cy="160" r="4" fill="#ff5f56"/>
   <text x="363" y="163" fill="#ff5f56" font-family="IBM Plex Mono, monospace" font-size="6" letter-spacing="1">AGENT OFFLINE</text>
   <text x="456" y="163" fill="#71817e" font-family="IBM Plex Mono, monospace" font-size="6" letter-spacing="1">SF // UTC-8</text>
