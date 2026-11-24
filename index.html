@@ -17,7 +17,7 @@
 	<link type="text/css" rel="stylesheet" href="index.css" />
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <link href="cv.json" type="application/json" rel="exhibit/data" />
 
@@ -58,6 +58,7 @@
     <script src="lib/yaml/yaml.min.js" type="text/javascript"></script>
 	<script src="lib/exhibit3/exhibit-api.js?bundle=false" type="text/javascript"></script>
 	<script src="src/exhibit-yaml-importer.js" type="text/javascript"></script>
+	<script src="src/experience-domain-timeline.js" type="text/javascript"></script>
 	<script src="cv-exhibit-ext.js"></script>
 
 </head>
@@ -80,7 +81,7 @@
                 }
 
                 syncPageHeightFrame = window.requestAnimationFrame(function() {
-                    if (window.matchMedia('(max-width: 680px)').matches) {
+                    if (window.matchMedia('(max-width: 720px)').matches) {
                         pageElt.style.removeProperty('--side-bar-bottom');
                         syncPageHeightFrame = null;
                         return;
@@ -112,6 +113,26 @@
             }
 
             window.addEventListener('resize', syncPageHeight);
+
+            function enhanceFilterInput() {
+                var textFilterInput = document.querySelector('.exhibit-text-facet input');
+                if (!textFilterInput) {
+                    return false;
+                }
+
+                textFilterInput.setAttribute('placeholder', 'search experience logs...');
+                textFilterInput.setAttribute('aria-label', 'Search experience logs');
+                return true;
+            }
+
+            if (!enhanceFilterInput() && window.MutationObserver) {
+                var filterObserver = new MutationObserver(function() {
+                    if (enhanceFilterInput()) {
+                        filterObserver.disconnect();
+                    }
+                });
+                filterObserver.observe(sideBarElt, { childList: true, subtree: true });
+            }
         }
 --></script>
 
@@ -126,8 +147,34 @@
 <!-- PAGE STUFF -->
 <div class="rela-block page">
     <div class="rela-block top-bar">
-        <img class="top-bar-image" src="img/header.jpeg" />
-        <div class="caps name"><div class="abs-center">C&eacute;dric Vidal</div></div>
+        <div class="top-bar-content">
+            <img class="top-bar-image" src="img/header.jpeg" />
+            <img class="print-only print-header-background" src="img/print-header-background.png" alt="" />
+            <div class="terminal-chrome">
+                <div class="window-controls"><i></i><i></i><i></i></div>
+                <span class="terminal-path">cedric@vidal:~/career/intelligence</span>
+                <span class="terminal-session">SESSION 01</span>
+            </div>
+            <button class="print-button" type="button" onclick="window.print()" aria-label="Print resume">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M7 14h10v7H7zM17 11h1"/>
+                </svg>
+                <span>PRINT_CV</span>
+                <span class="print-hint" role="tooltip">Enable background graphics and use Fit to printable area for the terminal design</span>
+            </button>
+            <div class="name">
+                <div class="abs-center">
+                    <span class="eyebrow">AI ENGINEERING // LEADERSHIP // PRODUCT</span>
+                    <span class="hero-name">C&eacute;dric Vidal</span>
+                    <span class="hero-command"><b>&gt;</b> building systems that augment human potential<span class="cursor">_</span></span>
+                </div>
+            </div>
+            <div class="system-status">
+                <span><i></i> AGENT ONLINE</span>
+                <span>SF // UTC-8</span>
+                <span>OPEN TO COLLABORATION</span>
+            </div>
+        </div>
     </div>
     <div class="side-bar">
         <div class="profile-panel">
@@ -178,39 +225,23 @@
         <input class="mobile-filter-toggle" id="mobile-filter-toggle" type="checkbox" />
         <label class="mobile-filter-toggle-label noprint" for="mobile-filter-toggle">Filters</label>
         <div class="experience-filters-content noprint">
-        <p class="rela-block caps side-header noprint">Expertise</p>
+        <p class="rela-block caps side-header noprint">Query Console</p>
+        <div class="filter-console-intro">
+            <span class="filter-console-status"><i></i> INDEX READY</span>
+            <p><b>&gt;</b> Select signals to filter the experience stream.</p>
+        </div>
+        <p class="filter-group-label">01 / EXPERTISE SIGNALS</p>
         <div class="noprint">
             <div data-ex-role="facet" data-ex-facet-class="RecencyCloud" data-ex-expression=".techFacet" data-ex-show-missing="false" data-ex-collection-id="experiences"></div>
         </div>
 
         <div class="noprint">
+            <p class="filter-group-label">02 / LOG SEARCH</p>
             <div class="noprint" data-ex-role="facet" data-ex-facet-class="TextSearch" data-ex-facet-label="Filter by text" data-ex-collection-id="experiences"></div>
             <!--div class="noprint" data-ex-role="facet" data-ex-expression=".customer" data-ex-facet-label="Filter by customer" data-ex-collection-id="experiences"></div-->
             <div class="noprint" data-ex-role="facet" data-ex-expression=".employer" data-ex-facet-label="Filter by company" data-ex-collection-id="experiences"></div>
             <div class="noprint" data-ex-role="facet" data-ex-expression=".industry" data-ex-facet-label="Filter by industry" data-ex-collection-id="experiences"></div>
         </div>
-        </div>
-
-        <p class="rela-block caps side-header">Publications</p>
-        <div id="ex-vp-pub">
-            <div data-ex-role="lens" data-ex-item-types="Publication" class="publication" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
-                <div>
-                    <p class="pub-title">
-                        <span data-ex-content=".date" class="date"></span>
-                        <cite data-ex-content=".label" class="title"></cite>
-                    </p>
-                    <p class="pub-desc">
-                        <img data-ex-if-exists=".image" data-ex-src-content=".image" class="pub-image" />
-                        <span data-ex-content=".description" class="description pub-text"></span>
-                    </p>
-                    <p data-ex-if-exists=".download">
-                        <a data-ex-href-content=".download" class="download">Download publication</a>
-                    </p>
-                </div>
-            </div>
-
-            <div data-ex-role="view" data-ex-label="Publications" data-ex-orders=".date" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="publications" data-ex-show-all="false" data-ex-abbreviated-count="3"></div>
-
         </div>
 
         <p class="rela-block caps side-header">Talks</p>
@@ -241,6 +272,27 @@
 
         </div>
 
+        <p class="rela-block caps side-header">Publications</p>
+        <div id="ex-vp-pub">
+            <div data-ex-role="lens" data-ex-item-types="Publication" class="publication" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+                <div>
+                    <p class="pub-title">
+                        <span data-ex-content=".date" class="date"></span>
+                        <cite data-ex-content=".label" class="title"></cite>
+                    </p>
+                    <p class="pub-desc">
+                        <img data-ex-if-exists=".image" data-ex-src-content=".image" class="pub-image" />
+                        <span data-ex-content=".description" class="description pub-text"></span>
+                    </p>
+                    <p data-ex-if-exists=".download">
+                        <a data-ex-href-content=".download" class="download">Download publication</a>
+                    </p>
+                </div>
+            </div>
+
+            <div data-ex-role="view" data-ex-label="Publications" data-ex-orders=".date" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="publications" data-ex-show-all="false" data-ex-abbreviated-count="3"></div>
+
+        </div>
 
         <p class="rela-block caps side-header">Open Source</p>
         <div id="ex-vp-oss">
@@ -263,6 +315,17 @@
         </div>
     </div>
     <div class="rela-block content-container">
+        <div class="agent-console">
+            <div class="console-label">AGENT_PROFILE.md</div>
+            <p><span class="prompt">cedric $</span> <span class="command">summarize --career --impact</span></p>
+            <p class="console-output">Technology builder and team leader translating ambitious ideas into useful, resilient systems.</p>
+            <div class="console-metrics">
+                <span><b>MODE</b> hands-on</span>
+                <span><b>FOCUS</b> applied AI</span>
+                <span><b>STYLE</b> human-first</span>
+            </div>
+        </div>
+        <section id="domain-timeline" class="domain-timeline" hidden></section>
         <h2 class="rela-block caps title">Innovative technology builder and team leader</h2>
         <div class="rela-block separator"></div>
 
@@ -304,11 +367,6 @@
 
     <div class="print-left-border">
         This resume is available online at <a href="https://cv.vidal.biz">https://cv.vidal.biz</a>.
-    </div>
-
-    <div class="print-button">
-        <img src="icons/print.svg" onclick="javascript:print();"/>
-        <p class="hint">Select 70% scale and display background graphics for best printing results</p>
     </div>
 
 </body>

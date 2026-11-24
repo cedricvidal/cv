@@ -36,7 +36,44 @@ ExhibitYAML.parse = function(url, s, callback) {
                         return tech.length > 0;
                     });
                 }
+
+                if (typeof item.domains === "string") {
+                    item.domains = item.domains.split(";");
+                }
+
+                if (item.domains instanceof Array) {
+                    item.domainTimeline = item.domains.map(function(domain) {
+                        if (typeof domain === "string") {
+                            return {
+                                label: domain.trim()
+                            };
+                        }
+
+                        if (domain && typeof domain === "object" && typeof domain.label === "string") {
+                            return {
+                                label: domain.label.trim(),
+                                start: domain.start,
+                                end: domain.end
+                            };
+                        }
+
+                        return null;
+                    }).filter(function(domain) {
+                        return domain && domain.label.length > 0;
+                    });
+                    item.domains = item.domainTimeline.map(function(domain) {
+                        return domain.label;
+                    });
+                }
             });
+
+            var experienceItems = o.items.filter(function(item) {
+                return item.type === "Experience";
+            });
+
+            if (experienceItems.length > 0 && window.ExperienceDomainTimeline) {
+                window.ExperienceDomainTimeline.setExperiences(experienceItems);
+            }
         }
     } catch(e) {
         Exhibit.UI.showJsonFileValidation(Exhibit._("%general.badJsonMessage", url, e.message), url);

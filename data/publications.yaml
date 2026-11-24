@@ -20,7 +20,7 @@ items:
   -
     label: 'Multimodal deep networks for text and image-based document classification'
     type: Publication
-    description: 'Submitted to APIA 2019 conference (https://www.irit.fr/pfia2019/apia/)'
+    description: 'Submitted to [APIA 2019 conference](https://www.irit.fr/pfia2019/apia/)'
     magazine: ""
     date: '2019-04-05'
     url: ""
