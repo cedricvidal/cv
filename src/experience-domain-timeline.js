@@ -7,6 +7,7 @@
         "Enterprise Systems",
         "Expert Systems AI",
         "Workflow Systems",
+        "Document AI",
         "Self Driving AI",
         "Generative AI",
         "Agentic AI",

@@ -195,6 +195,7 @@ items:
     domains:
       - Enterprise Systems
       - Workflow Systems
+      - Document AI
     industry: 'Fintech'
     place: France
     location: "38, rue du Sentier\r\nParis\r\nFrance"
