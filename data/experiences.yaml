@@ -50,7 +50,6 @@ items:
       generative AI systems.
     tech: 'Azure; Azure OpenAI; OpenAI; LLM; RAG; GenAI; Agentic Workflows; AI Evaluation; Python; GitHub'
     domains:
-      - Enterprise Systems
       - Generative AI
       - label: Agentic AI
         start: '2025-07-01'
