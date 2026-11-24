@@ -18,6 +18,11 @@ items:
       scaling long-running, non-deterministic workloads, safely sandboxing autonomous agents, and measuring
       improvements across repeated runs.
     tech: 'Technical Leadership; AI Coding Agents; Agentic Workflows; AI Evaluation; Distributed Systems; LLM; GenAI; Azure; GitHub; Python; Typescript; Rust; Kubernetes; KEDA'
+    domains:
+      - Enterprise Systems
+      - Generative AI
+      - Agentic AI
+      - Developer Relations
     industry: 'Cloud / AI'
     place: 'Remote, SF Bay Area'
     location: 'San Francisco Bay Area, CA'
@@ -45,6 +50,11 @@ items:
       in San Francisco, bringing together founders and practitioners to share real-world agentic and
       generative AI systems.
     tech: 'Azure; Azure OpenAI; OpenAI; LLM; RAG; GenAI; Agentic Workflows; AI Evaluation; Python; GitHub'
+    domains:
+      - Enterprise Systems
+      - Generative AI
+      - Agentic AI
+      - Developer Relations
     industry: 'Cloud / AI'
     place: 'Hybrid, SF Bay Area'
     location: 'San Francisco Bay Area, CA'
@@ -76,6 +86,8 @@ items:
       beyond isolated demos.
     tech:
       OpenAI; ChatGPT; gpt-3.5-turbo; LLM; OpenSearch; Vector Databases; HuggingFace; LangChain; BERT; Flask; Python; Pandas; Azure Speech services
+    domains:
+      - Generative AI
     place: 'Remote, Foster City'
     location: 'Foster City, CA 94404'
     start: '2022-11-02'
@@ -106,6 +118,10 @@ items:
     tech: >
       Camunda; BPMN; KNative; S3; ECS; EKS; SNS; SQS; K8S; Helm; Java; Spring; Typescript; Python; PostgreSQL; Redis
       REST; Micro Services; Elasticsearch; Terraform
+    domains:
+      - Enterprise Systems
+      - Workflow Systems
+      - Autonomous Driving AI & Labeling Pipelines
     industry: 'Self Driving'
     place: 'Remote, Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
@@ -138,6 +154,9 @@ items:
       - Contributed to cross-functional efforts around **international rollout** and **GDPR readiness**, balancing engineering
       velocity with safety, compliance, and long-term system health.
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; DBT; Airflow; Python; Micro Services; Elasticsearch; Terraform'
+    domains:
+      - Enterprise Systems
+      - Autonomous Driving AI & Labeling Pipelines
     industry: 'Self Driving'
     place: 'Remote, Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
@@ -174,6 +193,9 @@ items:
       - Represented Quicksign externally through **technical talks and conferences**, including presentations on
       event-driven architectures and regulated system design.
     tech: "Kafka; Kubernetes; GIT; Java; Spring; Python; Flask; Node.js; Camel; Drools; Micro Services; BPMN; C++; Kappa; Kafka Streams; React; Redux; GCP; GCS; Cloud; Azure; AWS;Tensorflow;Scikitlearn;Caffe;Camunda;R&D;\r\nArchitecture;\r\nTechnical marketing;Android;iOS;"
+    domains:
+      - Enterprise Systems
+      - Workflow Systems
     industry: 'Fintech'
     place: France
     location: "38, rue du Sentier\r\nParis\r\nFrance"
@@ -197,6 +219,9 @@ items:
       (I later joined Quicksign as CTO).
       - Revamped the CI, fully revamped the previously manual build taking 2 days to a fully automated process taking less than a minute.
     tech: 'ActiveMQ; Camel; Java; Hibernate; Joda Time; ABBYY; Drools; Spring; Guava; Mockito; JForkr; C++; Automake; Autoconf; STL; Debian Packaging; Ubuntu'
+    domains:
+      - Enterprise Systems
+      - Expert Systems AI
     industry: 'Fintech'
     place: France
     location: Neuilly
@@ -213,6 +238,8 @@ items:
     responsibilities: |
       - Troubleshooting critical production problems, prototyping new architectures, modernizing existing codebase, performance optimization.
     tech: 'ActiveMQ; Camel; Java; Javascript; Node.js; AngularJS; Backbone.js; CouchDB; MongoDB; MySQL; PouchDB; Neo4J'
+    domains:
+      - Enterprise Systems
     industry: Booking
     place: 'Ile St Germain, Paris'
     location: 'Amadeus France, 2 Avenue Bas Meudon, 92130 Issy-les-Moulineaux, France'
@@ -231,6 +258,8 @@ items:
       - Coached the team during the initial development and continue to advice for strategic technical choices spanning hosting, 
       caching, performance.
     tech: 'Phonegap; Javascript; Node.js; Backbone.js; Underscore.js; JQuery Mobile; MongoDB; CDN; Edge Networking; Caching; NFC'
+    domains:
+      - Enterprise Systems
     industry: Wine
     place: Bordeaux
     location: Bordeaux
@@ -542,6 +571,8 @@ items:
     industry: Software Engineering Services
     industries: Fintech; Army; Banking; Insurance; Government; Online bets;  Health; Mapping; Retail; Publishing; Trading; 
     customers: Amadeus; French Ministry of Defense; Accord; MAIF; AEFE; AXA; SPS; Calyon; Research Institutes; CEA (French Atomic Energy Institute); HUG (Geneva Hospital); Dexia; Masternaut; Domiserve; Auchan; Vecteur-Plus; B-Process; Moniteur; Euronext; Boursorama; Caisse d'Epargne; JM-Bruneau
+    domains:
+      - Enterprise Systems
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
     start: '2011-01-01'
@@ -555,6 +586,8 @@ items:
     title: 'Principal Software Engineer'
     responsibilities: 
     tech: 'EMF; Acceleo; Obeo Transfo; M2M; M2T; T2M; MDSD; DSL; UML; Spring; JSF; JPA; JavaEE; Websphere; Modeling; Eclipse; Eclipse RCP'
+    domains:
+      - Enterprise Systems
     industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
@@ -680,6 +713,8 @@ items:
       - Consulting for ProxiAD's customers (Optimization, architectural maintenance and expertise) : 75%
       - Lead for the revamping of ProxiAD's JavaEE and MDSD Production System based on : EMF, oAW, M2M, M2T, T2M, MDSD, DSL, UML.
     tech: 'EMF; oAW; M2M; M2T; T2M; MDSD; DSL; UML; JavaEE; Modeling; Eclipse RCP; Eclipse'
+    domains:
+      - Enterprise Systems
     industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
@@ -819,6 +854,8 @@ items:
       - Lead engineer for MDA and JavaEE watch; Technical and quality auditor
       - Occasionally consulting for [Syntonia](http://www.syntonia.fr) (a consulting oriented subsidiary)
     tech: 'JavaEE; MDA; Modeling'
+    domains:
+      - Enterprise Systems
     industry: Software Engineering Services
     place: Paris
     location: 'ProxiAD Paris, 12 rue de la Chaussée d''Antin, Paris, France'
@@ -840,6 +877,8 @@ items:
       - Initiator and implementor of the migration of the build system from Ant to Maven 1
       - Designer and implementor of a streaming oriented XML based data exchange import system
     tech: 'JavaEE; RedHat WAF-CMS 6.0; Struts; Oracle 9i; Weblogic 8.1; XML; Jakarta Commons Digester'
+    domains:
+      - Enterprise Systems
     industry: Retail
     place: Lille
     location: 'Decathlon Campus, Lille, France'

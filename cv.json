@@ -48,6 +48,9 @@
         "description" : {
             "label": "Description",
             "valueType": "markdown"
+        },
+        "domains" : {
+            "label": "Domains"
         }
     }
 }

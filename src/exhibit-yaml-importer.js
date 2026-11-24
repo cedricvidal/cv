@@ -36,6 +36,18 @@ ExhibitYAML.parse = function(url, s, callback) {
                         return tech.length > 0;
                     });
                 }
+
+                if (typeof item.domains === "string") {
+                    item.domains = item.domains.split(";");
+                }
+
+                if (item.domains instanceof Array) {
+                    item.domains = item.domains.map(function(domain) {
+                        return domain.trim();
+                    }).filter(function(domain) {
+                        return domain.length > 0;
+                    });
+                }
             });
         }
     } catch(e) {
