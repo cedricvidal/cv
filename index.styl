@@ -1647,11 +1647,10 @@ ol.exhibit-tileView-body
 
     body:after
         display block
-        border-right 1px solid $line
-        border-bottom 1px solid $line
-        border-left 1px solid $line
-        border-radius 0 0 6px 6px
-        opacity .25
+        background none
+        border 1px solid $line
+        border-radius 6px
+        opacity 1
 
     .noprint, .print-button
         display none !important
@@ -1667,7 +1666,7 @@ ol.exhibit-tileView-body
         margin 0
         padding 12px
         background rgba(8,12,15,.98)
-        border 1px solid $line
+        border 1px solid transparent
         border-radius 6px
         box-shadow none
         -webkit-box-decoration-break clone
