@@ -1656,6 +1656,10 @@ ol.exhibit-tileView-body {
     transform: scale(0.5);
     transform-origin: top left;
   }
+  .name,
+  .system-status {
+    left: 480px;
+  }
   .terminal-chrome {
     backdrop-filter: none;
   }
