@@ -75,9 +75,11 @@
         var today = utcToday();
         var domains = {};
         var invalidItems = [];
+        var invalidDomains = [];
         var allSegments = [];
 
         items.forEach(function(item) {
+            var domainTimeline;
             var start;
             var end;
 
@@ -93,26 +95,51 @@
                 return;
             }
 
-            item.domains.forEach(function(domain) {
-                var segment = {
-                    domain: domain,
-                    start: start,
-                    end: end,
-                    title: item.title || item.label || domain,
-                    current: !item.end
+            domainTimeline = item.domainTimeline instanceof Array ? item.domainTimeline : item.domains.map(function(domain) {
+                return {
+                    label: domain
                 };
+            });
 
-                if (!domains[domain]) {
-                    domains[domain] = [];
+            domainTimeline.forEach(function(domain) {
+                var domainStart = domain.start ? parseDate(domain.start) : start;
+                var domainEnd = domain.end ? parseDate(domain.end) : end;
+                var domainLabel = domain.label;
+
+                if (
+                    typeof domainLabel !== "string" ||
+                    !domainStart ||
+                    !domainEnd ||
+                    domainStart < start ||
+                    domainEnd > end ||
+                    domainEnd < domainStart
+                ) {
+                    invalidDomains.push((item.label || item.title || "Unlabeled experience") + ": " + (domainLabel || "Unlabeled domain"));
+                    return;
                 }
 
-                domains[domain].push(segment);
+                var segment = {
+                    domain: domainLabel,
+                    start: domainStart,
+                    end: domainEnd,
+                    title: item.title || item.label || domainLabel,
+                    current: !domain.end && !item.end
+                };
+
+                if (!domains[domainLabel]) {
+                    domains[domainLabel] = [];
+                }
+
+                domains[domainLabel].push(segment);
                 allSegments.push(segment);
             });
         });
 
         if (invalidItems.length > 0) {
             console.error("Domain timeline skipped experiences with invalid dates:", invalidItems);
+        }
+        if (invalidDomains.length > 0) {
+            console.error("Domain timeline skipped domains with invalid dates:", invalidDomains);
         }
 
         if (allSegments.length === 0) {

@@ -52,7 +52,8 @@ items:
     domains:
       - Enterprise Systems
       - Generative AI
-      - Agentic AI
+      - label: Agentic AI
+        start: '2025-07-01'
       - Developer Relations
     industry: 'Cloud / AI'
     place: 'Hybrid, SF Bay Area'

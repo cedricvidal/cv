@@ -42,10 +42,27 @@ ExhibitYAML.parse = function(url, s, callback) {
                 }
 
                 if (item.domains instanceof Array) {
-                    item.domains = item.domains.map(function(domain) {
-                        return domain.trim();
+                    item.domainTimeline = item.domains.map(function(domain) {
+                        if (typeof domain === "string") {
+                            return {
+                                label: domain.trim()
+                            };
+                        }
+
+                        if (domain && typeof domain === "object" && typeof domain.label === "string") {
+                            return {
+                                label: domain.label.trim(),
+                                start: domain.start,
+                                end: domain.end
+                            };
+                        }
+
+                        return null;
                     }).filter(function(domain) {
-                        return domain.length > 0;
+                        return domain && domain.label.length > 0;
+                    });
+                    item.domains = item.domainTimeline.map(function(domain) {
+                        return domain.label;
                     });
                 }
             });
