@@ -1639,7 +1639,7 @@ ol.exhibit-tileView-body {
   .top-bar {
     position: relative;
     width: 100%;
-    height: 238px;
+    height: 172px;
     isolation: isolate;
     background: #07100e;
     border-bottom: 1px solid rgba(125,255,178,0.18);
@@ -1647,24 +1647,69 @@ ol.exhibit-tileView-body {
   }
   .top-bar-image {
     display: block;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 144px;
   }
   .top-bar-content {
-    width: 142.857143%;
-    height: 340px;
-    transform: scale(0.7);
-    transform-origin: top left;
+    width: 100%;
+    height: 172px;
   }
-  .name,
-  .system-status {
-    left: 329px;
+  .top-bar-content:before {
+    top: 28px;
   }
   .terminal-chrome {
+    height: 28px;
+    padding: 0 15px;
+    font-size: 7px;
     backdrop-filter: none;
+  }
+  .window-controls {
+    gap: 6px;
+    margin-right: 13px;
+  }
+  .window-controls i {
+    width: 6px;
+    height: 6px;
+  }
+  .terminal-session {
+    margin-right: 0;
+  }
+  .name {
+    inset: 28px 0 22px 34.5%;
+  }
+  .name .abs-center {
+    top: 21px;
+    left: 0;
+    width: calc(100% - 24px);
+    transform: none;
+  }
+  .eyebrow {
+    margin-bottom: 4px;
+    font-size: 9px;
+  }
+  .hero-name {
+    font-size: 50px;
+  }
+  .hero-command {
+    margin-top: 10px;
+    font-size: 10px;
   }
   .cursor {
     animation: none;
+  }
+  .system-status {
+    gap: 28px;
+    right: 24px;
+    bottom: 0;
+    left: 29.7%;
+    height: 22px;
+    border-top: 1px solid rgba(125,255,178,0.18);
+    font-size: 6px;
   }
   .system-status span:first-child {
     color: #fc6;
@@ -1672,7 +1717,7 @@ ol.exhibit-tileView-body {
   }
   .system-status span:first-child:after {
     content: "AGENT OFFLINE";
-    font-size: 10px;
+    font-size: 6px;
   }
   .system-status i {
     background: #fc6;
