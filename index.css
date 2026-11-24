@@ -646,7 +646,7 @@ h3 {
 .domain-timeline-track-row {
   display: flex;
   align-items: center;
-  height: 52px;
+  height: 44px;
   border-top: 1px solid rgba(216,230,225,0.09);
 }
 .domain-timeline-name {
@@ -662,7 +662,7 @@ h3 {
 .domain-timeline-track {
   position: relative;
   width: 100%;
-  height: calc(var(--domain-lanes) * 9px + 6px);
+  height: 15px;
   min-height: 15px;
   background: repeating-linear-gradient(90deg, rgba(216,230,225,0.09) 0, rgba(216,230,225,0.09) 1px, transparent 1px, transparent var(--domain-year-width)), linear-gradient(90deg, rgba(125,255,178,0.035), rgba(69,232,223,0.02));
   border-right: 1px solid rgba(216,230,225,0.09);
@@ -670,7 +670,7 @@ h3 {
 }
 .domain-timeline-segment {
   position: absolute;
-  top: calc(var(--segment-lane) * 9px + 3px);
+  top: 4px;
   left: var(--segment-left);
   width: var(--segment-width);
   min-width: 3px;
@@ -1770,11 +1770,11 @@ ol.exhibit-tileView-body {
     font-size: 6px;
   }
   .domain-timeline-track {
-    height: calc(var(--domain-lanes) * 5px + 4px);
+    height: 9px;
     min-height: 9px;
   }
   .domain-timeline-segment {
-    top: calc(var(--segment-lane) * 5px + 2px);
+    top: 3px;
     height: 3px;
     box-shadow: none;
   }

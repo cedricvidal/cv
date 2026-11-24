@@ -63,25 +63,6 @@
         return merged;
     }
 
-    function assignLanes(segments) {
-        var laneEnds = [];
-
-        segments.slice().sort(function(a, b) {
-            return a.start - b.start;
-        }).forEach(function(segment) {
-            var lane = 0;
-
-            while (lane < laneEnds.length && segment.start.getTime() <= laneEnds[lane]) {
-                lane += 1;
-            }
-
-            segment.lane = lane;
-            laneEnds[lane] = segment.end.getTime();
-        });
-
-        return Math.max(laneEnds.length, 1);
-    }
-
     function totalYears(intervals) {
         var duration = intervals.reduce(function(total, interval) {
             return total + interval.end.getTime() - interval.start.getTime() + DAY_MS;
@@ -163,21 +144,25 @@
                 var segments = domains[domain].sort(function(a, b) {
                     return a.start - b.start;
                 });
-
-                segments.forEach(function(segment) {
-                    segment.left = clampPercent(
-                        (segment.start.getTime() - axisStart.getTime()) / axisDuration * 100
-                    );
-                    segment.width = clampPercent(
-                        (segment.end.getTime() + DAY_MS - segment.start.getTime()) / axisDuration * 100
-                    );
+                var mergedIntervals = mergeIntervals(segments);
+                var aggregateSegments = mergedIntervals.map(function(interval) {
+                    return {
+                        start: interval.start,
+                        end: interval.end,
+                        current: interval.end.getTime() === today.getTime(),
+                        left: clampPercent(
+                            (interval.start.getTime() - axisStart.getTime()) / axisDuration * 100
+                        ),
+                        width: clampPercent(
+                            (interval.end.getTime() + DAY_MS - interval.start.getTime()) / axisDuration * 100
+                        )
+                    };
                 });
 
                 return {
                     label: domain,
-                    segments: segments,
-                    lanes: assignLanes(segments),
-                    years: totalYears(mergeIntervals(segments))
+                    segments: aggregateSegments,
+                    years: totalYears(mergedIntervals)
                 };
             })
         };
@@ -251,16 +236,14 @@
             var track = createElement("div", "domain-timeline-track");
 
             labels.appendChild(createElement("div", "domain-timeline-name", domain.label));
-            track.style.setProperty("--domain-lanes", domain.lanes);
 
             domain.segments.forEach(function(segment) {
                 var segmentElement = createElement("span", "domain-timeline-segment");
                 var dateRange = formatDate(segment.start) + " to " + (segment.current ? "today" : formatDate(segment.end));
-                var description = segment.title + ", " + dateRange;
+                var description = domain.label + ", active " + dateRange;
 
                 segmentElement.style.setProperty("--segment-left", segment.left + "%");
                 segmentElement.style.setProperty("--segment-width", segment.width + "%");
-                segmentElement.style.setProperty("--segment-lane", segment.lane);
                 segmentElement.title = description;
                 segmentElement.setAttribute("role", "img");
                 segmentElement.setAttribute("aria-label", description);
