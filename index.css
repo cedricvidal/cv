@@ -1138,6 +1138,88 @@ ol.exhibit-tileView-body {
 .print-button:hover p {
   visibility: visible;
 }
+.exhibit-busyIndicator {
+  position: fixed !important;
+  z-index: 1000;
+  top: 50% !important;
+  left: 50% !important;
+  width: calc(100vw - 32px);
+  max-width: 420px;
+  min-width: 0 !important;
+  padding: 48px 24px 24px !important;
+  color: #d8e6e1;
+  background: rgba(6,11,13,0.97) !important;
+  border: 1px solid rgba(125,255,178,0.18) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.7), inset 0 0 40px rgba(125,255,178,0.025);
+  font-family: 'IBM Plex Mono', monospace;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(12px);
+}
+.exhibit-busyIndicator:before {
+  content: "SYSTEM_BOOT // INDEXING";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 13px;
+  color: #7dffb2;
+  background: rgba(125,255,178,0.035);
+  border-bottom: 1px solid rgba(125,255,178,0.18);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+.exhibit-busyIndicator:after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 14px;
+  left: 24px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #7dffb2, transparent);
+  opacity: 0.6;
+  animation: loader-scan 1.8s ease-in-out infinite;
+}
+.exhibit-busyIndicator-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #dff8ec;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.exhibit-busyIndicator-content:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(125,255,178,0.25);
+  border-top-color: #7dffb2;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(125,255,178,0.18);
+  animation: loader-spin 0.8s linear infinite;
+}
+.exhibit-busyIndicator-content img {
+  display: none;
+}
+.exhibit-busyIndicator-content .message {
+  flex-basis: 100%;
+  min-height: 1.4em;
+  color: #71817e;
+  font-size: 9px !important;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .exhibit-busyIndicator-content:before,
+  .exhibit-busyIndicator:after {
+    animation: none;
+  }
+}
 @media screen {
   .print-only,
   .print-footer,
@@ -1435,6 +1517,14 @@ ol.exhibit-tileView-body {
   .domain-timeline-row {
     grid-template-columns: 155px minmax(445px, 1fr) 38px;
   }
+  .exhibit-busyIndicator {
+    width: calc(100vw - 24px);
+    padding: 46px 18px 22px !important;
+  }
+  .exhibit-busyIndicator:after {
+    right: 18px;
+    left: 18px;
+  }
 }
 @media print {
   @page {
@@ -1466,6 +1556,9 @@ ol.exhibit-tileView-body {
   }
   .noprint,
   .print-button {
+    display: none !important;
+  }
+  .exhibit-busyIndicator {
     display: none !important;
   }
   .page {
@@ -1799,5 +1892,65 @@ ol.exhibit-tileView-body {
 @keyframes pulse {
   50% {
     opacity: 0.35;
+  }
+}
+@-moz-keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loader-scan {
+  0%, 100% {
+    transform: scaleX(0.1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 0.75;
+  }
+}
+@-webkit-keyframes loader-scan {
+  0%, 100% {
+    transform: scaleX(0.1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 0.75;
+  }
+}
+@-o-keyframes loader-scan {
+  0%, 100% {
+    transform: scaleX(0.1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 0.75;
+  }
+}
+@keyframes loader-scan {
+  0%, 100% {
+    transform: scaleX(0.1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 0.75;
   }
 }
