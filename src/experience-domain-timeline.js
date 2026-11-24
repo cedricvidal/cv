@@ -63,12 +63,14 @@
         return merged;
     }
 
-    function totalYears(intervals) {
-        var duration = intervals.reduce(function(total, interval) {
+    function totalDuration(intervals) {
+        return intervals.reduce(function(total, interval) {
             return total + interval.end.getTime() - interval.start.getTime() + DAY_MS;
         }, 0);
+    }
 
-        return Math.round(duration / YEAR_MS);
+    function totalYears(intervals) {
+        return Math.round(totalDuration(intervals) / YEAR_MS);
     }
 
     function buildModel(items) {
@@ -155,11 +157,54 @@
         var axisStart = new Date(Date.UTC(axisStartYear, 0, 1));
         var axisEnd = new Date(Date.UTC(axisEndYear + 1, 0, 1));
         var axisDuration = axisEnd.getTime() - axisStart.getTime();
-        var orderedDomains = DOMAIN_ORDER.filter(function(domain) {
-            return domains[domain];
-        }).concat(Object.keys(domains).filter(function(domain) {
-            return DOMAIN_ORDER.indexOf(domain) === -1;
-        }).sort());
+        var domainModels = Object.keys(domains).map(function(domain) {
+            var segments = domains[domain].sort(function(a, b) {
+                return a.start - b.start;
+            });
+            var mergedIntervals = mergeIntervals(segments);
+            var aggregateSegments = mergedIntervals.map(function(interval) {
+                return {
+                    start: interval.start,
+                    end: interval.end,
+                    current: interval.end.getTime() === today.getTime(),
+                    left: clampPercent(
+                        (interval.start.getTime() - axisStart.getTime()) / axisDuration * 100
+                    ),
+                    width: clampPercent(
+                        (interval.end.getTime() + DAY_MS - interval.start.getTime()) / axisDuration * 100
+                    )
+                };
+            });
+
+            return {
+                label: domain,
+                segments: aggregateSegments,
+                latestEnd: mergedIntervals[mergedIntervals.length - 1].end,
+                duration: totalDuration(mergedIntervals),
+                years: totalYears(mergedIntervals)
+            };
+        }).sort(function(a, b) {
+            var recencyDifference = b.latestEnd - a.latestEnd;
+            var durationDifference;
+            var aOrder;
+            var bOrder;
+
+            if (recencyDifference !== 0) {
+                return recencyDifference;
+            }
+
+            durationDifference = b.duration - a.duration;
+            if (durationDifference !== 0) {
+                return durationDifference;
+            }
+
+            aOrder = DOMAIN_ORDER.indexOf(a.label);
+            bOrder = DOMAIN_ORDER.indexOf(b.label);
+            aOrder = aOrder === -1 ? DOMAIN_ORDER.length : aOrder;
+            bOrder = bOrder === -1 ? DOMAIN_ORDER.length : bOrder;
+
+            return aOrder - bOrder || a.label.localeCompare(b.label);
+        });
 
         return {
             startYear: axisStartYear,
@@ -167,31 +212,7 @@
             years: Array.from({ length: axisEndYear - axisStartYear + 1 }, function(_, index) {
                 return axisStartYear + index;
             }),
-            domains: orderedDomains.map(function(domain) {
-                var segments = domains[domain].sort(function(a, b) {
-                    return a.start - b.start;
-                });
-                var mergedIntervals = mergeIntervals(segments);
-                var aggregateSegments = mergedIntervals.map(function(interval) {
-                    return {
-                        start: interval.start,
-                        end: interval.end,
-                        current: interval.end.getTime() === today.getTime(),
-                        left: clampPercent(
-                            (interval.start.getTime() - axisStart.getTime()) / axisDuration * 100
-                        ),
-                        width: clampPercent(
-                            (interval.end.getTime() + DAY_MS - interval.start.getTime()) / axisDuration * 100
-                        )
-                    };
-                });
-
-                return {
-                    label: domain,
-                    segments: aggregateSegments,
-                    years: totalYears(mergedIntervals)
-                };
-            })
+            domains: domainModels
         };
     }
 
