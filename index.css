@@ -1646,6 +1646,9 @@ ol.exhibit-tileView-body {
     border-radius: 5px 5px 0 0;
   }
   .top-bar-image {
+    display: none;
+  }
+  .print-header-background {
     display: block;
     position: absolute;
     top: 28px;
@@ -1660,7 +1663,7 @@ ol.exhibit-tileView-body {
     height: 172px;
   }
   .top-bar-content:before {
-    top: 28px;
+    display: none;
   }
   .terminal-chrome {
     height: 28px;
