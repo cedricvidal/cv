@@ -229,28 +229,6 @@
         </div>
         </div>
 
-        <p class="rela-block caps side-header">Publications</p>
-        <div id="ex-vp-pub">
-            <div data-ex-role="lens" data-ex-item-types="Publication" class="publication" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
-                <div>
-                    <p class="pub-title">
-                        <span data-ex-content=".date" class="date"></span>
-                        <cite data-ex-content=".label" class="title"></cite>
-                    </p>
-                    <p class="pub-desc">
-                        <img data-ex-if-exists=".image" data-ex-src-content=".image" class="pub-image" />
-                        <span data-ex-content=".description" class="description pub-text"></span>
-                    </p>
-                    <p data-ex-if-exists=".download">
-                        <a data-ex-href-content=".download" class="download">Download publication</a>
-                    </p>
-                </div>
-            </div>
-
-            <div data-ex-role="view" data-ex-label="Publications" data-ex-orders=".date" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="publications" data-ex-show-all="false" data-ex-abbreviated-count="3"></div>
-
-        </div>
-
         <p class="rela-block caps side-header">Talks</p>
         <div id="ex-vp-talk">
 
@@ -279,6 +257,27 @@
 
         </div>
 
+        <p class="rela-block caps side-header">Publications</p>
+        <div id="ex-vp-pub">
+            <div data-ex-role="lens" data-ex-item-types="Publication" class="publication" data-ex-formats="date { template: 'MMM yyyy'; show: date }" style="display: none;">
+                <div>
+                    <p class="pub-title">
+                        <span data-ex-content=".date" class="date"></span>
+                        <cite data-ex-content=".label" class="title"></cite>
+                    </p>
+                    <p class="pub-desc">
+                        <img data-ex-if-exists=".image" data-ex-src-content=".image" class="pub-image" />
+                        <span data-ex-content=".description" class="description pub-text"></span>
+                    </p>
+                    <p data-ex-if-exists=".download">
+                        <a data-ex-href-content=".download" class="download">Download publication</a>
+                    </p>
+                </div>
+            </div>
+
+            <div data-ex-role="view" data-ex-label="Publications" data-ex-orders=".date" data-ex-directions="descending" data-ex-grouped="false" data-ex-collection-id="publications" data-ex-show-all="false" data-ex-abbreviated-count="3"></div>
+
+        </div>
 
         <p class="rela-block caps side-header">Open Source</p>
         <div id="ex-vp-oss">
