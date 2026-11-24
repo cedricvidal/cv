@@ -1628,6 +1628,10 @@ ol.exhibit-tileView-body {
   }
   body:after {
     display: block;
+    border-right: 1px solid rgba(125,255,178,0.18);
+    border-bottom: 1px solid rgba(125,255,178,0.18);
+    border-left: 1px solid rgba(125,255,178,0.18);
+    border-radius: 0 0 6px 6px;
     opacity: 0.25;
   }
   .noprint,
@@ -1643,10 +1647,13 @@ ol.exhibit-tileView-body {
     max-width: none;
     min-height: 0;
     margin: 0;
+    padding: 8px 0;
     background: rgba(8,12,15,0.98);
     border: 1px solid rgba(125,255,178,0.18);
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: none;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
   .print-left-border {
     z-index: 20;
@@ -1819,6 +1826,7 @@ ol.exhibit-tileView-body {
   .project {
     margin-bottom: 11px;
     padding-bottom: 11px;
+    break-inside: avoid;
     border-color: rgba(216,230,225,0.09);
   }
   .pub-desc .pub-image {
