@@ -38,7 +38,7 @@ items:
     date: '2019-01-24'
     url: 'https://twitter.com/cedricvidal/status/1088429692334604289'
     slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
-    thumbnail: 'https://pbs.twimg.com/media/DxrF5TlWoAMN2oS.jpg'
+    thumbnail: 'img/talks/margo-bank-2019.jpg'
   -
     label: 'Kafka Meetup @ Criteo'
     type: Talk
@@ -49,7 +49,7 @@ items:
     date: '2019-01-15'
     url: 'https://www.meetup.com/fr-FR/Paris-Apache-Kafka-Meetup/'
     slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
-    thumbnail: 'https://pbs.twimg.com/media/Dw-YacfX4AADnHq.jpg'
+    thumbnail: 'img/talks/kafka-criteo-2019.jpg'
   -
     label: 'Renault Digital'
     type: Talk
@@ -60,7 +60,7 @@ items:
     date: '2018-12-17'
     url: 'https://twitter.com/momichel/status/1073618445810438145'
     slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
-    thumbnail: 'https://pbs.twimg.com/media/DuZCQvYW0AA4ZJO.jpg'
+    thumbnail: 'img/talks/renault-digital-2018.jpg'
   -
     label: 'Voxxed Micro Services 2018'
     type: Talk
@@ -72,7 +72,7 @@ items:
     url: 'https://voxxeddays.com/microservices/2018/09/22/cedric-vidal-and-nicolas-romanetti-on-kafka-stream-and-bpmn/'
     slideshare: 'https://www.slideshare.net/cedric.vidal/do-microservices-dream-about-cqrses-kafka-stream-and-bpmn-voxxed-microservices-paris-2018'
     video: 'https://www.youtube.com/watch?v=AYbLIAy_fFE'
-    thumbnail: 'https://pbs.twimg.com/media/Dq2Ts2FXcAIxe7i.jpg:large'
+    thumbnail: 'img/talks/voxxed-microservices-2018.jpg'
   -
     label: 'Koncrete Kube #2'
     type: Talk
@@ -82,7 +82,7 @@ items:
     location: Paris
     date: '2018-10-16'
     url: 'https://www.eventbrite.fr/e/billets-koncrete-kube-2-50736590508#'
-    thumbnail: 'https://pbs.twimg.com/media/DpplhBhX4AAL5Cu.jpg'
+    thumbnail: 'img/talks/koncrete-kube-2018.jpg'
     slideshare: 'https://www.slideshare.net/cedric.vidal/kubernetes-and-gitops-at-quicksign-koncrete-kube-oct-2018'
   -
     label: 'Confluent Streaming Event Paris'
@@ -104,7 +104,7 @@ items:
     date: '2018-07-03'
     url: 'https://www.eventbrite.ca/e/camunda-day-amsterdam-registration-43164911412'
     video: 'https://www.youtube.com/watch?v=jvhYUTOr6Hw'
-    thumbnail: 'https://pbs.twimg.com/media/DhLv3GGX4AAdItW.jpg'
+    thumbnail: 'img/talks/camunda-amsterdam-2018.jpg'
     slideshare: 'https://www.slideshare.net/cedric.vidal/camunda-days-2018-building-a-digital-onboarding-microservices-platform-using-camunda-bpm-and-kafka'
   -
     label: 'BBL Kappa CQRS-ES Architecture'
@@ -160,7 +160,7 @@ items:
     location: 'Quai du Président Roosevelt, 92130 Issy-les-Moulineaux, France'
     date: '2009-11-26'
     slideshare: 'http://www.slideshare.net/cedric.vidal/md-day-2009-cedric-vidal-10'
-    thumbnail: 'http://cdn.slidesharecdn.com/mdday2009-cedricvidal-1-0-091127110413-phpapp01-thumbnail-2?1259341824'
+    thumbnail: 'img/talks/md-day-2009.jpg'
   -
     label: 'Eclipse Demo Camp Paris 2009 Organizer'
     type: Talk
@@ -190,4 +190,4 @@ items:
     date: '2009-07-10'
     url: 'http://is.gd/4KAGn'
     slideshare: 'http://www.slideshare.net/cedric.vidal/rmll-eclipse-acceleo-day-mdsd-scaffolding-and-acceleo-cdric-vidal-11'
-    thumbnail: 'http://cdn.slidesharecdn.com/rmlleclipseacceleoday-mdsdscaffoldingandacceleo-cdricvidal-1-1-090715171333-phpapp01-thumbnail-2?1247696319'
+    thumbnail: 'img/talks/rmll-acceleo-2009.jpg'
