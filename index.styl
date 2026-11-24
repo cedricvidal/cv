@@ -192,7 +192,7 @@ h3
 
 .terminal-session
     margin-left auto
-    margin-right 70px
+    margin-right 110px
     color $green
 
 .name
@@ -1168,29 +1168,49 @@ ol.exhibit-tileView-body
     transform translateX(-50%) rotate(-90deg)
 
 .print-button
-    position fixed
-    z-index 30
-    top 18px
-    right 18px
-    padding 9px
-    background rgba(8,14,16,.9)
-    border 1px solid $line
-    border-radius 3px
-    box-shadow 0 10px 28px rgba(0,0,0,.35)
-    text-align right
-    backdrop-filter blur(8px)
-
-.print-button img
-    display block
-    width 27px
-    height 27px
-    cursor pointer
-    filter invert(1)
-    opacity .72
-
-.print-button p
+    display flex
+    align-items center
+    gap 7px
     position absolute
-    top 43px
+    z-index 5
+    top 7px
+    right 10px
+    height 28px
+    padding 0 9px
+    color $green
+    background rgba(8,14,16,.92)
+    border 1px solid $line
+    border-radius 2px
+    box-shadow inset 0 0 12px rgba(125,255,178,.025)
+    font-family $mono
+    font-size 8px
+    letter-spacing .12em
+    cursor pointer
+    transition color 150ms ease, background 150ms ease, border-color 150ms ease, box-shadow 150ms ease
+
+.print-button svg
+    width 15px
+    height 15px
+    fill none
+    stroke currentColor
+    stroke-linecap square
+    stroke-linejoin miter
+    stroke-width 1.5
+
+.print-button:hover,
+.print-button:focus-visible
+    color $green-bright
+    background rgba(125,255,178,.065)
+    border-color rgba(125,255,178,.55)
+    box-shadow inset 0 0 14px rgba(125,255,178,.045), 0 0 14px rgba(125,255,178,.08)
+
+.print-button:focus-visible
+    outline 1px solid $cyan
+    outline-offset 2px
+
+.print-hint
+    position absolute
+    top 34px
     right 0
     width 190px
     margin 0
@@ -1201,8 +1221,10 @@ ol.exhibit-tileView-body
     border 1px solid $line
     font-size 10px
     line-height 1.4
+    text-align left
 
-.print-button:hover p
+.print-button:hover .print-hint,
+.print-button:focus-visible .print-hint
     visibility visible
 
 .exhibit-busyIndicator
