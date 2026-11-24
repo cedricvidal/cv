@@ -120,7 +120,7 @@ items:
     domains:
       - Enterprise Systems
       - Workflow Systems
-      - Autonomous Driving AI & Labeling Pipelines
+      - Self Driving AI
     industry: 'Self Driving'
     place: 'Remote, Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'
@@ -155,7 +155,7 @@ items:
     tech: 'GraphQL; Postgraphile; PostgreSQL; REST; S3; ECS; EKS; SNS; SQS; K8S; Java; Spring; Node; Typescript; Big Query; DBT; Airflow; Python; Micro Services; Elasticsearch; Terraform'
     domains:
       - Enterprise Systems
-      - Autonomous Driving AI & Labeling Pipelines
+      - Self Driving AI
     industry: 'Self Driving'
     place: 'Remote, Palo Alto'
     location: '1450 Page Mill Rd, Palo Alto, CA 94304'

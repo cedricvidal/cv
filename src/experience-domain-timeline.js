@@ -7,7 +7,7 @@
         "Enterprise Systems",
         "Expert Systems AI",
         "Workflow Systems",
-        "Autonomous Driving AI & Labeling Pipelines",
+        "Self Driving AI",
         "Generative AI",
         "Agentic AI",
         "Developer Relations"
