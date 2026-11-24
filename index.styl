@@ -1101,10 +1101,14 @@ ol.exhibit-tileView-body
         display contents
 
     .profile-panel
+        display grid
+        grid-template-columns 148px minmax(0, 1fr)
+        align-items center
+        gap 22px
         position relative
         order 1
         width 100%
-        padding 108px 20px 24px
+        padding 26px 22px
         color #8fa09b
         background $panel
         border-bottom 1px solid $line
@@ -1117,20 +1121,28 @@ ol.exhibit-tileView-body
         background #070b0d
 
     .mugshot
-        top -74px
+        position relative
+        top auto
+        left auto
         width 148px
         height 148px
+        transform none
 
     .logo
+        position relative
         width 148px
         height 148px
 
     .addressbox
-        text-align center
+        margin 0
+        padding 0
+        border-bottom 0
+        text-align left
 
     .social-links
-        max-width 300px
-        margin auto
+        grid-column 1 / -1
+        width 100%
+        margin 0
 
     .content-container
         order 2
@@ -1215,6 +1227,47 @@ ol.exhibit-tileView-body
 
     .print-button
         display none
+
+@media screen and (max-width 520px)
+    .top-bar
+        height 290px
+
+    .terminal-path
+        max-width 150px
+
+    .terminal-session
+        display none
+
+    .name
+        bottom 34px
+
+    .name .abs-center
+        width calc(100% - 28px)
+
+    .eyebrow
+        margin-bottom 12px
+        letter-spacing .14em
+
+    .hero-command
+        margin-top 16px
+        line-height 1.5
+
+    .system-status
+        gap 12px
+        padding 0 10px
+        font-size 8px
+
+    .profile-panel
+        grid-template-columns 1fr
+        justify-items center
+        gap 18px
+        padding 24px 18px
+
+    .addressbox
+        text-align center
+
+    .social-links
+        max-width 320px
 
 @media print
     @page
