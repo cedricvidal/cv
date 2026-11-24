@@ -223,7 +223,7 @@ h3 {
   left: 370px;
   height: 32px;
   color: #71817e;
-  font-size: 9px;
+  font-size: 9.5px;
   letter-spacing: 0.12em;
 }
 .system-status span:first-child {
@@ -1722,7 +1722,7 @@ ol.exhibit-tileView-body {
     margin-top: 20px;
     padding-bottom: 6px;
     border-color: rgba(125,255,178,0.18);
-    font-size: 7px;
+    font-size: 7.5px;
   }
   .publication,
   .talk,
@@ -1755,13 +1755,13 @@ ol.exhibit-tileView-body {
   }
   .console-label {
     padding: 5px 8px;
-    font-size: 6px;
+    font-size: 6.5px;
   }
   .agent-console p {
     margin-bottom: 5px;
   }
   .console-output {
-    font-size: 10px;
+    font-size: 10.5px;
   }
   .console-metrics {
     gap: 4px;
@@ -1769,7 +1769,7 @@ ol.exhibit-tileView-body {
   }
   .console-metrics span {
     padding: 3px 5px;
-    font-size: 6px;
+    font-size: 6.5px;
   }
   .domain-timeline {
     overflow: visible;
@@ -1785,11 +1785,11 @@ ol.exhibit-tileView-body {
   }
   .domain-timeline-label {
     padding: 5px 8px;
-    font-size: 6px;
+    font-size: 6.5px;
   }
   .domain-timeline-command {
     margin-bottom: 7px;
-    font-size: 6.5px;
+    font-size: 7px;
   }
   .domain-timeline-scroll {
     overflow: visible;
@@ -1808,7 +1808,7 @@ ol.exhibit-tileView-body {
   .domain-timeline-column-header,
   .domain-timeline-axis-track {
     height: 12px;
-    font-size: 4.5px;
+    font-size: 5px;
   }
   .domain-timeline-name,
   .domain-timeline-total,
@@ -1816,7 +1816,7 @@ ol.exhibit-tileView-body {
     height: 19px;
   }
   .domain-timeline-name {
-    font-size: 6.5px;
+    font-size: 7px;
   }
   .domain-timeline-track {
     height: 9px;
@@ -1828,7 +1828,7 @@ ol.exhibit-tileView-body {
     box-shadow: none;
   }
   .domain-timeline-total {
-    font-size: 7px;
+    font-size: 7.5px;
   }
   .content-container > .title {
     color: #effff8;
@@ -1840,7 +1840,7 @@ ol.exhibit-tileView-body {
   }
   .greyed {
     color: #45e8df;
-    font-size: 7.5px;
+    font-size: 8px;
   }
   .greyed:before {
     color: #7dffb2;
@@ -1891,12 +1891,12 @@ ol.exhibit-tileView-body {
     display: none !important;
   }
   h3 {
-    font-size: 10.5px;
+    font-size: 11px;
   }
   .tech,
   .industries,
   .customers {
-    font-size: 7px;
+    font-size: 7.5px;
   }
 }
 @-moz-keyframes blink {
