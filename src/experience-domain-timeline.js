@@ -71,7 +71,7 @@
     }
 
     function totalYears(intervals) {
-        return Math.round(totalDuration(intervals) / YEAR_MS);
+        return Math.floor(totalDuration(intervals) / YEAR_MS);
     }
 
     function buildModel(items) {
