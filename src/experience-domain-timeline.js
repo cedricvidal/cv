@@ -259,7 +259,7 @@
         container.appendChild(createElement("div", "domain-timeline-label", "DOMAIN_TIMELINE"));
 
         var command = createElement("p", "domain-timeline-command");
-        command.appendChild(createElement("span", "prompt", "cedric.ai $"));
+        command.appendChild(createElement("span", "prompt", "cedric $"));
         command.appendChild(document.createTextNode(" domains --timeline --aggregate union"));
         container.appendChild(command);
 
