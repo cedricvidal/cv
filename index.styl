@@ -611,9 +611,14 @@ h3
 .domain-timeline-command .prompt
     margin-right 6px
 
-.domain-timeline-scroll
+.domain-timeline-grid
+    display grid
+    grid-template-columns 190px minmax(0, 1fr) 46px
+    gap 14px
     position relative
     z-index 2
+
+.domain-timeline-scroll
     overflow-x auto
     padding-bottom 6px
     scrollbar-color rgba(125,255,178,.35) transparent
@@ -624,49 +629,42 @@ h3
     outline-offset 4px
 
 .domain-timeline-chart
-    min-width 760px
-
-.domain-timeline-axis,
-.domain-timeline-row
-    display grid
-    grid-template-columns 190px minmax(500px, 1fr) 46px
-    gap 14px
-    align-items center
-
-.domain-timeline-axis
-    margin-bottom 7px
-    color $muted
-    font-size 7px
-    letter-spacing .04em
+    min-width 620px
 
 .domain-timeline-axis-track
     display grid
     grid-template-columns repeat(var(--domain-year-count), minmax(0, 1fr))
+    align-items center
+    height 22px
+    color $muted
+    font-size 7px
+    letter-spacing .04em
 
 .domain-timeline-axis-track span
     overflow hidden
     text-align left
     text-overflow clip
 
-.domain-timeline-axis-total
-    text-align right
+.domain-timeline-axis-track span:nth-child(even)
+    visibility hidden
 
-.domain-timeline-axis-spacer,
-.domain-timeline-name
-    position sticky
-    z-index 3
-    left 0
-    background #081013
+.domain-timeline-column-header
+    display flex
+    align-items center
+    height 22px
+    color $muted
+    font-size 7px
+    letter-spacing .08em
 
-.domain-timeline-axis-total,
-.domain-timeline-total
-    position sticky
-    z-index 3
-    right 0
-    background #081013
+.domain-timeline-total-header
+    justify-content flex-end
 
-.domain-timeline-row
-    min-height 34px
+.domain-timeline-name,
+.domain-timeline-total,
+.domain-timeline-track-row
+    display flex
+    align-items center
+    height 52px
     border-top 1px solid $line-soft
 
 .domain-timeline-name
@@ -676,8 +674,12 @@ h3
     font-weight 600
     line-height 1.25
 
+.domain-timeline-track-row
+    width 100%
+
 .domain-timeline-track
     position relative
+    width 100%
     height calc(var(--domain-lanes) * 9px + 6px)
     min-height 15px
     background:
@@ -705,6 +707,7 @@ h3
     opacity 1
 
 .domain-timeline-total
+    justify-content flex-end
     color $green
     font-size 13px
     font-weight 600
@@ -1402,11 +1405,10 @@ ol.exhibit-tileView-body
         margin-right -4px
 
     .domain-timeline-chart
-        min-width 720px
+        min-width 600px
 
-    .domain-timeline-axis,
-    .domain-timeline-row
-        grid-template-columns 170px minmax(460px, 1fr) 42px
+    .domain-timeline-grid
+        grid-template-columns 170px minmax(0, 1fr) 42px
 
     .mobile-filter-toggle
         position fixed
@@ -1529,11 +1531,11 @@ ol.exhibit-tileView-body
         overflow-wrap anywhere
 
     .domain-timeline-chart
-        min-width 690px
+        min-width 560px
 
-    .domain-timeline-axis,
-    .domain-timeline-row
-        grid-template-columns 155px minmax(445px, 1fr) 38px
+    .domain-timeline-grid
+        grid-template-columns 155px minmax(0, 1fr) 38px
+        gap 10px
 
     .exhibit-busyIndicator
         width calc(100vw - 24px)
@@ -1759,26 +1761,19 @@ ol.exhibit-tileView-body
     .domain-timeline-chart
         min-width 0
 
-    .domain-timeline-axis,
-    .domain-timeline-row
+    .domain-timeline-grid
         grid-template-columns 90px minmax(0, 1fr) 25px
         gap 6px
 
-    .domain-timeline-axis-spacer,
-    .domain-timeline-name,
-    .domain-timeline-axis-total,
-    .domain-timeline-total
-        position static
-
-    .domain-timeline-axis
-        margin-bottom 3px
+    .domain-timeline-column-header,
+    .domain-timeline-axis-track
+        height 12px
         font-size 4px
 
-    .domain-timeline-axis-track span:nth-child(even)
-        visibility hidden
-
-    .domain-timeline-row
-        min-height 19px
+    .domain-timeline-name,
+    .domain-timeline-total,
+    .domain-timeline-track-row
+        height 19px
 
     .domain-timeline-name
         font-size 6px

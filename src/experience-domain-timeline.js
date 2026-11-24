@@ -200,7 +200,9 @@
         var container = document.getElementById("domain-timeline");
         var model = buildModel(experiences);
         var chart;
-        var axis;
+        var grid;
+        var labels;
+        var totals;
 
         renderScheduled = false;
 
@@ -224,6 +226,12 @@
         command.appendChild(document.createTextNode(" domains --timeline --aggregate union"));
         container.appendChild(command);
 
+        grid = createElement("div", "domain-timeline-grid");
+        labels = createElement("div", "domain-timeline-labels");
+        totals = createElement("div", "domain-timeline-totals");
+        labels.appendChild(createElement("div", "domain-timeline-column-header", "DOMAIN"));
+        totals.appendChild(createElement("div", "domain-timeline-column-header domain-timeline-total-header", "TOTAL"));
+
         var scroll = createElement("div", "domain-timeline-scroll");
         scroll.tabIndex = 0;
         scroll.setAttribute("aria-label", "Career domains timeline from " + model.startYear + " to " + model.endYear);
@@ -232,21 +240,17 @@
         chart.style.setProperty("--domain-year-count", model.years.length);
         chart.style.setProperty("--domain-year-width", 100 / model.years.length + "%");
 
-        axis = createElement("div", "domain-timeline-axis");
-        axis.appendChild(createElement("span", "domain-timeline-axis-spacer", "DOMAIN"));
         var axisTrack = createElement("div", "domain-timeline-axis-track");
         model.years.forEach(function(year) {
             axisTrack.appendChild(createElement("span", "", String(year)));
         });
-        axis.appendChild(axisTrack);
-        axis.appendChild(createElement("span", "domain-timeline-axis-total", "TOTAL"));
-        chart.appendChild(axis);
+        chart.appendChild(axisTrack);
 
         model.domains.forEach(function(domain) {
-            var row = createElement("div", "domain-timeline-row");
+            var row = createElement("div", "domain-timeline-track-row");
             var track = createElement("div", "domain-timeline-track");
 
-            row.appendChild(createElement("div", "domain-timeline-name", domain.label));
+            labels.appendChild(createElement("div", "domain-timeline-name", domain.label));
             track.style.setProperty("--domain-lanes", domain.lanes);
 
             domain.segments.forEach(function(segment) {
@@ -264,12 +268,15 @@
             });
 
             row.appendChild(track);
-            row.appendChild(createElement("div", "domain-timeline-total", domain.years + "Y"));
             chart.appendChild(row);
+            totals.appendChild(createElement("div", "domain-timeline-total", domain.years + "Y"));
         });
 
         scroll.appendChild(chart);
-        container.appendChild(scroll);
+        grid.appendChild(labels);
+        grid.appendChild(scroll);
+        grid.appendChild(totals);
+        container.appendChild(grid);
 
         window.requestAnimationFrame(function() {
             if (scroll.scrollWidth > scroll.clientWidth) {
