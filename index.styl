@@ -690,7 +690,8 @@ h3
     position absolute
     top calc(var(--segment-lane) * 9px + 3px)
     left var(--segment-left)
-    width max(var(--segment-width), 3px)
+    width var(--segment-width)
+    min-width 3px
     height 6px
     background linear-gradient(90deg, $green, $cyan)
     border-radius 1px

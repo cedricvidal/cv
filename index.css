@@ -670,7 +670,8 @@ h3 {
   position: absolute;
   top: calc(var(--segment-lane) * 9px + 3px);
   left: var(--segment-left);
-  width: 3px;
+  width: var(--segment-width);
+  min-width: 3px;
   height: 6px;
   background: linear-gradient(90deg, #7dffb2, #45e8df);
   border-radius: 1px;
