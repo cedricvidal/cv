@@ -1777,6 +1777,12 @@ ol.exhibit-tileView-body {
   .side-bar a {
     color: #7dffb2;
   }
+  .sidebar-details {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
   .addressbox .fn,
   .side-header,
   .diploma,
@@ -1839,6 +1845,8 @@ ol.exhibit-tileView-body {
     width: calc(100% - 220px);
     margin-left: 220px;
     padding: 17px 14px 28px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
   .content-container > * {
     margin-bottom: 15px;
