@@ -27,8 +27,8 @@
   <text x="350" y="108" fill="#effff8" font-family="Space Grotesk, Arial, sans-serif" font-size="50" font-weight="700">Cédric Vidal</text>
   <text x="350" y="134" fill="#7dffb2" font-family="IBM Plex Mono, monospace" font-size="10">&gt;</text>
   <text x="366" y="134" fill="#9eada9" font-family="IBM Plex Mono, monospace" font-size="10">building systems that augment human potential_</text>
-  <circle cx="350" cy="160" r="4" fill="#ffcc66"/>
-  <text x="363" y="163" fill="#ffcc66" font-family="IBM Plex Mono, monospace" font-size="6" letter-spacing="1">AGENT OFFLINE</text>
+  <circle cx="350" cy="160" r="4.5" fill="#ffcc66"/>
+  <text x="363" y="163" fill="#ffcc66" font-family="IBM Plex Mono, monospace" font-size="6.5" letter-spacing="1">AGENT OFFLINE</text>
   <text x="456" y="163" fill="#71817e" font-family="IBM Plex Mono, monospace" font-size="6" letter-spacing="1">SF // UTC-8</text>
   <text x="537" y="163" fill="#71817e" font-family="IBM Plex Mono, monospace" font-size="6" letter-spacing="1">OPEN TO COLLABORATION</text>
 </svg>
