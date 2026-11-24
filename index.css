@@ -1697,6 +1697,7 @@ ol.exhibit-tileView-body {
   }
   .hero-name {
     font-size: 32px;
+    text-shadow: none;
   }
   .hero-command {
     margin-top: 11px;
