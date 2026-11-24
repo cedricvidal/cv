@@ -49,6 +49,14 @@ ExhibitYAML.parse = function(url, s, callback) {
                     });
                 }
             });
+
+            var experienceItems = o.items.filter(function(item) {
+                return item.type === "Experience";
+            });
+
+            if (experienceItems.length > 0 && window.ExperienceDomainTimeline) {
+                window.ExperienceDomainTimeline.setExperiences(experienceItems);
+            }
         }
     } catch(e) {
         Exhibit.UI.showJsonFileValidation(Exhibit._("%general.badJsonMessage", url, e.message), url);
