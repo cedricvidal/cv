@@ -20,7 +20,6 @@ items:
     tech: 'Technical Leadership; AI Coding Agents; Agentic Workflows; AI Evaluation; Distributed Systems; LLM; GenAI; Azure; GitHub; Python; Typescript; Rust; Kubernetes; KEDA'
     domains:
       - Enterprise Systems
-      - Generative AI
       - Agentic AI
     industry: 'Cloud / AI'
     place: 'Remote, SF Bay Area'
