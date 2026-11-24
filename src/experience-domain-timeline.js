@@ -230,9 +230,10 @@
 
         chart = createElement("div", "domain-timeline-chart");
         chart.style.setProperty("--domain-year-count", model.years.length);
+        chart.style.setProperty("--domain-year-width", 100 / model.years.length + "%");
 
         axis = createElement("div", "domain-timeline-axis");
-        axis.appendChild(createElement("span", "domain-timeline-axis-spacer"));
+        axis.appendChild(createElement("span", "domain-timeline-axis-spacer", "DOMAIN"));
         var axisTrack = createElement("div", "domain-timeline-axis-track");
         model.years.forEach(function(year) {
             axisTrack.appendChild(createElement("span", "", String(year)));
@@ -269,6 +270,12 @@
 
         scroll.appendChild(chart);
         container.appendChild(scroll);
+
+        window.requestAnimationFrame(function() {
+            if (scroll.scrollWidth > scroll.clientWidth) {
+                scroll.scrollLeft = scroll.scrollWidth;
+            }
+        });
     }
 
     function scheduleRender() {

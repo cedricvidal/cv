@@ -550,6 +550,145 @@ h3 {
   color: #7dffb2;
   font-weight: 500;
 }
+.domain-timeline {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 44px;
+  padding: 48px 24px 24px;
+  background: linear-gradient(145deg, rgba(10,17,20,0.96), rgba(6,11,13,0.98));
+  border: 1px solid rgba(125,255,178,0.18);
+  border-radius: 4px;
+  box-shadow: inset 0 0 35px rgba(125,255,178,0.02), 0 14px 40px rgba(0,0,0,0.2);
+}
+.domain-timeline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(69,232,223,0.025));
+}
+.domain-timeline-label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 9px 13px;
+  color: #71817e;
+  background: rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(216,230,225,0.09);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+.domain-timeline-command {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 20px;
+  color: #45e8df;
+  font-size: 12px;
+}
+.domain-timeline-command .prompt {
+  margin-right: 6px;
+}
+.domain-timeline-scroll {
+  position: relative;
+  z-index: 2;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-color: rgba(125,255,178,0.35) transparent;
+  scrollbar-width: thin;
+}
+.domain-timeline-scroll:focus-visible {
+  outline: 1px solid #7dffb2;
+  outline-offset: 4px;
+}
+.domain-timeline-chart {
+  min-width: 760px;
+}
+.domain-timeline-axis,
+.domain-timeline-row {
+  display: grid;
+  grid-template-columns: 190px minmax(500px, 1fr) 46px;
+  gap: 14px;
+  align-items: center;
+}
+.domain-timeline-axis {
+  margin-bottom: 7px;
+  color: #71817e;
+  font-size: 7px;
+  letter-spacing: 0.04em;
+}
+.domain-timeline-axis-track {
+  display: grid;
+  grid-template-columns: repeat(var(--domain-year-count), minmax(0, 1fr));
+}
+.domain-timeline-axis-track span {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: clip;
+}
+.domain-timeline-axis-total {
+  text-align: right;
+}
+.domain-timeline-axis-spacer,
+.domain-timeline-name {
+  position: sticky;
+  z-index: 3;
+  left: 0;
+  background: #081013;
+}
+.domain-timeline-axis-total,
+.domain-timeline-total {
+  position: sticky;
+  z-index: 3;
+  right: 0;
+  background: #081013;
+}
+.domain-timeline-row {
+  min-height: 34px;
+  border-top: 1px solid rgba(216,230,225,0.09);
+}
+.domain-timeline-name {
+  color: #dff8ec;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.domain-timeline-track {
+  position: relative;
+  height: calc(var(--domain-lanes) * 9px + 6px);
+  min-height: 15px;
+  background: repeating-linear-gradient(90deg, rgba(216,230,225,0.09) 0, rgba(216,230,225,0.09) 1px, transparent 1px, transparent var(--domain-year-width)), linear-gradient(90deg, rgba(125,255,178,0.035), rgba(69,232,223,0.02));
+  border-right: 1px solid rgba(216,230,225,0.09);
+  border-left: 1px solid rgba(216,230,225,0.09);
+}
+.domain-timeline-segment {
+  position: absolute;
+  top: calc(var(--segment-lane) * 9px + 3px);
+  left: var(--segment-left);
+  width: 3px;
+  height: 6px;
+  background: linear-gradient(90deg, #7dffb2, #45e8df);
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(125,255,178,0.14);
+  opacity: 0.78;
+  transition: opacity 150ms ease, filter 150ms ease;
+}
+.domain-timeline-segment:hover,
+.domain-timeline-segment:focus {
+  filter: brightness(1.2);
+  opacity: 1;
+}
+.domain-timeline-total {
+  color: #7dffb2;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+}
 .title {
   width: 100%;
   text-align: left;
@@ -1155,6 +1294,19 @@ ol.exhibit-tileView-body {
   .console-output {
     font-size: 16px;
   }
+  .domain-timeline {
+    padding: 46px 18px 20px;
+  }
+  .domain-timeline-scroll {
+    margin-right: -4px;
+  }
+  .domain-timeline-chart {
+    min-width: 720px;
+  }
+  .domain-timeline-axis,
+  .domain-timeline-row {
+    grid-template-columns: 170px minmax(460px, 1fr) 42px;
+  }
   .mobile-filter-toggle {
     position: fixed;
     opacity: 0;
@@ -1267,6 +1419,21 @@ ol.exhibit-tileView-body {
   }
   .social-links {
     max-width: 320px;
+  }
+  .domain-timeline {
+    margin-bottom: 34px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .domain-timeline-command {
+    overflow-wrap: anywhere;
+  }
+  .domain-timeline-chart {
+    min-width: 690px;
+  }
+  .domain-timeline-axis,
+  .domain-timeline-row {
+    grid-template-columns: 155px minmax(445px, 1fr) 38px;
   }
 }
 @media print {
@@ -1461,6 +1628,69 @@ ol.exhibit-tileView-body {
   .console-metrics span {
     padding: 3px 5px;
     font-size: 5.5px;
+  }
+  .domain-timeline {
+    overflow: visible;
+    margin-bottom: 20px;
+    padding: 29px 10px 10px;
+    background: linear-gradient(145deg, rgba(10,17,20,0.96), rgba(6,11,13,0.98));
+    border-color: rgba(125,255,178,0.18);
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .domain-timeline:after {
+    display: none;
+  }
+  .domain-timeline-label {
+    padding: 5px 8px;
+    font-size: 5.5px;
+  }
+  .domain-timeline-command {
+    margin-bottom: 7px;
+    font-size: 6px;
+  }
+  .domain-timeline-scroll {
+    overflow: visible;
+    padding-bottom: 0;
+  }
+  .domain-timeline-chart {
+    min-width: 0;
+  }
+  .domain-timeline-axis,
+  .domain-timeline-row {
+    grid-template-columns: 90px minmax(0, 1fr) 25px;
+    gap: 6px;
+  }
+  .domain-timeline-axis-spacer,
+  .domain-timeline-name,
+  .domain-timeline-axis-total,
+  .domain-timeline-total {
+    position: static;
+  }
+  .domain-timeline-axis {
+    margin-bottom: 3px;
+    font-size: 4px;
+  }
+  .domain-timeline-axis-track span:nth-child(even) {
+    visibility: hidden;
+  }
+  .domain-timeline-row {
+    min-height: 19px;
+  }
+  .domain-timeline-name {
+    font-size: 6px;
+  }
+  .domain-timeline-track {
+    height: calc(var(--domain-lanes) * 5px + 4px);
+    min-height: 9px;
+  }
+  .domain-timeline-segment {
+    top: calc(var(--segment-lane) * 5px + 2px);
+    height: 3px;
+    box-shadow: none;
+  }
+  .domain-timeline-total {
+    font-size: 6.5px;
   }
   .content-container > .title {
     color: #effff8;
