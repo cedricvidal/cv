@@ -600,6 +600,10 @@ h3 {
   position: relative;
   z-index: 2;
 }
+.domain-timeline-scroll-shell {
+  position: relative;
+  min-width: 0;
+}
 .domain-timeline-scroll {
   overflow-x: auto;
   padding-bottom: 6px;
@@ -609,6 +613,34 @@ h3 {
 .domain-timeline-scroll:focus-visible {
   outline: 1px solid #7dffb2;
   outline-offset: 4px;
+}
+.domain-timeline-scroll-hint {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 6px;
+  left: 0;
+  width: 58px;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(6,11,13,0.98) 0%, rgba(6,11,13,0.72) 45%, transparent 100%);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+.domain-timeline-scroll-hint:after {
+  content: "\2039  OLDER";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  color: #45e8df;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px rgba(69,232,223,0.3);
+}
+.domain-timeline-scroll-shell.has-overflow-left .domain-timeline-scroll-hint {
+  opacity: 1;
+  transform: none;
 }
 .domain-timeline-chart {
   min-width: 620px;
@@ -1748,6 +1780,9 @@ ol.exhibit-tileView-body {
   .domain-timeline-scroll {
     overflow: visible;
     padding-bottom: 0;
+  }
+  .domain-timeline-scroll-hint {
+    display: none;
   }
   .domain-timeline-chart {
     min-width: 0;

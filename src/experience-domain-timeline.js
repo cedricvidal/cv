@@ -236,6 +236,8 @@
         var chart;
         var grid;
         var labels;
+        var scrollHint;
+        var scrollShell;
         var totals;
 
         renderScheduled = false;
@@ -269,6 +271,9 @@
         var scroll = createElement("div", "domain-timeline-scroll");
         scroll.tabIndex = 0;
         scroll.setAttribute("aria-label", "Career domains timeline from " + model.startYear + " to " + model.endYear);
+        scrollShell = createElement("div", "domain-timeline-scroll-shell");
+        scrollHint = createElement("div", "domain-timeline-scroll-hint");
+        scrollHint.setAttribute("aria-hidden", "true");
 
         chart = createElement("div", "domain-timeline-chart");
         chart.style.setProperty("--domain-year-count", model.years.length);
@@ -305,15 +310,24 @@
         });
 
         scroll.appendChild(chart);
+        scrollShell.appendChild(scroll);
+        scrollShell.appendChild(scrollHint);
         grid.appendChild(labels);
-        grid.appendChild(scroll);
+        grid.appendChild(scrollShell);
         grid.appendChild(totals);
         container.appendChild(grid);
+
+        function updateScrollHint() {
+            scrollShell.classList.toggle("has-overflow-left", scroll.scrollLeft > 1);
+        }
+
+        scroll.addEventListener("scroll", updateScrollHint, { passive: true });
 
         window.requestAnimationFrame(function() {
             if (scroll.scrollWidth > scroll.clientWidth) {
                 scroll.scrollLeft = scroll.scrollWidth;
             }
+            updateScrollHint();
         });
     }
 
