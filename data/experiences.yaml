@@ -37,7 +37,7 @@ items:
     responsibilities: |
       Helping **startups** leverage Microsoft's **AI platforms** and emerging **generative AI** technologies.
 
-      Beginning in mid-2025, started working on early explorations around **AI coding agents** and
+      Beginning in winter 2023, started working on early explorations around **AI coding agents** and
       **agentic evaluation**, focusing on how multi-step, autonomous systems should be measured as they
       move beyond single-turn outputs toward full task completion.
 
@@ -52,7 +52,7 @@ items:
     domains:
       - Generative AI
       - label: Agentic AI
-        start: '2025-07-01'
+        start: '2023-12-01'
       - Developer Relations
     industry: 'Cloud / AI'
     place: 'Hybrid, SF Bay Area'
