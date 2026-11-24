@@ -459,12 +459,16 @@ h3
 .publication:last-child, .talk:last-child, .project:last-child
     border-bottom 0
 
-.pub-desc:after, .project-desc:after
+.talk-thumbnail
+    max-width 100%
+    height auto
+
+.pub-desc:after, .project-desc:after, .talk-desc:after
     content ""
     display table
     clear both
 
-.pub-desc .pub-image
+.pub-desc .pub-image, .talk-desc .talk-thumbnail
     float left
     width 50px
     margin 5px 10px 5px 0
@@ -472,7 +476,7 @@ h3
     background white
     border-radius 2px
 
-.pub-desc .pub-text, .project-desc .project-text
+.pub-desc .pub-text, .project-desc .project-text, .talk-desc .description
     display inline
 
 .project-desc .project-image
@@ -1845,7 +1849,7 @@ ol.exhibit-tileView-body
         break-inside avoid
         border-color $line-soft
 
-    .pub-desc .pub-image
+    .pub-desc .pub-image, .talk-desc .talk-thumbnail
         width 35px
 
     .project-desc .project-image
