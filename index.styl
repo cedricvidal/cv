@@ -192,7 +192,7 @@ h3
 
 .terminal-session
     margin-left auto
-    margin-right 110px
+    margin-right 220px
     color $green
 
 .name
@@ -1171,7 +1171,8 @@ ol.exhibit-tileView-body
     left 20px
     transform translateX(-50%) rotate(-90deg)
 
-.print-button
+.print-button,
+.fork-button
     display flex
     align-items center
     gap 7px
@@ -1192,7 +1193,11 @@ ol.exhibit-tileView-body
     cursor pointer
     transition color 150ms ease, background 150ms ease, border-color 150ms ease, box-shadow 150ms ease
 
-.print-button svg
+.print-button
+    right 120px
+
+.print-button svg,
+.fork-button svg
     width 15px
     height 15px
     fill none
@@ -1202,13 +1207,17 @@ ol.exhibit-tileView-body
     stroke-width 1.5
 
 .print-button:hover,
-.print-button:focus-visible
+.print-button:focus-visible,
+.fork-button:hover,
+.fork-button:focus-visible
     color $green-bright
     background rgba(125,255,178,.065)
     border-color rgba(125,255,178,.55)
     box-shadow inset 0 0 14px rgba(125,255,178,.045), 0 0 14px rgba(125,255,178,.08)
+    text-decoration none
 
-.print-button:focus-visible
+.print-button:focus-visible,
+.fork-button:focus-visible
     outline 1px solid $cyan
     outline-offset 2px
 
@@ -1388,7 +1397,7 @@ ol.exhibit-tileView-body
         white-space nowrap
 
     .terminal-session
-        margin-right 0
+        margin-right 110px
 
     .name
         inset 42px 0 32px
